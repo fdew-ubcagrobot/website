@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-import SponsorshipsPage from './components/Sponsorships'; // Adjust the import path as necessary
+import Sponsorships from './components/Sponsorship';
 
 
 function App() {
@@ -9,6 +9,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h3>Overview</h3>
+        <ul>
+          <li>Sponsorships Page:</li>
+        </ul>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
