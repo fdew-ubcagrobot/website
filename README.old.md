@@ -1,4 +1,0 @@
-# website
-
-Libraries:
- - tailwnindcss
