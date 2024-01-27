@@ -1,6 +1,8 @@
 import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-//import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import SponsorshipsPage from './components/Sponsorships'; // Adjust the import path as necessary
+
 
 function App() {
   return (
