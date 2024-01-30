@@ -1,9 +1,11 @@
 import React from "react";
-import { SponsorshipS1, SponsorshipS2, SponsorshipS3, SponsorshipS4 } from "../components";
+import {TitleBanner, SponsorshipS1, SponsorshipS2, SponsorshipS3, SponsorshipS4 } from "../components";
+import Shake from "../components/sponsorship/shake.png";
 
 const Sponsorship = () => {
     return (
-        <div>
+        <>
+            <TitleBanner imageSrc={Shake}>Sponsorship</TitleBanner>
             <SponsorshipS1>
                 Sponsorship
             </SponsorshipS1>
@@ -16,7 +18,7 @@ const Sponsorship = () => {
             <SponsorshipS4>
                 Hello
             </SponsorshipS4>
-        </div>
+        </>
     );
 };
 
