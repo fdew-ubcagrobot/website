@@ -4,7 +4,7 @@ import Shake from "../components/sponsorship/shake.png";
 
 const Sponsorship = () => {
     return (
-        <>
+        <div className="bg-[#F8F7F1]">
             <TitleBanner imageSrc={Shake}>Sponsorship</TitleBanner>
             <SponsorshipS1>
                 Sponsorship
@@ -18,7 +18,7 @@ const Sponsorship = () => {
             <SponsorshipS4>
                 Hello
             </SponsorshipS4>
-        </>
+        </div>
     );
 };
 
