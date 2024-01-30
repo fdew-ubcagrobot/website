@@ -16,7 +16,6 @@ import {
   AboutUs,
 } from "./pages";
 
-
 function App() {
     return (
         <Router>

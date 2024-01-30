@@ -12,5 +12,5 @@ export {
     Recruitment,
     ContactUs,
     AboutUs,
-    
+
 }
