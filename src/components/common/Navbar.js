@@ -1,30 +1,27 @@
-import React from "react";
-import { Nav, NavLink, NavMenu } from "./NavbarElements";
- 
+import React, { useEffect } from "react";
+import { useState } from "react";
+
 const Navbar = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isSticky, setIsSticky] = useState(false);
+
+    const toggleMene = () => {
+        setIsMenuOpen(!isMenuOpen);
+    }
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if(window.scrollY > 0){
+                setIsSticky(true);
+            }
+        };
+
+        window.addEventListener("scroll",)
+    }, [])
+
     return (
-        <>
-            <Nav>
-                <NavMenu>
-                <NavLink to="/Home" activeStyle>
-                        Home
-                    </NavLink>
-                    <NavLink to="/Sponsorship" activeStyle>
-                        Sponsorship
-                    </NavLink>
-                    <NavLink to="/Recruitment" activeStyle>
-                        Recruitment
-                    </NavLink>
-                    <NavLink to="/ContactUs" activeStyle>
-                        Contact Us
-                    </NavLink>
-                    <NavLink to="/AboutUs" activeStyle>
-                        aboutUs
-                    </NavLink>
-                </NavMenu>
-            </Nav>
-        </>
+        <header>
+
+        </header>
     );
-};
- 
-export default Navbar;
+}
