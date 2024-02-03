@@ -1,7 +1,7 @@
 import React from "react";
 import StudentsWorking from "./studentsWorking.jpg";
 
-function SponsorshipS1(props) {
+function SponsorshipS1() {
     return (
         <div style={{ backgroundImage: `url(${StudentsWorking})` }} className="min-h-screen w-screen bg-cover bg-center">
             <div className="h-screen w-screen bg-[#00000080] flex justify-center items-center p-40">
