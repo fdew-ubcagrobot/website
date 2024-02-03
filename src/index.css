@@ -54,6 +54,20 @@ h1 {
 .sponsorLogos img {
   margin-top: 15px;
   margin-bottom: 15px;
-  max-height: 150px;
+  max-width: 275px;
   margin: 0 20px; /* Adjust as needed */
+}
+
+@media (max-width: 500px) {
+  .sponsorLogos {
+    flex-direction: column;
+    align-items: center; /* Optional: Center images in the column */
+  }
+
+  .sponsorLogos img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex-direction: column;
+    align-items: center; /* Optional: Center images in the column */
+  }
 }
