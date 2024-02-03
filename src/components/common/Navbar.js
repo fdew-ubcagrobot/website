@@ -3,6 +3,8 @@ import { useState } from "react";
 
 // import icons
 import { hi, HiOutlineMenu } from "react-icons/hi";
+import { agrobot } from "../../images";
+
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +29,7 @@ const Navbar = () => {
             <nav className={`py-4 md:px-8 px-4 bg-white ${isSticky? "sticky top-0 right-0 left-0 bg-white": ""}`}>
                 <div className="flex items-center justify-between">
                     <div className="font-bold text-lg cursor-pointer text-black ">
-                        <a href="/"> UBC Agrobots</a>
+                        <img src={agrobot} alt="UBC Agrobot"/>
                     </div>
                 
                 {/* for larger devices */}
