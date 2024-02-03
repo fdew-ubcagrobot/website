@@ -1,5 +1,5 @@
 import Home from "./Home";
-import Projects from "./Projects";
+import Portfolio from "./Portfolio";
 import Sponsorship from "./Sponsorship";
 import Recruitment from "./Recruitment";
 import ContactUs from "./ContactUs";
@@ -7,7 +7,7 @@ import AboutUs from "./AboutUs";
 
 export {
     Home,
-    Projects,
+    Portfolio,
     Sponsorship,
     Recruitment,
     ContactUs,
