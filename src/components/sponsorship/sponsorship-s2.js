@@ -1,14 +1,15 @@
 import React from "react";
 import TeamPhoto from "./TeamPhoto.jpg";
+import ShadowTeamPhoto from "./ShadowTeamPhoto.jpg";
 
 function SponsorshipS2() {
     return (
-        <div className="h-screen w-screen p-[10%] font-RobotoMono">
+        <div className="min-h-screen w-screen p-[10%] font-RobotoMono">
             <h1 className=" text-[40px] pb-10">Interested in <br />Sponsoring us?</h1>
-            <div className="flex align-middle">
-                <div className="w-[50%] relative flex justify-center items-center">
-                    <img src={TeamPhoto} alt="TeamPhoto" className="relative z-10 rounded-[14px]" />
-                    <div className="absolute top-[20px] left-[-20px] w-full h-full bg-[#56B259] z-0 rounded-[14px]" ></div>
+            <div className="flex justify-center">
+                <div className="w-[50%] relative inline-block">
+                    <img src={ShadowTeamPhoto} alt="Shadow Team" className="absolute top-[20px] left-[-20px] z-0 rounded-[14px]" style={{ width: '100%', height: 'auto' }} />
+                    <img src={TeamPhoto} alt="Team" className="absolute top-0 left-0 z-10 rounded-[14px]" style={{ width: '100%', height: 'auto' }} />
                 </div>
                 <div className="w-[50%] p-5 flex flex-col justify-center">
                     <p className="pb-10">Sponsors receive a wide array of benefits from sponsoring UBC AgroBot. Through sponsoring us we can offer networking opportunities, promotion on social media, and promotion at international competitions.</p>
