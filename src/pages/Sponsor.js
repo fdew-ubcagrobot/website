@@ -1,18 +1,31 @@
 import React from 'react';
+<<<<<<< HEAD
 import 
 { 
+=======
+
+import {
+    fcc,
+>>>>>>> 07014ba376f6970e74d23dc742b202bb6030fd1c
     apsc,
     chbe,
     ece,
     egbc,
+<<<<<<< HEAD
     fcc,
+=======
+>>>>>>> 07014ba376f6970e74d23dc742b202bb6030fd1c
     gage,
     ieee,
     lfs,
     proto,
     solidworks,
     verdi
+<<<<<<< HEAD
 } from '../assets';
+=======
+} from '../images';
+>>>>>>> 07014ba376f6970e74d23dc742b202bb6030fd1c
 
 import '../index.css';
 
