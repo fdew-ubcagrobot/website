@@ -1,20 +1,24 @@
 import React from "react";
-import { 
-  Navbar 
+import {
+    Navbar
 } from "./components";
 import {
     BrowserRouter as Router,
     Routes,
     Route,
 } from "react-router-dom";
-import { 
-  Home,
-  Projects,
-  Sponsorship,
-  Recruitment,
-  ContactUs,
-  AboutUs,
+import {
+    Home,
+    Projects,
+    Sponsorship,
+    Recruitment,
+    ContactUs,
+    AboutUs,
 } from "./pages";
+
+import {
+    footer
+} from "./components/common"
 
 function App() {
     return (
@@ -28,9 +32,11 @@ function App() {
                 <Route path="/contactUs" element={<ContactUs />} />
                 <Route path="/aboutUs" element={<AboutUs />} />
             </Routes>
+            <footer />
         </Router>
+
 
     );
 }
- 
+
 export default App;

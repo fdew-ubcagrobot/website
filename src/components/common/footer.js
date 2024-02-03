@@ -12,15 +12,15 @@ footer.style.width = '100%';
 
 // Create an image element and append it to the footer
 const image = document.createElement('img');
-image.src = 'path/to/your/image.png';
-image.alt = 'Logo';
+image.src = './images/UBC_AGROBOTS.png';
+image.alt = 'UBC Agrobots';
 image.style.width = '20px';
 image.style.height = '20px';
 image.style.marginRight = '10px';
 footer.appendChild(image);
 
 // Define the menu items and create corresponding anchor elements
-const menuItems = ['HOME', 'PORTFOLIO', 'PROJECTS', 'SPONSORSHIP', 'Recruitment', 'ContactUS', 'AboutUs', 'Shop'];
+const menuItems = ['HOME', 'PORTFOLIO', 'PROJECTS', 'SPONSORSHIP', 'RECRUITMENT', 'CONTACT US', 'ABOUT US', 'SHOP'];
 menuItems.forEach(item => {
     const link = document.createElement('a');
     link.href = '#'; // You can set the actual href value
