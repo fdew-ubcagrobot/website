@@ -1,11 +1,11 @@
 import React from "react";
-import Sponsor from "./Sponsor"; 
+import { Sponsors } from '../components'; 
 
 const Recruitment = () => {
     return (
         <div>
             <h1>Welcome to recruitment</h1>
-            <Sponsor />
+            <Sponsors />
         </div>
     );
 };
