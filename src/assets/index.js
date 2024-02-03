@@ -12,6 +12,9 @@ import
     solidworks,
     verdi,
     agrobot,
+    GreenHouse,
+    StudentsWorking,
+    Shake
 } from './image';
 
 
@@ -28,4 +31,7 @@ export {
     solidworks,
     verdi,
     agrobot,
+    GreenHouse,
+    StudentsWorking,
+    Shake
 }
