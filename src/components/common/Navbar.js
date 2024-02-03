@@ -4,6 +4,9 @@ import { useState } from "react";
 // import icons
 import { hi, HiOutlineMenu } from "react-icons/hi";
 
+import { navLinks } from "../../constant";
+import { agrobot } from "../../assets";
+
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
@@ -27,23 +30,24 @@ const Navbar = () => {
             <nav className={`py-4 md:px-8 px-4 bg-white ${isSticky? "sticky top-0 right-0 left-0 bg-white": ""}`}>
                 <div className="flex items-center justify-between">
                     <div className="font-bold text-lg cursor-pointer text-black ">
-                        <a href="/"> UBC Agrobots</a>
+                        <a href="/"> 
+                        <img src={agrobot}/>
+                        </a>
                     </div>
                 
                 {/* for larger devices */}
 
-                <div className="lg:flex items-center gap-3 hidden">
-                    <a href="/" className="block hover:text-grey-400 py-2 px-4">Home</a>
-                    <a href="/" className="block hover:text-grey-400 py-2 px-4">Portfolio</a>
-                    <a href="/" className="block hover:text-grey-400 py-2 px-4">Sponsorship</a>
-                    <a href="/" className="block hover:text-grey-400 py-2 px-4">Recruitment</a>
-                    <a href="/" className="block hover:text-grey-400 py-2 px-4">About us</a>
-                </div>
+                <ul className="list-none lg:flex items-center gap-3 hidden">
+                    {navLinks.map((nav) => (
+                        <li className="block hover:text-grey-400 py-2 px-4">
+                             <a href={`${nav.link}`}>{nav.id}</a>
+                        </li>
+                    ))}
+                  
+                </ul>
 
                 {/* contact me button */}
-           <div className="lg:block hidden">
-                <button className="">Contact US</button>
-           </div>
+        
             
             {/* menu button for small devices */}
             <button onClick={toggleMenu} className="lg:hidden text-indigo-600 text-3xl ">
