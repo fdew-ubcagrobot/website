@@ -3,7 +3,6 @@ import { useState } from "react";
 
 // import icons
 import { hi, HiOutlineMenu } from "react-icons/hi";
-import { agrobot } from "../../images";
 
 
 import { navLinks } from "../../constant";
