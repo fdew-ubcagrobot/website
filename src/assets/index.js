@@ -14,7 +14,9 @@ import
     agrobot,
     GreenHouse,
     StudentsWorking,
-    Shake
+    Shake,
+    ConcentricOctagons,
+    HomeFarm,
 } from './image';
 
 
@@ -33,5 +35,7 @@ export {
     agrobot,
     GreenHouse,
     StudentsWorking,
-    Shake
+    Shake,
+    ConcentricOctagons,
+    HomeFarm,
 }
