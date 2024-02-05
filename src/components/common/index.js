@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import TitleBanner from "./TitleBanner";
-import Sponsors from './Sponsor';
+import Sponsors from './sponsor';
 
 export {
     Navbar,
