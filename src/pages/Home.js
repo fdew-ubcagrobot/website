@@ -21,7 +21,7 @@ function Home() {
     useEffect(() => {
         const handleResize = debounce(() => {
             setIsMobile(window.innerWidth < 768);
-        }, 500);
+        }, 250);
 
         handleResize();
 
