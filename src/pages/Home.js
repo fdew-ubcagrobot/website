@@ -33,19 +33,12 @@ function Home() {
 
     }, []);
 
-    if (isMobile) {
-        return (
-            <p>hihi :p</p>
-        );
-    }
-    else {
-        return (
-            <div>
-                <HomeBanner></HomeBanner>
-                <Sponsors />
-            </div>
-        );
-    }
+    return (
+        <div>
+            <HomeBanner isMobile={isMobile}></HomeBanner>
+            <Sponsors />
+        </div>
+    );
 };
 
 export default Home;
