@@ -1,43 +1,38 @@
-import React from "react";
-// Create a footer element
-const footer = document.createElement('div');
-footer.id = 'footer';
-footer.style.backgroundColor = '#333';
-footer.style.color = 'white';
-footer.style.textAlign = 'center';
-footer.style.padding = '10px';
-footer.style.position = 'fixed';
-footer.style.bottom = '0';
-footer.style.width = '100%';
+import React from 'react';
+import './Footer.css'; 
+import {LOGO} from "../../assets";
 
-// Create an image element and append it to the footer
-const image = document.createElement('img');
-image.src = './images/UBC_AGROBOTS.png';
-image.alt = 'UBC Agrobots';
-image.style.width = '20px';
-image.style.height = '20px';
-image.style.marginRight = '10px';
-footer.appendChild(image);
+function Footer() {
+  return (
+    <footer className="footer">
+      <img src={LOGO} alt="UBC AgroBot Logo" className="logo"/>
+      <nav>
+        <ul>
+          <li><a href="/"><b>Home</b></a></li>
+          <li>
+            <a href="/portfolio"><b>Portfolio</b></a>
+            <ul>
+              <li className='sub'><a href="/achievements">Achievements</a></li>
+              <li className='sub'><a href="/publications">Publications</a></li>
+              <li className='sub'><a href="/gallery">Gallery</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/projects"><b>Projects</b></a>
+            <ul>
+              <li className='sub'><a href="/agrobot">AgroBot</a></li>
+              <li className='sub'><a href="/agroponics">AgroPonics</a></li>
+            </ul>
+          </li>
+          <li><a href="/sponsorship"><b>Sponsorship</b></a></li>
+          <li><a href="/recruitment"><b>Recruitment</b></a></li>
+          <li><a href="/contactus"><b>Contact Us</b></a></li>
+          <li><a href="/aboutus"><b>About Us</b></a></li>
+          <li><a href="/shop"><b>Shop</b></a></li>
+        </ul>
+      </nav>
+    </footer>
+  );
+}
 
-// Define the menu items and create corresponding anchor elements
-const menuItems = ['HOME', 'PORTFOLIO', 'PROJECTS', 'SPONSORSHIP', 'RECRUITMENT', 'CONTACT US', 'ABOUT US', 'SHOP'];
-menuItems.forEach(item => {
-    const link = document.createElement('a');
-    link.href = '#'; // You can set the actual href value
-    link.textContent = item;
-    link.style.color = 'white';
-    link.style.textDecoration = 'none';
-    link.style.margin = '0 10px';
-    footer.appendChild(link);
-});
-
-// Define the additional spans and append them to the footer
-const additionalSpans = ['Achievements', 'Agrobot', 'Publications', 'AgroPonics', 'Gallery'];
-additionalSpans.forEach(spanText => {
-    const span = document.createElement('span');
-    span.textContent = spanText;
-    footer.appendChild(span);
-});
-
-// Append the footer to the body
-document.body.appendChild(footer);
+export default Footer;

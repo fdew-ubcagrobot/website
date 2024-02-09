@@ -17,6 +17,7 @@ import Shake from './shake.png';
 import StudentsWorking from './studentsWorking.jpg';
 import ConcentricOctagons from './concentric_octogons.png';
 import HomeFarm from './homeFarm.png';
+import LOGO from './UBC_AGROBOTS.png';
 
 export {
     apsc,
@@ -38,4 +39,5 @@ export {
     Shake,
     ConcentricOctagons,
     HomeFarm,
+    LOGO
 }

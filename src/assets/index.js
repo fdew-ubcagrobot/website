@@ -17,6 +17,7 @@ import
     Shake,
     ConcentricOctagons,
     HomeFarm,
+    LOGO
 } from './image';
 
 
@@ -38,4 +39,5 @@ export {
     Shake,
     ConcentricOctagons,
     HomeFarm,
+    LOGO
 }
