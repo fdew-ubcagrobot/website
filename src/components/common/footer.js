@@ -10,7 +10,7 @@ function Footer() {
                     <li className='inline mr-[30px] ml-10'><a href="/"><b>Home</b></a></li>
                     <li className='inline mr-[30px]'>
                         <a href="/portfolio"><b>Portfolio</b></a>
-                        <ul className='text-[#21130d] absolute mt-0 ml-[360px] bg-[#f8f7f1]'>
+                        <ul className='text-xs text-[#21130d] absolute mt-0 ml-[360px] bg-[#f8f7f1]'>
                             <li className='sub'><a href="/achievements">Achievements</a></li>
                             <li className='sub'><a href="/publications">Publications</a></li>
                             <li className='sub'><a href="/gallery">Gallery</a></li>
@@ -19,7 +19,7 @@ function Footer() {
                     </li>
                     <li className='inline mr-[30px]'>
                         <a href="/projects"><b>Projects</b></a>
-                        <ul className='hidden'>
+                        <ul className='text-xs text-[#21130d] absolute mt-0 ml-[480px] bg-[#f8f7f1]'>
                             <li className='sub'><a href="/agrobot">AgroBot</a></li>
                             <li className='sub'><a href="/agroponics">AgroPonics</a></li>
                         </ul>
