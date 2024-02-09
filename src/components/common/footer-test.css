@@ -1,29 +1,25 @@
+
 .footer {
-    background-color: #f8f7f1; /* Green background */
-    color: #8cbc24; /* White text */
+    background-color: #f8f7f1;
+    color: #8cbc24;
     padding: 25px;
     margin-bottom: 40px;
     margin-top: 15px;
   }
-  
-  .footer .logo {
-    float: left;
-    float: bottom;
-    margin-right: 50px;
 
-  }
-  
-  .footer nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
+
+
+
   
   .footer nav ul li {
     display: inline;
     margin-right: 30px;
 
   }
+
+
+    
+  
   
   .footer nav ul li ul {
     display: none; /* This will make the sub-menu always visible */
@@ -33,5 +29,19 @@
     display: list-item; /* This will make the sub-menu items stack vertically */
   }
   
+  .footer nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer .logo {
+    float: left;
+    float: bottom;
+    margin-right: 50px;
+
+  }
+
+  
+
 
   
