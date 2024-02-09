@@ -3,7 +3,7 @@ import {LOGO} from "../../assets";
 
 function Footer() {
   return (
-    <footer className="footer bg-[#f8f7f1] text-[#8cbc24] p-25 ml-5 mb-20 mt-10">
+    <footer className="footer bg-[#f8f7f1] text-[#8cbc24] p-25 ml-5 mb-20 mt-20">
       <img src={LOGO} alt="UBC AgroBot Logo" className="float-left float-bottom mr-50"/>
       <nav>
         <ul className="list-none p-0">
