@@ -5,7 +5,11 @@ export const navLinks = [
     },
     {
         id : "Portfolio",
-        link : "/portfolio"
+        link : "/portfolio",
+        dropdown: [
+            { id: "Agrobots", link: "/agrobots" },
+            { id: "Agroponics", link: "/agroponics" },
+        ]
     },
     {
         id : "Sponsorship",
@@ -17,7 +21,7 @@ export const navLinks = [
     },
     {
         id : "Contact us",
-        link : "#"
+        link : "/contactUs"
     },
     {
         id : "About us",
