@@ -15,6 +15,7 @@ import ShadowTeamPhoto from './ShadowTeamPhoto.jpg';
 import TeamPhoto from './TeamPhoto.jpg';
 import Shake from './shake.png';
 import GroupWork from './GroupWork.png';
+import Agrobot from './Agrobot.png';
 import StudentsWorking from './studentsWorking.jpg';
 import ConcentricOctagons from './concentric_octogons.png';
 import HomeFarm from './homeFarm.png';
@@ -43,6 +44,7 @@ export {
     StudentsWorking,
     Shake,
     GroupWork,
+    Agrobot,
     ConcentricOctagons,
     HomeFarm,
     BronzeStar,
