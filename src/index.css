@@ -8,10 +8,10 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto Mono', monospace;
 }
 
 body {
+  font-family: 'Roboto Mono', monospace;
   background-color: #F8F7F1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

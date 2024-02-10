@@ -18,6 +18,10 @@ import
     GroupWork,
     ConcentricOctagons,
     HomeFarm,
+    BronzeStar,
+    SilverStar,
+    GoldStar,
+    DiamondStar,
     LOGO
 } from './image';
 
@@ -41,5 +45,9 @@ export {
     GroupWork,
     ConcentricOctagons,
     HomeFarm,
+    BronzeStar,
+    SilverStar,
+    GoldStar,
+    DiamondStar,
     LOGO
 }

@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'RobotoMono': ['Roboto Mono', 'monospace'],
+        'Inter': ['Inter', 'sans-serif'],
       },
     },
   },

@@ -18,6 +18,10 @@ import GroupWork from './GroupWork.png';
 import StudentsWorking from './studentsWorking.jpg';
 import ConcentricOctagons from './concentric_octogons.png';
 import HomeFarm from './homeFarm.png';
+import BronzeStar from './bronzeStar.svg';
+import SilverStar from './silverStar.svg';
+import GoldStar from './goldStar.svg';
+import DiamondStar from './diamondStar.svg';
 import LOGO from './UBC_AGROBOTS.png';
 
 export {
@@ -41,5 +45,9 @@ export {
     GroupWork,
     ConcentricOctagons,
     HomeFarm,
+    BronzeStar,
+    SilverStar,
+    GoldStar,
+    DiamondStar,
     LOGO
 }
