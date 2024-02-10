@@ -15,6 +15,7 @@ import
     GreenHouse,
     StudentsWorking,
     Shake,
+    GroupWork,
     ConcentricOctagons,
     HomeFarm,
     LOGO
@@ -37,6 +38,7 @@ export {
     GreenHouse,
     StudentsWorking,
     Shake,
+    GroupWork,
     ConcentricOctagons,
     HomeFarm,
     LOGO
