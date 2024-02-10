@@ -48,7 +48,7 @@ export {
     GroupWork,
     Agrobot,
     ConcentricOctagons,
-    Recruitment,
+    RecruitmentImage,
     HomeFarm,
     BronzeStar,
     SilverStar,
