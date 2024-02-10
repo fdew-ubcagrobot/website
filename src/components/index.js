@@ -4,6 +4,7 @@ import { SponsorshipS1, SponsorshipS2, SponsorshipS3 } from './sponsorship';
 import { HomeBanner } from "./home";
 import { Sponsors } from './common'
 import { InfoParagraph, StatsBar } from './portfolio';
+import { mailForm, sideBar } from "./contactUs";
 
 export {
     Navbar,
@@ -15,4 +16,6 @@ export {
     Sponsors,
     InfoParagraph,
     StatsBar,
+    mailForm,
+    sideBar
 }
