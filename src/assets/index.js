@@ -23,7 +23,8 @@ import
     SilverStar,
     GoldStar,
     DiamondStar,
-    LOGO
+    LOGO,
+    mailPhoto
 } from './image';
 
 
@@ -51,5 +52,6 @@ export {
     SilverStar,
     GoldStar,
     DiamondStar,
-    LOGO
+    LOGO,
+    mailPhoto
 }
