@@ -17,6 +17,10 @@ import Shake from './shake.png';
 import StudentsWorking from './studentsWorking.jpg';
 import ConcentricOctagons from './concentric_octogons.png';
 import HomeFarm from './homeFarm.png';
+import BronzeStar from './bronzeStar.svg';
+import SilverStar from './silverStar.svg';
+import GoldStar from './goldStar.svg';
+import DiamondStar from './diamondStar.svg';
 
 export {
     apsc,
@@ -38,4 +42,8 @@ export {
     Shake,
     ConcentricOctagons,
     HomeFarm,
+    BronzeStar,
+    SilverStar,
+    GoldStar,
+    DiamondStar,
 }

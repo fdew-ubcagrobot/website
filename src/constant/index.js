@@ -1,5 +1,5 @@
 import { navLinks } from "./navbar";
-import { Header, S1Text, S2Title, S2BenefitsParagraph, S2ButtonText } from './sponsorship';
+import { Header, S1Text, S2Title, S2BenefitsParagraph, S2ButtonText, SponsorLevels } from './sponsorship';
 
 export {
     navLinks,
@@ -7,5 +7,6 @@ export {
     S1Text,
     S2Title,
     S2BenefitsParagraph,
-    S2ButtonText
+    S2ButtonText,
+    SponsorLevels,
 }

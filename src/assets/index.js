@@ -17,6 +17,10 @@ import
     Shake,
     ConcentricOctagons,
     HomeFarm,
+    BronzeStar,
+    SilverStar,
+    GoldStar,
+    DiamondStar,
 } from './image';
 
 
@@ -38,4 +42,8 @@ export {
     Shake,
     ConcentricOctagons,
     HomeFarm,
+    BronzeStar,
+    SilverStar,
+    GoldStar,
+    DiamondStar,
 }
