@@ -10,11 +10,22 @@ import { agrobot } from "../../assets";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [issubMenuOpen, setIssubMenuOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
-    }
+         // Close the mobile menu when toggling the portfolio dropdown
+        setIssubMenuOpen(false);
+};
+    
 
+    const togglesubMenu = () => {
+        setIssubMenuOpen(!issubMenuOpen);
+         // Close the portfolio dropdown menu when toggling the dropdown
+         setIsMenuOpen(false);
+};
+        
+    
     return (
         <header className="h-[10vh] bg-[#F8F7F1] w-full sticky top-0 left-0 right-0 border-b-2 z-[100]">
             <nav className="h-full py-4 md:px-8 px-4">
@@ -23,14 +34,26 @@ const Navbar = () => {
                         <img className="h-full" src={agrobot} alt="UBC Agrobot" />
                     </div>
 
-                <ul className="list-none lg:flex items-center gap-3 hidden">
-                    {navLinks.map((nav) => (
-                        <li className="block text-[#8cbc24] py-2 px-4">
-                             <a href={`${nav.link}`}>{nav.id}</a>
-                        </li>
-                    ))}
-                  
-                </ul>
+                    <ul className="list-none lg:flex items-center gap-3 hidden">
+                        {navLinks.map((nav) => (
+                            <li key={nav.id} className="block text-[#8cbc24] py-2 px-4">
+                                {nav.id === "Portfolio" && (
+                                    <div className="dropdown">
+                                        <button className="dropbtn" onClick={togglesubMenu}>{nav.id} ▼</button>
+                                        {issubMenuOpen && (
+                                            <div className="dropdown-content">
+                                                <a href="/agrobots">Agrobots</a>
+                                                <a href="/agroponics">Agroponics</a>
+                                            </div>
+                                        )}
+                                    </div>
+                                )}
+                                {nav.id !== "Portfolio" && (
+                                    <a href={`${nav.link}`}>{nav.id}</a>
+                                )}
+                            </li>
+                        ))}
+                    </ul>
 
                 {/* contact me button */}
         
