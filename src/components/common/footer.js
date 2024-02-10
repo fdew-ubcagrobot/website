@@ -6,12 +6,12 @@ import { LOGO } from "../../assets";
 
 function Footer() {
     return (
-        <footer className="bg-[#f8f7f1] text-[#88BE22] w-[100vw] min-h-[50vh]  flex pt-[20vh] p-8">
-            <div className='w-[20%] flex justify-center items-center'>
+        <footer className="bg-[#f8f7f1] text-[#88BE22] w-[100vw] min-h-[50vh] flex pt-[20vh] px-8">
+            <div className='w-[220px] text-center'>
                 <img src={LOGO} alt="footer logo" className="inline-block w-[70%]"></img>
             </div>
             <div className='w-[80%] text-[18px]'>
-                <ul className='w-full h-full font-bold capitalize flex justify-evenly flex-wrap  mb-[40px] text-center'>
+                <ul className='w-full pt-1 font-bold capitalize flex justify-evenly flex-wrap text-center'>
                     <li className='px-[10px]'><a href="/">Home</a></li>
                     <li className='px-[10px]'>
                         <a href="/portfolio">Portfolio</a>
