@@ -19,7 +19,7 @@ function Footer() {
                     </li>
                     <li className='inline mr-[30px]'>
                         <a href="/projects"><b>Projects</b></a>
-                        <ul className='text-xs text-[#21130d] absolute mt-0 ml-[480px] bg-[#f8f7f1]'>
+                        <ul className='text-xs text-[#21130d] absolute mt-0 ml-[476px] bg-[#f8f7f1]'>
                             <li className='sub'><a href="/agrobot">AgroBot</a></li>
                             <li className='sub'><a href="/agroponics">AgroPonics</a></li>
                         </ul>
