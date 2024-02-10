@@ -25,7 +25,7 @@ const Navbar = () => {
 
                 <ul className="list-none lg:flex items-center gap-3 hidden">
                     {navLinks.map((nav) => (
-                        <li className="block hover:text-green-600 py-2 px-4">
+                        <li className="block text-[#8cbc24] py-2 px-4">
                              <a href={`${nav.link}`}>{nav.id}</a>
                         </li>
                     ))}
@@ -35,17 +35,10 @@ const Navbar = () => {
                 {/* contact me button */}
         
             
-            {/* menu button for small devices */}
-            <button onClick={toggleMenu} className="lg:hidden text-green-600 text-3xl ">
-                <HiOutlineMenu/>
-            </button>
+    
 
-
-                    {/* contact me button */}
-
-
-                    {/* menu button for small devices */}
-                    <button onClick={toggleMenu} className="lg:hidden text-indigo-600 text-3xl ">
+                {/* menu button for small devices */}
+                    <button onClick={toggleMenu} className="lg:hidden text-[#8cbc24] text-3xl ">
                         <HiOutlineMenu />
                     </button>
 
@@ -54,7 +47,7 @@ const Navbar = () => {
                 {/* nav items for small devices */}
                 {
                     isMenuOpen && (
-                        <div className="mt-4 bg-indigo-500 text-white rounded py-4">
+                        <div className="mt-4 bg-[#8cbc24] text-white rounded py-4">
                             <a href="/" className="block hover:text-grey-400 py-2 px-4">Home</a>
                             <a href="/" className="block hover:text-grey-400 py-2 px-4">Portfolio</a>
                             <a href="/" className="block hover:text-grey-400 py-2 px-4">Sponsorship</a>
