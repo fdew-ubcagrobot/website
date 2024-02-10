@@ -43,7 +43,7 @@ const Navbar = () => {
                                         {issubMenuOpen && (
                                             <div className="dropdown-content">
                                                 <a href="/agrobots">Agrobots</a>
-                                                <a href="/agroponics">Agroponics</a>
+                                                <a href="/agroponics" style={{ display: "block" }}>Agroponics</a> 
                                             </div>
                                         )}
                                     </div>
