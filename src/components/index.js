@@ -3,7 +3,7 @@ import { TitleBanner } from "./common";
 import { SponsorshipS1, SponsorshipS2, SponsorshipS3 } from './sponsorship';
 import { HomeBanner } from "./home";
 import { Sponsors } from './common'
-import { PortfolioS1, StatsBar } from './portfolio';
+import { InfoParagraph, StatsBar } from './portfolio';
 
 export {
     Navbar,
@@ -13,6 +13,6 @@ export {
     SponsorshipS3,
     HomeBanner,
     Sponsors,
-    PortfolioS1,
+    InfoParagraph,
     StatsBar,
 }

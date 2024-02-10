@@ -1,13 +1,15 @@
 import React from "react";
-import { Sponsors } from '../components'; 
+import { TitleBanner, PortfolioS1, StatsBar} from "../components";
+import { RecruitmentImage } from "../assets"; 
+import NotificationBanner from "../components/common/NotificationBanner";
 
-const Recruitment = () => {
+function Recruitment() {
     return (
-        <div>
-            <h1>Welcome to recruitment</h1>
-            <Sponsors />
+        <div className="bg-[#F8F7F1] w-screen">
+            <TitleBanner toColor="#5d3c3a" fromColor="#9da28d" imageSrc={RecruitmentImage} imageClassName="absolute right-0 bottom-0 w-4/12">Recruitment</TitleBanner>
+           <NotificationBanner></NotificationBanner>
         </div>
     );
 };
- 
+
 export default Recruitment;
