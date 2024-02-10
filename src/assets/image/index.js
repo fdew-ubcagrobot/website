@@ -21,6 +21,7 @@ import BronzeStar from './bronzeStar.svg';
 import SilverStar from './silverStar.svg';
 import GoldStar from './goldStar.svg';
 import DiamondStar from './diamondStar.svg';
+import LOGO from './UBC_AGROBOTS.png';
 
 export {
     apsc,
@@ -42,8 +43,12 @@ export {
     Shake,
     ConcentricOctagons,
     HomeFarm,
+<<<<<<< HEAD
     BronzeStar,
     SilverStar,
     GoldStar,
     DiamondStar,
+=======
+    LOGO
+>>>>>>> 6843ae5a661bfad9f2cde6d59cffae97f29530bf
 }

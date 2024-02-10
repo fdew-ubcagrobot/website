@@ -17,8 +17,8 @@ import {
 } from "./pages";
 
 import {
-    footer
-} from "./components/common"
+    Footer
+} from "./components/common";
 
 function App() {
     return (
@@ -32,7 +32,7 @@ function App() {
                 <Route path="/contactUs" element={<ContactUs />} />
                 <Route path="/aboutUs" element={<AboutUs />} />
             </Routes>
-            <footer />
+            <Footer />
         </Router>
     );
 }

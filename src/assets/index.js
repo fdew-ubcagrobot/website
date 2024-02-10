@@ -17,10 +17,14 @@ import
     Shake,
     ConcentricOctagons,
     HomeFarm,
+<<<<<<< HEAD
     BronzeStar,
     SilverStar,
     GoldStar,
     DiamondStar,
+=======
+    LOGO
+>>>>>>> 6843ae5a661bfad9f2cde6d59cffae97f29530bf
 } from './image';
 
 
@@ -46,4 +50,5 @@ export {
     SilverStar,
     GoldStar,
     DiamondStar,
+    LOGO
 }
