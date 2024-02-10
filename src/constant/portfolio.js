@@ -1,0 +1,1 @@
+export const S1Title = "Achievements and Participation"
