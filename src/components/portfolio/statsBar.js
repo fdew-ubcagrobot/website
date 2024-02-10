@@ -1,11 +1,7 @@
 import React from "react";
+import { stats } from "../../constant/portfolio";
 
 function StatsBar() {
-    const stats = [
-        { icon: "Icon 1", heading: "Text 1", text: "Description 1" },
-        { icon: "Icon 2", heading: "Text 2", text: "Description 2" },
-        { icon: "Icon 3", heading: "Text 3", text: "Description 3" },
-    ];
 
     return (
         <div className="bg-white rounded-lg shadow-lg p-4 mx-20">
