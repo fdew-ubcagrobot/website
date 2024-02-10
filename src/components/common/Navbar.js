@@ -2,11 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 // import icons
-<<<<<<< HEAD
-import { hi, HiOutlineMenu } from "react-icons/hi";
-=======
 import { HiOutlineMenu } from "react-icons/hi";
->>>>>>> f4f1beb8db7f823b75af15fd6ad9af1737b30ae9
 
 
 import { navLinks } from "../../constant";
@@ -44,7 +40,6 @@ const Navbar = () => {
                 <HiOutlineMenu/>
             </button>
 
-                    </ul>
 
                     {/* contact me button */}
 
