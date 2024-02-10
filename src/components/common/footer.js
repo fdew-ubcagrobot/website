@@ -1,36 +1,40 @@
 import React from 'react';
 import { LOGO } from "../../assets";
 
+// For parent: w-[100vw] h-[10vh]
+// For children: 
+
 function Footer() {
     return (
-        <footer className="footer bg-[#f8f7f1] text-[#8cbc24] p-25 ml-5 mb-20 mt-20">
-            <img src={LOGO} alt="UBC AgroBot Logo" className="float-left float-bottom mr-50" />
-            <nav>
-                <ul className="list-none p-0">
-                    <li className='inline mr-[30px] ml-10'><a href="/"><b>Home</b></a></li>
-                    <li className='inline mr-[30px]'>
-                        <a href="/portfolio"><b>Portfolio</b></a>
-                        <ul className='text-xs text-[#21130d] absolute mt-0 ml-[360px] bg-[#f8f7f1]'>
-                            <li className='sub'><a href="/achievements">Achievements</a></li>
-                            <li className='sub'><a href="/publications">Publications</a></li>
-                            <li className='sub'><a href="/gallery">Gallery</a></li>
-                        </ul>
-
-                    </li>
-                    <li className='inline mr-[30px]'>
-                        <a href="/projects"><b>Projects</b></a>
-                        <ul className='text-xs text-[#21130d] absolute mt-0 ml-[476px] bg-[#f8f7f1]'>
-                            <li className='sub'><a href="/agrobot">AgroBot</a></li>
-                            <li className='sub'><a href="/agroponics">AgroPonics</a></li>
+        <footer className="bg-[#f8f7f1] text-[#88BE22] w-[100vw] min-h-[50vh]  flex pt-[20vh] p-8">
+            <div className='w-[20%] flex justify-center items-center'>
+                <img src={LOGO} alt="footer logo" className="inline-block w-[70%]"></img>
+            </div>
+            <div className='w-[80%] text-[18px]'>
+                <ul className='w-full h-full font-bold capitalize flex justify-evenly flex-wrap  mb-[40px] text-center'>
+                    <li className='px-[10px]'><a href="/">Home</a></li>
+                    <li className='px-[10px]'>
+                        <a href="/portfolio">Portfolio</a>
+                        <ul className='text-black font-normal leading-6'>
+                            <li><a href="/achievements">Achievements</a></li>
+                            <li><a href="/publications">Publications</a></li>
+                            <li><a href="/gallery">Gallery</a></li>
                         </ul>
                     </li>
-                    <li className='inline mr-[30px]'><a href="/sponsorship"><b>Sponsorship</b></a></li>
-                    <li className='inline mr-[30px]'><a href="/recruitment"><b>Recruitment</b></a></li>
-                    <li className='inline mr-[30px]'><a href="/contactus"><b>Contact Us</b></a></li>
-                    <li className='inline mr-[30px]'><a href="/aboutus"><b>About Us</b></a></li>
-                    <li className='inline mr-[30px]'><a href="/shop"><b>Shop</b></a></li>
+                    <li className='px-[10px]'>
+                        <a href="/projects">Projects</a>
+                        <ul className='text-black font-normal leading-6'>
+                            <li><a href="/agrobot">AgroBot</a></li>
+                            <li><a href="/agroponics">AgroPonics</a></li>
+                        </ul>
+                    </li>
+                    <li className='px-[10px]'><a href="/sponsorship">Sponsorship</a></li>
+                    <li className='px-[10px]'><a href="/recruitment">Recruitment</a></li>
+                    <li className='px-[10px]'><a href="/contactus">Contact Us</a></li>
+                    <li className='px-[10px]'><a href="/aboutus">About Us</a></li>
+                    <li className='px-[10px]'><a href="/shop">Shop</a></li>
                 </ul>
-            </nav>
+            </div>
         </footer>
     );
 }
