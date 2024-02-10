@@ -1,7 +1,7 @@
 import React from "react";
 import { TeamPhoto, ShadowTeamPhoto, Agrobot } from "../../assets/image";
 import { PS1Title } from "../../constant";
-import StatsBar from "./statsBar";
+
 
 function PortfolioS1() {
     
@@ -26,7 +26,6 @@ function PortfolioS1() {
                 </div>
             </div>
         </div>
-        <StatsBar></StatsBar>
         </>
         
     );

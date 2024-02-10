@@ -1,0 +1,1 @@
+export const headers = ["OUR SPONSORS", "Diamond", "Gold", "Silver", "Bronze"]
