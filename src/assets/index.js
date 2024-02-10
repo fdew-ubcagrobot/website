@@ -12,6 +12,12 @@ import
     solidworks,
     verdi,
     agrobot,
+    GreenHouse,
+    StudentsWorking,
+    Shake,
+    ConcentricOctagons,
+    HomeFarm,
+    LOGO
 } from './image';
 
 
@@ -28,4 +34,10 @@ export {
     solidworks,
     verdi,
     agrobot,
+    GreenHouse,
+    StudentsWorking,
+    Shake,
+    ConcentricOctagons,
+    HomeFarm,
+    LOGO
 }

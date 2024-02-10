@@ -1,6 +1,4 @@
 import React from "react";
-import {TitleBanner, SponsorshipS1, SponsorshipS2, SponsorshipS3, SponsorshipS4 } from "../components";
-import Shake from "../components/sponsorship/shake.png";
 
 const Portfolio = () => {
     return (

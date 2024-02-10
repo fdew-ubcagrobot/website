@@ -1,10 +1,10 @@
 import React from "react";
 import TierBanner from "./tierBanner";
-import Greenhouse from "./greenhouse.jpg"
+import { GreenHouse } from '../../assets/image';
 
 function SponsorshipS3() {
     return (
-        <div style={{ backgroundImage: `url(${Greenhouse})` }} className="w-screen bg-cover bg-center">
+        <div style={{ backgroundImage: `url(${GreenHouse})` }} className="w-screen bg-cover bg-center">
             <div className="p-[7.5%] font-RobotoMono flex justify-between items-center bg-[#00000080]">
                 <TierBanner></TierBanner>
                 <TierBanner></TierBanner>
