@@ -1,19 +1,19 @@
 export const navLinks = [
     {
         id : "Home",
-        link : "#"
+        link : "/"
     },
     {
         id : "Portfolio",
-        link : "#"
+        link : "/portfolio"
     },
     {
         id : "Sponsorship",
-        link : "#"
+        link : "/sponsorship"
     },
     {
         id : "Recruitment",
-        link : "#"
+        link : "/recruitment"
     },
     {
         id : "Contact us",
@@ -21,7 +21,7 @@ export const navLinks = [
     },
     {
         id : "About us",
-        link : "#"
+        link : "/aboutUs"
     },
     
     

@@ -10,6 +10,20 @@ import proto from './proto.png';
 import solidworks from './solidworks.png';
 import verdi from './verdi.png';
 import agrobot from './UBC_AGROBOTS.png';
+import GreenHouse from './greenhouse.jpg';
+import ShadowTeamPhoto from './ShadowTeamPhoto.jpg';
+import TeamPhoto from './TeamPhoto.jpg';
+import Shake from './shake.png';
+import GroupWork from './GroupWork.png';
+import Agrobot from './Agrobot.png';
+import StudentsWorking from './studentsWorking.jpg';
+import ConcentricOctagons from './concentric_octogons.png';
+import HomeFarm from './homeFarm.png';
+import BronzeStar from './bronzeStar.svg';
+import SilverStar from './silverStar.svg';
+import GoldStar from './goldStar.svg';
+import DiamondStar from './diamondStar.svg';
+import LOGO from './UBC_AGROBOTS.png';
 
 export {
     apsc,
@@ -23,5 +37,19 @@ export {
     proto,
     solidworks,
     verdi,
-    agrobot
+    agrobot,
+    GreenHouse,
+    ShadowTeamPhoto,
+    TeamPhoto,
+    StudentsWorking,
+    Shake,
+    GroupWork,
+    Agrobot,
+    ConcentricOctagons,
+    HomeFarm,
+    BronzeStar,
+    SilverStar,
+    GoldStar,
+    DiamondStar,
+    LOGO
 }

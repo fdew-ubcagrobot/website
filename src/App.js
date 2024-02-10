@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import {
     Home,
-    Projects,
+    Portfolio,
     Sponsorship,
     Recruitment,
     ContactUs,
@@ -17,8 +17,8 @@ import {
 } from "./pages";
 
 import {
-    footer
-} from "./components/common"
+    Footer
+} from "./components/common";
 
 function App() {
     return (
@@ -26,16 +26,14 @@ function App() {
             <Navbar />
             <Routes>
                 <Route exact path="/" element={<Home />} />
-                <Route path="/projects" element={<Projects />} />
+                <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/sponsorship" element={<Sponsorship />} />
                 <Route path="/recruitment" element={<Recruitment />} />
                 <Route path="/contactUs" element={<ContactUs />} />
                 <Route path="/aboutUs" element={<AboutUs />} />
             </Routes>
-            <footer />
+            <Footer />
         </Router>
-
-
     );
 }
 

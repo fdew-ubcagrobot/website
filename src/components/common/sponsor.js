@@ -12,17 +12,18 @@ import {
     proto,
     solidworks,
     verdi
-} from '../assets/image';
+} from '../../assets';
 
-import '../index.css';
+import { headers } from '../../constant/sponsorFooter';
+import '../../index.css';
 
 const Sponsors = () => {
     return (
         <div className="center">
-            <h1 className="sponsorTitle">OUR SPONSORS</h1>
+            <h1 className="sponsorTitle">{headers[0]}</h1>
             <div className="line-container">
                 <hr className="line" />
-                    <span className="centered-text">Diamond</span>
+                    <span className="centered-text">{headers[1]}</span>
                 <hr className="line" />
             </div>
             <div className="sponsorLogos">
@@ -32,7 +33,7 @@ const Sponsors = () => {
             </div>
             <div className="line-container">
                 <hr className="line" />
-                    <span className="centered-text">Gold</span>
+                    <span className="centered-text">{headers[2]}</span>
                 <hr className="line" />
             </div>
             <div className="sponsorLogos">
@@ -43,7 +44,7 @@ const Sponsors = () => {
             </div>
             <div className="line-container">
                 <hr className="line" />
-                    <span className="centered-text">Silver</span>
+                    <span className="centered-text">{headers[3]}</span>
                 <hr className="line" />
             </div>
             <div className="sponsorLogos">
@@ -52,7 +53,7 @@ const Sponsors = () => {
             </div>
             <div className="line-container">
                 <hr className="line" />
-                    <span className="centered-text">Bronze</span>
+                    <span className="centered-text">{headers[4]}</span>
                 <hr className="line" />
             </div>
             <div className="sponsorLogos">

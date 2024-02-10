@@ -12,6 +12,18 @@ import
     solidworks,
     verdi,
     agrobot,
+    GreenHouse,
+    StudentsWorking,
+    Shake,
+    GroupWork,
+    Agrobot,
+    ConcentricOctagons,
+    HomeFarm,
+    BronzeStar,
+    SilverStar,
+    GoldStar,
+    DiamondStar,
+    LOGO
 } from './image';
 
 
@@ -28,4 +40,16 @@ export {
     solidworks,
     verdi,
     agrobot,
+    GreenHouse,
+    StudentsWorking,
+    Shake,
+    GroupWork,
+    Agrobot,
+    ConcentricOctagons,
+    HomeFarm,
+    BronzeStar,
+    SilverStar,
+    GoldStar,
+    DiamondStar,
+    LOGO
 }
