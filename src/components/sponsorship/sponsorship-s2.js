@@ -23,9 +23,9 @@ function SponsorshipS2() {
                 <div className="w-[50%] p-5 flex flex-col justify-center">
                     <p className="pb-10">{S2BenefitsParagraph}</p>
                     <div className="flex justify-center">
-                        <button className="p-4 w-auto rounded-[14px] bg-[#56B259] text-white font-bold">
+                        <a href={`${process.env.PUBLIC_URL}/assets/UBC-AgroBot-Sponsorship-Package-2020-1.pdf`} target="_blank" rel="noopener noreferrer" className="p-4 w-auto rounded-[14px] bg-[#56B259] text-white font-bold">
                             {S2ButtonText}
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
