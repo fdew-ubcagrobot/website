@@ -1,5 +1,5 @@
 import React from "react";
-import { TitleBanner, SponsorshipS1, SponsorshipS2, SponsorshipS3 } from "../components";
+import { TitleBanner, SponsorshipS1, SponsorshipS2, SponsorshipS3, Sponsors } from "../components";
 import { Shake } from "../assets";
 import { Header } from "../constant";
 
@@ -10,7 +10,7 @@ const Sponsorship = () => {
             <SponsorshipS1></SponsorshipS1>
             <SponsorshipS2></SponsorshipS2>
             <SponsorshipS3></SponsorshipS3>
-            
+            <Sponsors />
         </div>
     );
 };

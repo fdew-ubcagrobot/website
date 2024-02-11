@@ -11,7 +11,7 @@ function Footer() {
                 <img src={LOGO} alt="footer logo" className="inline-block w-[70%]"></img>
             </div>
             <div className='w-[80%] text-[18px]'>
-                <ul className='w-full pt-1 font-bold capitalize flex justify-evenly flex-wrap text-center'>
+                <ul className='w-full pt-1 font-bold capitalize flex justify-evenly flex-wrap'>
                     <li className='px-[10px]'><a href="/">Home</a></li>
                     <li className='px-[10px]'>
                         <a href="/portfolio">Portfolio</a>
