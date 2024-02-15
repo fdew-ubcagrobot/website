@@ -4,6 +4,7 @@ import Sponsorship from "./Sponsorship";
 import Recruitment from "./Recruitment";
 import ContactUs from "./ContactUs";
 import AboutUs from "./AboutUs";
+import AgroPonics from "./AgroPonics";
 
 export {
     Home,
@@ -12,5 +13,5 @@ export {
     Recruitment,
     ContactUs,
     AboutUs,
-
+    AgroPonics,
 }

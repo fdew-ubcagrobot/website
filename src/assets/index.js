@@ -25,7 +25,8 @@ import
     GoldStar,
     DiamondStar,
     LOGO,
-    mailPhoto
+    mailPhoto,
+    AgroPonicsTitleImg,
 } from './image';
 
 
@@ -55,5 +56,6 @@ export {
     GoldStar,
     DiamondStar,
     LOGO,
-    mailPhoto
+    mailPhoto,
+    AgroPonicsTitleImg,
 }

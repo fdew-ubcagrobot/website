@@ -5,6 +5,7 @@ import { HomeBanner } from "./home";
 import { Sponsors } from './common'
 import { InfoParagraph, StatsBar } from './portfolio';
 import { mailForm, sideBar } from "./contactUs";
+import { AgroPonicsS1, AgroPonicsS2, AgroPonicsS3, AgroPonicsS4, AgroPonicsS5, } from './agroponics';
 
 export {
     Navbar,
@@ -17,5 +18,10 @@ export {
     InfoParagraph,
     StatsBar,
     mailForm,
-    sideBar
+    sideBar,
+    AgroPonicsS1,
+    AgroPonicsS2,
+    AgroPonicsS3,
+    AgroPonicsS4,
+    AgroPonicsS5,
 }

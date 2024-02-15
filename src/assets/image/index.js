@@ -26,6 +26,7 @@ import GoldStar from './goldStar.svg';
 import DiamondStar from './diamondStar.svg';
 import LOGO from './UBC_AGROBOTS.png';
 import mailPhoto from './mailPhoto.png';
+import AgroPonicsTitleImg from './AgroPonicsTitleImg.png';
 
 export {
     apsc,
@@ -55,5 +56,6 @@ export {
     GoldStar,
     DiamondStar,
     LOGO,
-    mailPhoto
+    mailPhoto,
+    AgroPonicsTitleImg,
 }
