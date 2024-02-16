@@ -6,7 +6,7 @@ import { LOGO } from "../../assets";
 
 function Footer() {
     return (
-        <footer className="bg-[#f8f7f1] text-[#88BE22] w-[100vw] min-h-[50vh] flex pt-[20vh] px-8">
+        <footer className="bg-[#f8f7f1] text-[#88BE22] w-[100vw] min-h-[50vh] flex pt-[35vh] px-8">
             <div className='w-[220px] text-center'>
                 <img src={LOGO} alt="footer logo" className="inline-block w-[70%]"></img>
             </div>
