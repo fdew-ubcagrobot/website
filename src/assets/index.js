@@ -27,6 +27,7 @@ import
     LOGO,
     mailPhoto,
     AgroPonicsTitleImg,
+    AgroBotTitleImg,
 } from './image';
 
 
@@ -58,4 +59,5 @@ export {
     LOGO,
     mailPhoto,
     AgroPonicsTitleImg,
+    AgroBotTitleImg,
 }

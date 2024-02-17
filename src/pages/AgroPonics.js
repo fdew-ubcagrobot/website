@@ -3,7 +3,7 @@ import { TitleBanner, AgroPonicsS1, AgroPonicsS2, AgroPonicsS3, AgroPonicsS4, Ag
 import { AgroPonicsTitleImg } from "../assets";
 import { AgroPonicsHeader } from "../constant";
 
-const AgroPonics = () => {
+function AgroPonics() {
     return (
         <div className="bg-[#F8F7F1] w-screen">
             <TitleBanner fromColor="#12200B" toColor="#4C5934" imageSrc={AgroPonicsTitleImg}>{AgroPonicsHeader}</TitleBanner>

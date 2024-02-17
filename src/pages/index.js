@@ -5,6 +5,7 @@ import Recruitment from "./Recruitment";
 import ContactUs from "./ContactUs";
 import AboutUs from "./AboutUs";
 import AgroPonics from "./AgroPonics";
+import AgroBot from './AgroBot';
 
 export {
     Home,
@@ -14,4 +15,5 @@ export {
     ContactUs,
     AboutUs,
     AgroPonics,
+    AgroBot,
 }

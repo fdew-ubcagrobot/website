@@ -42,7 +42,7 @@ const Navbar = () => {
                                         <button className="dropbtn" onClick={togglesubMenu}>{nav.id} ▼</button>
                                         {issubMenuOpen && (
                                             <div className="dropdown-content">
-                                                <a href="/agrobots">Agrobots</a>
+                                                <a href="/agrobot">Agrobot</a>
                                                 <a href="/agroponics" style={{ display: "block" }}>Agroponics</a> 
                                             </div>
                                         )}
