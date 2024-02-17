@@ -1,16 +1,21 @@
 import React from "react";
-import { StudentsWorking } from "../../assets";
-import { S1Text } from "../../constant";
+import {
+  RECRUITMENT_INFO_PARAGRAPH,
+  APPLICATION_LINK,
+  APPLICATION_LINK_TEXT,
+} from "../../constant/recruitment";
 
-function SponsorshipS1() {
-    return (
-        <div style={{ backgroundImage: `url(${StudentsWorking})` }} className="min-h-screen w-screen bg-cover bg-center">
-            <div className="h-screen w-screen bg-[#00000080] flex justify-center items-center p-40">
-                <p className="text-white text-[40px] text-center font-RobotoMono">{S1Text}</p>
-            </div>
-        </div>
-
-    );
+function RecruitmentS1() {
+  return (
+    <div className="mt-12 mx-auto text-center max-w-[500px]">
+      <p>{RECRUITMENT_INFO_PARAGRAPH}</p>
+      <p>
+        <a target="_blank" href={APPLICATION_LINK}>
+          {APPLICATION_LINK_TEXT}
+        </a>{" "}
+      </p>
+    </div>
+  );
 }
 
-export default SponsorshipS1;
+export default RecruitmentS1;
