@@ -7,7 +7,7 @@ export const navLinks = [
         id : "Portfolio",
         link : "/portfolio",
         dropdown: [
-            { id: "Agrobots", link: "/agrobots" },
+            { id: "Agrobot", link: "/agrobot" },
             { id: "Agroponics", link: "/agroponics" },
         ]
     },

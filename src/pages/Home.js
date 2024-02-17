@@ -36,6 +36,13 @@ function Home() {
     return (
         <div>
             <HomeBanner isMobile={isMobile}></HomeBanner>
+            
+            <div className='w-80vw mx-auto my-10vh'>
+                <div>Mitigate Climate Impacts</div>
+                <div>Enhance Food Security</div>
+                <div>Ensure Economic Viability</div>
+            </div>
+
             <Sponsors />
         </div>
     );

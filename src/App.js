@@ -15,6 +15,7 @@ import {
     ContactUs,
     AboutUs,
     AgroPonics,
+    AgroBot,
 } from "./pages";
 
 import {
@@ -33,6 +34,7 @@ function App() {
                 <Route path="/contactUs" element={<ContactUs />} />
                 <Route path="/aboutUs" element={<AboutUs />} />
                 <Route path="/agroponics" element={<AgroPonics />} />
+                <Route path="/agrobot" element={<AgroBot />} />
             </Routes>
             <Footer />
         </Router>
