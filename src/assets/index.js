@@ -28,6 +28,10 @@ import
     mailPhoto,
     AgroPonicsTitleImg,
     AgroBotTitleImg,
+    HomeOurMissionRecycle,
+    HomeOurMissionStrawberry,
+    HomeOurMissionStocks,
+    AgroBotInWild,
 } from './image';
 
 
@@ -60,4 +64,8 @@ export {
     mailPhoto,
     AgroPonicsTitleImg,
     AgroBotTitleImg,
+    HomeOurMissionRecycle,
+    HomeOurMissionStrawberry,
+    HomeOurMissionStocks,
+    AgroBotInWild,
 }

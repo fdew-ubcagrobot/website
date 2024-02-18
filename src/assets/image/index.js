@@ -28,6 +28,10 @@ import LOGO from './UBC_AGROBOTS.png';
 import mailPhoto from './mailPhoto.png';
 import AgroPonicsTitleImg from './AgroPonicsTitleImg.png';
 import AgroBotTitleImg from './AgroPonicsTitleImg.png';
+import HomeOurMissionRecycle from './HomeOurMissionRecycle.png';
+import HomeOurMissionStrawberry from './HomeOurMissionStrawberry.png';
+import HomeOurMissionStocks from './HomeOurMissionStocks.png';
+import AgroBotInWild from './agrobotInWild.png';
 
 export {
     apsc,
@@ -60,4 +64,8 @@ export {
     mailPhoto,
     AgroPonicsTitleImg,
     AgroBotTitleImg,
+    HomeOurMissionRecycle,
+    HomeOurMissionStrawberry,
+    HomeOurMissionStocks,
+    AgroBotInWild,
 }

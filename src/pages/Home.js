@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HomeBanner, Sponsors } from '../components';
+import { HomeBanner, Sponsors, OurMission } from '../components';
 
 function debounce(func, wait) {
     let timeout;
@@ -36,12 +36,8 @@ function Home() {
     return (
         <div>
             <HomeBanner isMobile={isMobile}></HomeBanner>
-            
-            <div className='w-80vw mx-auto my-10vh'>
-                <div>Mitigate Climate Impacts</div>
-                <div>Enhance Food Security</div>
-                <div>Ensure Economic Viability</div>
-            </div>
+
+            <OurMission></OurMission>
 
             <Sponsors />
         </div>

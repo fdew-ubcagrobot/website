@@ -1,7 +1,7 @@
 import Navbar from "./common/Navbar";
 import { TitleBanner } from "./common";
 import { SponsorshipS1, SponsorshipS2, SponsorshipS3 } from './sponsorship';
-import { HomeBanner } from "./home";
+import { HomeBanner, OurMission } from "./home";
 import { Sponsors } from './common'
 import { InfoParagraph, StatsBar } from './portfolio';
 import { mailForm, sideBar } from "./contactUs";
@@ -14,6 +14,7 @@ export {
     SponsorshipS2,
     SponsorshipS3,
     HomeBanner,
+    OurMission,
     Sponsors,
     InfoParagraph,
     StatsBar,
