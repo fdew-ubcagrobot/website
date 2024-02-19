@@ -39,6 +39,7 @@ import
     HomeChemicalBalancing,
     HomeFullyAutonomous,
     HomeNutrientCycling,
+    AgroBotWihTeamOnGrass
 } from './image';
 
 
@@ -82,4 +83,5 @@ export {
     HomeChemicalBalancing,
     HomeFullyAutonomous,
     HomeNutrientCycling,
+    AgroBotWihTeamOnGrass,
 }

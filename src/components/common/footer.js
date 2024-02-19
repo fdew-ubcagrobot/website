@@ -15,7 +15,7 @@ function Footer() {
                     <li className='px-[10px]'><a href="/">Home</a></li>
                     <li className='px-[10px]'>
                         <a href="/portfolio">Portfolio</a>
-                        <ul className='text-black font-normal leading-6'>
+                        <ul className='text-[#2a2a2a] font-normal leading-6'>
                             <li><a href="/achievements">Achievements</a></li>
                             <li><a href="/publications">Publications</a></li>
                             <li><a href="/gallery">Gallery</a></li>
@@ -23,7 +23,7 @@ function Footer() {
                     </li>
                     <li className='px-[10px]'>
                         <a href="/projects">Projects</a>
-                        <ul className='text-black font-normal leading-6'>
+                        <ul className='text-[#2a2a2a] font-normal leading-6'>
                             <li><a href="/agrobot">AgroBot</a></li>
                             <li><a href="/agroponics">AgroPonics</a></li>
                         </ul>

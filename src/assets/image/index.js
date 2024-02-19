@@ -39,6 +39,7 @@ import HomeTargetedAction from './HomeTargetedAction.png';
 import HomeChemicalBalancing from './HomeChemicalBalancing.jpg';
 import HomeFullyAutonomous from './HomeFullyAutonomous.png';
 import HomeNutrientCycling from './HomeNutrientCycling.png';
+import AgroBotWihTeamOnGrass from './AgroBotWithTeamOnGrass.jpg';
 
 export {
     apsc,
@@ -82,4 +83,5 @@ export {
     HomeChemicalBalancing,
     HomeFullyAutonomous,
     HomeNutrientCycling,
+    AgroBotWihTeamOnGrass,
 }

@@ -6,6 +6,7 @@ import { Sponsors } from './common'
 import { InfoParagraph, StatsBar } from './portfolio';
 import { mailForm, sideBar } from "./contactUs";
 import { AgroPonicsS1, AgroPonicsS2, AgroPonicsS3, AgroPonicsS4, AgroPonicsS5, } from './agroponics';
+import { AgroBotIntro, AgroBotKeyFeatures, AgroBotSubteams, AgroBotWantToHelp, } from './agrobot';
 
 export {
     Navbar,
@@ -26,4 +27,8 @@ export {
     AgroPonicsS4,
     AgroPonicsS5,
     HomeProjects,
+    AgroBotIntro,
+    AgroBotKeyFeatures,
+    AgroBotSubteams,
+    AgroBotWantToHelp,
 }
