@@ -27,7 +27,6 @@ import
     LOGO,
     mailPhoto,
     AgroPonicsTitleImg,
-    AgroBotTitleImg,
     HomeOurMissionRecycle,
     HomeOurMissionStrawberry,
     HomeOurMissionStocks,
@@ -39,7 +38,11 @@ import
     HomeChemicalBalancing,
     HomeFullyAutonomous,
     HomeNutrientCycling,
-    AgroBotWihTeamOnGrass
+    AgroBotWihTeamOnGrass,
+    AgroBotBannerImg,
+    AgroBotTargetedAction, 
+    ArgoBotAutomation, 
+    AgroBotDataCollection,
 } from './image';
 
 
@@ -71,7 +74,6 @@ export {
     LOGO,
     mailPhoto,
     AgroPonicsTitleImg,
-    AgroBotTitleImg,
     HomeOurMissionRecycle,
     HomeOurMissionStrawberry,
     HomeOurMissionStocks,
@@ -84,4 +86,8 @@ export {
     HomeFullyAutonomous,
     HomeNutrientCycling,
     AgroBotWihTeamOnGrass,
+    AgroBotBannerImg,
+    AgroBotTargetedAction, 
+    ArgoBotAutomation, 
+    AgroBotDataCollection
 }

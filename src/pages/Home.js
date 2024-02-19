@@ -41,7 +41,7 @@ function Home() {
             
             <HomeProjects></HomeProjects>
 
-            <Sponsors />
+            <Sponsors/>
         </div>
     );
 };

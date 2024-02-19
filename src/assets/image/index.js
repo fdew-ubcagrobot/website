@@ -27,7 +27,6 @@ import DiamondStar from './diamondStar.svg';
 import LOGO from './UBC_AGROBOTS.png';
 import mailPhoto from './mailPhoto.png';
 import AgroPonicsTitleImg from './AgroPonicsTitleImg.png';
-import AgroBotTitleImg from './AgroPonicsTitleImg.png';
 import HomeOurMissionRecycle from './HomeOurMissionRecycle.png';
 import HomeOurMissionStrawberry from './HomeOurMissionStrawberry.png';
 import HomeOurMissionStocks from './HomeOurMissionStocks.png';
@@ -40,6 +39,10 @@ import HomeChemicalBalancing from './HomeChemicalBalancing.jpg';
 import HomeFullyAutonomous from './HomeFullyAutonomous.png';
 import HomeNutrientCycling from './HomeNutrientCycling.png';
 import AgroBotWihTeamOnGrass from './AgroBotWithTeamOnGrass.jpg';
+import AgroBotBannerImg from './AgroBotBannerImg.png';
+import AgroBotTargetedAction from './AgroBotTargetedAction.png';
+import ArgoBotAutomation from './AgroBotAutomation.png';
+import AgroBotDataCollection from './AgroBotDataCollection.png';
 
 export {
     apsc,
@@ -71,7 +74,6 @@ export {
     LOGO,
     mailPhoto,
     AgroPonicsTitleImg,
-    AgroBotTitleImg,
     HomeOurMissionRecycle,
     HomeOurMissionStrawberry,
     HomeOurMissionStocks,
@@ -84,4 +86,8 @@ export {
     HomeFullyAutonomous,
     HomeNutrientCycling,
     AgroBotWihTeamOnGrass,
+    AgroBotBannerImg,
+    AgroBotTargetedAction,
+    ArgoBotAutomation,
+    AgroBotDataCollection,
 }
