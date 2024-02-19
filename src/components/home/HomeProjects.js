@@ -1,4 +1,14 @@
 import React from "react";
+import { HomeAutomation, HomeDataCollection, HomeModularChassis, HomeTargetedAction, HomeChemicalBalancing, HomeFullyAutonomous, HomeNutrientCycling, } from '../../assets';
+
+function Img(props) {
+    return (
+        <div className='w-full h-full flex justify-center items-center flex-col'>
+            <h3 className='p-2 text-center font-bold text-[18px] font-Inter'>{props.children}</h3>
+            <img src={props.imgSrc} className='h-[90%] rounded-[14px]'></img>
+        </div>
+    );
+}
 
 function HomeProjects() {
 
@@ -17,10 +27,10 @@ function HomeProjects() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                         </div>
                         <div className='flex flex-wrap w-full mt-8'>
-                            <div className='bg-slate-200 h-52 w-[45%] mx-[2.5%] my-[2.5%]'>Targeted action</div>
-                            <div className='bg-slate-400 h-52 w-[45%] mx-[2.5%] my-[2.5%]'>Data collection</div>
-                            <div className='bg-slate-600 h-52 w-[45%] mx-[2.5%] my-[2.5%]'>Modular chassis</div>
-                            <div className='bg-slate-800 h-52 w-[45%] mx-[2.5%] my-[2.5%]'>Automation</div>
+                            <div className='w-[45%] mx-[2.5%] my-[2.5%] rounded-[14px]'><Img imgSrc={HomeTargetedAction}>Targeted Action</Img></div>
+                            <div className='w-[45%] mx-[2.5%] my-[2.5%] rounded-[14px]'><Img imgSrc={HomeDataCollection}>Data collection</Img></div>
+                            <div className='w-[45%] mx-[2.5%] my-[2.5%] rounded-[14px]'><Img imgSrc={HomeModularChassis}>Modular chassis</Img></div>
+                            <div className='w-[45%] mx-[2.5%] my-[2.5%] rounded-[14px]'><Img imgSrc={HomeAutomation}>Automation</Img></div>
                         </div>
                     </div>
                     <div className='w-[49%] bg-[#F8F7F1] rounded-[16px] p-8 py-12'>
@@ -29,9 +39,9 @@ function HomeProjects() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                         </div>
                         <div className='flex flex-wrap w-full mt-8'>
-                            <div className='bg-slate-200 h-52 w-[45%] mx-[2.5%] my-[2.5%]'>Fully Autonomous</div>
-                            <div className='bg-slate-400 h-52 w-[45%] mx-[2.5%] my-[2.5%]'>Nutrient Cycling</div>
-                            <div className='bg-slate-800 h-52 w-[97.5%] mx-[2.5%] my-[2.5%]'>Chemical balancing</div>
+                            <div className='w-[45%] mx-[2.5%] my-[2.5%] rounded-[14px]'><Img imgSrc={HomeFullyAutonomous}>Fully Autonomous</Img></div>
+                            <div className='w-[45%] mx-[2.5%] my-[2.5%] rounded-[14px]'><Img imgSrc={HomeNutrientCycling}>Nutrient Cycling</Img></div>
+                            <div className=' w-[97.5%] mx-[2.5%] my-[2.5%] rounded-[14px]'><Img imgSrc={HomeChemicalBalancing}>Chemical Balancing</Img></div>
                         </div>
                     </div>
                 </div>

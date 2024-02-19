@@ -32,6 +32,13 @@ import HomeOurMissionRecycle from './HomeOurMissionRecycle.png';
 import HomeOurMissionStrawberry from './HomeOurMissionStrawberry.png';
 import HomeOurMissionStocks from './HomeOurMissionStocks.png';
 import AgroBotInWild from './agrobotInWild.png';
+import HomeAutomation from './HomeAutomation.gif';
+import HomeDataCollection from './HomeDataCollection.png';
+import HomeModularChassis from './HomeModularChassis.png';
+import HomeTargetedAction from './HomeTargetedAction.png';
+import HomeChemicalBalancing from './HomeChemicalBalancing.jpg';
+import HomeFullyAutonomous from './HomeFullyAutonomous.png';
+import HomeNutrientCycling from './HomeNutrientCycling.png';
 
 export {
     apsc,
@@ -68,4 +75,11 @@ export {
     HomeOurMissionStrawberry,
     HomeOurMissionStocks,
     AgroBotInWild,
+    HomeAutomation,
+    HomeDataCollection,
+    HomeModularChassis,
+    HomeTargetedAction,
+    HomeChemicalBalancing,
+    HomeFullyAutonomous,
+    HomeNutrientCycling,
 }

@@ -32,6 +32,13 @@ import
     HomeOurMissionStrawberry,
     HomeOurMissionStocks,
     AgroBotInWild,
+    HomeAutomation,
+    HomeDataCollection,
+    HomeModularChassis,
+    HomeTargetedAction,
+    HomeChemicalBalancing,
+    HomeFullyAutonomous,
+    HomeNutrientCycling,
 } from './image';
 
 
@@ -68,4 +75,11 @@ export {
     HomeOurMissionStrawberry,
     HomeOurMissionStocks,
     AgroBotInWild,
+    HomeAutomation,
+    HomeDataCollection,
+    HomeModularChassis,
+    HomeTargetedAction,
+    HomeChemicalBalancing,
+    HomeFullyAutonomous,
+    HomeNutrientCycling,
 }
