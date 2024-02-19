@@ -13,7 +13,7 @@ function SponsorshipS2() {
     ));
 
     return (
-        <div className="min-h-screen w-screen p-[10%] font-RobotoMono">
+        <div className="min-h-screen w-full p-[10%] font-RobotoMono">
             <h1 className=" text-[40px] pb-10">{processedS2Title}</h1>
             <div className="flex justify-center">
                 <div className="w-[50%] relative inline-block">

@@ -17,7 +17,7 @@ function HomeProjects() {
     };
 
     return (
-        <div style={bannerStyle} className="w-screen pb-[10vh]">
+        <div style={bannerStyle} className="w-full pb-[10vh]">
             <div className='w-[80vw] mx-auto text-[#3A3A3A]'>
                 <h1 className='font-Inter text-[48px] py-8'>Projects</h1>
                 <div className="flex w-full max-md:flex-col">

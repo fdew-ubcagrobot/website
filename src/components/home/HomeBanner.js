@@ -8,7 +8,7 @@ function HomeBanner(props) {
 
     if (!isMobile) {
         return (
-            <div className="h-[90vh] w-screen bg-[#F8F7F1] flex">
+            <div className="h-[90vh] w-full bg-[#F8F7F1] flex">
                 <div className="h-full w-[40%] flex flex-col items-center justify-center">
                     <h1 className="uppercase text-[48px] text-[#3A3A3A] font-bold">where <br /> innovation <br /> meets <br /> agriculture</h1>
                     <button className="w-[316px] h-[50px] mt-[20px] bg-[#3A3A3A] rounded-md text-[#F8F7F1] font-RobotoMono font-bold">
@@ -23,7 +23,7 @@ function HomeBanner(props) {
     }
     else {
         return (
-            <div className="h-[90vh] w-screen bg-[#F8F7F1]">
+            <div className="h-[90vh] w-full bg-[#F8F7F1]">
                 <div className="h-[40%] w-full mt-[10%] mb-[10%] flex items-center justify-center" >
                     <img className="w-[80%]" alt="a farm being manned by cute robots" src={HomeFarm} />
                 </div>

@@ -23,7 +23,7 @@ function OurMission() {
     };
 
     return (
-        <div style={bannerStyle} className="w-screen pb-[10vh]">
+        <div style={bannerStyle} className="w-full pb-[10vh]">
             <div className='w-[80vw] mx-auto font-Inter'>
                 <h1 className="text-[48px]">Our Mission</h1>
                 <p className='my-2 mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>

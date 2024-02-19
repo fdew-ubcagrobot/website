@@ -11,7 +11,7 @@ function TitleBanner(props) {
     }
 
     return (
-        <div className="w-screen flex flex-col justify-center items-center mt-[10vh] mb-[10vh]">
+        <div className="w-full flex flex-col justify-center items-center mt-[10vh] mb-[10vh]">
             <div style={bannerStyle} className="w-[80%] h-[20vh] flex items-center justify-center rounded-[14px]">
                 <h1 className="text-white text-[52px] font-bold font-Inter uppercase z-50">{children}</h1>
                 <img src={imageSrc} alt={imageAltText || "Title Image"} className="h-[120%] z-40" />

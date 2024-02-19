@@ -12,7 +12,7 @@ function SponsorshipS3() {
     );
 
     return (
-        <div style={{ backgroundImage: `url(${GreenHouse})` }} className="w-screen bg-cover bg-center">
+        <div style={{ backgroundImage: `url(${GreenHouse})` }} className="w-full bg-cover bg-center">
             <div className="p-[7.5%] font-RobotoMono flex justify-between items-stretch bg-[#00000080]">
                 <TierBanner tierElements={SponsorLevels.find(level => level.name === 'Bronze')} starImg={BronzeStar} tierColor="#CD7F32" style={{ height: tallestTierBannerHeight }} />
                 <TierBanner tierElements={SponsorLevels.find(level => level.name === 'Silver')} starImg={SilverStar} tierColor="#707070" style={{ height: tallestTierBannerHeight }} />
