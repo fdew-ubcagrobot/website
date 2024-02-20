@@ -3,7 +3,7 @@ import { AgroBotTargetedAction, ArgoBotAutomation, AgroBotDataCollection, } from
 
 function KeyBox(props) {
     return (
-        <div className='w-[32%] border-2 border-[#4C5934] rounded-[14px]'>
+        <div className='w-[33%] bg-[#d5eea7c2] rounded-[14px]'>
             <div className="flex w-full p-8">
                 <div className="w-[20%] mr-[5%] flex justify-center items-center">
                     <img src={props.imgSrc} alt='mission'></img>

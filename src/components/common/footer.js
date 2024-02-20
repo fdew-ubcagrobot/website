@@ -1,9 +1,6 @@
 import React from 'react';
 import { LOGO } from "../../assets";
 
-// For parent: w-[100vw] h-[10vh]
-// For children: 
-
 function Footer() {
     return (
         <footer className="bg-[#f8f7f1] text-[#88BE22] w-full min-h-[50vh] flex pt-[35vh] px-8">

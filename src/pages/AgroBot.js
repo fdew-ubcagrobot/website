@@ -10,8 +10,8 @@ function AgroBot() {
             <TitleBanner fromColor="#12200B" toColor="#4C5934" imageSrc={AgroBotBannerImg}>{AgroBotHeader}</TitleBanner>
             <AgroBotIntro></AgroBotIntro>
             <AgroBotKeyFeatures></AgroBotKeyFeatures>
-            {/* <AgroBotSubteams></AgroBotSubteams> */}
-            {/* <AgroBotWantToHelp></AgroBotWantToHelp> */}
+            <AgroBotSubteams></AgroBotSubteams>
+            <AgroBotWantToHelp></AgroBotWantToHelp>
         </div>
     );
 }
