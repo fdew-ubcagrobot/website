@@ -9,7 +9,7 @@ function KeyBox(props) {
                     <img src={props.imgSrc} alt='mission'></img>
                 </div>
                 <div className='w-[75%]'>
-                    <h4 className="font-bold text-[#12200B] pb-2">{props.children}</h4>
+                    <h4 className="font-bold text-[#12200B] pb-2 text-xl">{props.children}</h4>
                     <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                 </div>
             </div>

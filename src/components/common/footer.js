@@ -3,8 +3,8 @@ import { LOGO } from "../../assets";
 
 function Footer() {
     return (
-        <footer className="bg-[#f8f7f1] text-[#88BE22] w-full min-h-[50vh] flex pt-[35vh] px-8">
-            <div className='w-[220px] text-center'>
+        <footer className="bg-[#f8f7f1] text-[#88BE22] w-full flex p-10">
+            <div className='w-[20%] text-center'>
                 <img src={LOGO} alt="footer logo" className="inline-block w-[70%]"></img>
             </div>
             <div className='w-[80%] text-[18px]'>
