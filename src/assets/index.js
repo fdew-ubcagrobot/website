@@ -43,6 +43,7 @@ import
     AgroBotTargetedAction, 
     ArgoBotAutomation, 
     AgroBotDataCollection,
+    TeamDiscussion;
 } from './image';
 
 
@@ -90,4 +91,5 @@ export {
     AgroBotTargetedAction, 
     ArgoBotAutomation, 
     AgroBotDataCollection
+    TeamDiscussion;
 }
