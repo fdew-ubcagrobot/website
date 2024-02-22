@@ -90,6 +90,6 @@ export {
     AgroBotBannerImg,
     AgroBotTargetedAction, 
     ArgoBotAutomation, 
-    AgroBotDataCollection
-    TeamDiscussion;
+    AgroBotDataCollection,
+    TeamDiscussion,
 }
