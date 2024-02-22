@@ -1,6 +1,6 @@
 export const RECRUITMENT_STATUS_TITLE = "Mid-Year Recruitments now closed";
 export const RECRUITMENT_STATUS_DESCRIPTION =
-  "Mid-Year Recruitments for the academic year 2023-2024 are now open. Applications will be reviewed on a rolling basis, and the deadline for submission is January 20, 2024. Selected candidates will be invited for interviews.";
+  "Mid-Year Recruitments for the academic year 2023-2024 are now closed. Applications will be reviewed on a rolling basis, and the deadline for submission is January 20, 2024. Selected candidates will be invited for interviews.";
 
 export const RECRUITMENT_INFO_PARAGRAPH = `
 Are you interested in future-proofing agriculture? Our team is working on the next generation of agricultural technologies that will allow us to grow food for the ever growing population and minimize our negative environmental impact. 
@@ -25,4 +25,15 @@ Our team members get to use their engineering knowledge to solve real-world prob
 Our members go through the engineering design process, develop their own creative solutions, prototype and build!
 
 We schedule regular weekend meetings for members of each project as an opportunity for collaboration and discussion. Individual tasks are also assigned during the week. 
-`
+`;
+
+export const LEARN_MORE_LINK_TEXT = 'Learn more about our subteams';
+export const LEARN_MORE_LINK = '#';
+
+export const timelineData =  [
+  { date: "September 5", title: "Imagine Day", description: "Come visit Agrobot at Imagine Day to meet current members, ask questions, and learn more about current and upcoming projects" },
+  { date: "September 14", title: "Virtual Information Session", description: "More information to come - keep an eye on our socials" },
+  { date: "January 8", title: "Mid-Year Recruitment Applications Open", description: "Applicants will be selected for interviews on a rolling basis" },
+  { date: "January 27", title: "Mid-Year Recruitment Applications Close", description: "Submission deadline - last chance to apply!" },
+  { date: "February 6", title: "Last Day for Notification of Success", description: "Your journey with Agrobot begins - keep an eye on your inbox!" },
+];

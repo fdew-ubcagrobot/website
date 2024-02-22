@@ -8,6 +8,8 @@ import {
 } from "../constant/recruitment";
 import RecruitmentS1 from "../components/recruitment/recruitment-s1";
 import RecruitmentS2 from "../components/recruitment/recruitment-s2";
+import RecruitmentS3 from "../components/recruitment/recruitment-s3";
+import RecruitmentS4 from "../components/recruitment/recruitment-s4";
 
 function Recruitment() {
   return (
@@ -27,6 +29,8 @@ function Recruitment() {
 
       <RecruitmentS1></RecruitmentS1>
       <RecruitmentS2></RecruitmentS2>
+      <RecruitmentS3></RecruitmentS3>
+      <RecruitmentS4></RecruitmentS4>
     </div>
   );
 }
