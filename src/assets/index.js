@@ -43,7 +43,7 @@ import
     AgroBotTargetedAction, 
     ArgoBotAutomation, 
     AgroBotDataCollection,
-    TeamDiscussion;
+    TeamDiscussion,
 } from './image';
 
 
