@@ -10,7 +10,7 @@ function AgroBotWantToHelp() {
             <div className='w-full flex my-[5vh]'>
                 <div className='w-[50%] flex flex-col justify-center items-center bg-[#d5eea7c2] rounded-[14px]'>
                     <p className='w-[60%] text-[24px]'>Members will work towards solving a real-world problem, go through the engineering design process, and develop technical skills in mechanical, electrical and software design. </p>
-                    <button className='bg-[#88BE22] text-white px-4 py-2 rounded-[14px] flex items-center justify-center font-bold my-4'>Apply Here <MdChevronRight/></button>
+                    <button className='bg-[#88BE22] text-white px-4 py-2 rounded-[14px] flex items-center justify-center font-bold my-4' onClick={() => window.location.href = '/recruitment'}>Apply Here <MdChevronRight/></button>
                 </div>
                 <div className='w-[50%] flex justify-center items-center'>
                     <img src={AgroBotInWild} alt='modular-chassis' className='rounded-[14px]'></img>
