@@ -13,14 +13,14 @@ import { HiArrowSmRight } from "react-icons/hi";
 const RecruitmentS2 = () => {
   return (
     <div className="mt-12 text-center mx-auto p-6">
-      <div className="grid grid-cols-2 gap-4" style={{ 
+      <div className="grid grid-rows-2 md:grid-cols-2 gap-4" style={{ 
         backgroundImage: `url(${ConcentricOctagons})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
       backgroundSize: '80%',
         
       }}>
-        <div class="col">
+        <div class="row md:col">
           <h1 className="text-4xl mb-[2%] text-[#3A3A3A] text-left md:ml-24 ml-12">
             Who we are
           </h1>
@@ -28,7 +28,7 @@ const RecruitmentS2 = () => {
             descriptionText={WHO_WE_ARE_TEXT}
           ></ExpandedInfoCard>
         </div>
-        <div class="col">
+        <div class="row md:col">
           <h1 className="text-4xl mb-[2%] text-[#3A3A3A] text-left md:ml-24 ml-12">
             Who you are
           </h1>
