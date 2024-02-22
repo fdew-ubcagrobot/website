@@ -4,16 +4,18 @@ import {
   APPLICATION_LINK,
   APPLICATION_LINK_TEXT,
 } from "../../constant/recruitment";
+import { MdChevronRight } from "react-icons/md";
 
 function RecruitmentS1() {
   return (
     <div className="mt-12 mx-auto text-center max-w-[500px]">
       <p>{RECRUITMENT_INFO_PARAGRAPH}</p>
-      <p>
-        <a target="_blank" href={APPLICATION_LINK} className="text-lime-600 underline">
-          {APPLICATION_LINK_TEXT}
-        </a>{" "}
-      </p>
+      <button
+        className="mx-auto bg-[#88BE22] text-white px-4 py-2 rounded-[14px] flex items-center justify-center font-bold my-4 hover:bg-green-500 transition-all duration-300"
+        onClick={() => window.open(APPLICATION_LINK, "_blank")}
+      >
+        {APPLICATION_LINK_TEXT} <MdChevronRight />
+      </button>
     </div>
   );
 }

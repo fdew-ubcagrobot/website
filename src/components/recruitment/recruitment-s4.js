@@ -1,14 +1,4 @@
 import React from "react";
-import {
-  INFOCARD_1_TEXT,
-  INFOCARD_2_TEXT,
-  INFOCARD_3_TEXT,
-  WHO_WE_ARE_TEXT,
-  LEARN_MORE_LINK,
-  LEARN_MORE_LINK_TEXT,
-} from "../../constant/recruitment";
-import { TeamDiscussion } from "../../assets";
-import { HiOutlineAcademicCap } from "react-icons/hi";
 
 const RecruitmentS4 = () => {
   // TODO: Constantize text, add icons
@@ -19,14 +9,14 @@ const RecruitmentS4 = () => {
         <a
           className="text-lime-500 underline"
           href="https://www.instagram.com/ubcagrobots"
-          target="blank"
+          target="_blank"
         >
           Instagram
         </a>{" "}
         <a
           className="text-lime-500 underline"
           href="https://www.linkedin.com/company/ubc-agrobot"
-          target="blank"
+          target="_blank"
         >
           LinkedIn
         </a>
