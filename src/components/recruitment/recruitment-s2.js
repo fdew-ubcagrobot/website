@@ -13,11 +13,11 @@ import { HiArrowSmRight } from "react-icons/hi";
 const RecruitmentS2 = () => {
   return (
     <div className="mt-12 text-center mx-auto p-6">
-      <div className="grid grid-rows-2 md:grid-cols-2 gap-4" style={{ 
+      <div className="grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-4" style={{ 
         backgroundImage: `url(${ConcentricOctagons})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-      backgroundSize: '80%',
+      // backgroundSize: '80%',
         
       }}>
         <div class="row md:col">
