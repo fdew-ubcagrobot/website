@@ -3,7 +3,7 @@ import { TitleBanner } from "./common";
 import { SponsorshipS1, SponsorshipS2, SponsorshipS3 } from './sponsorship';
 import { HomeBanner, OurMission, HomeProjects } from "./home";
 import { Sponsors } from './common'
-import { InfoParagraph, StatsBar } from './portfolio';
+import { InfoParagraph, StatsBar, PortfolioImageGallery, PortfolioProjects } from './portfolio';
 import { mailForm, sideBar } from "./contactUs";
 import { AgroPonicsS1, AgroPonicsS2, AgroPonicsS3, AgroPonicsS4, AgroPonicsS5, Agroponicsnest, } from './agroponics';
 import { AgroBotIntro, AgroBotKeyFeatures, AgroBotSubteams, AgroBotWantToHelp, } from './agrobot';
@@ -19,6 +19,8 @@ export {
     Sponsors,
     InfoParagraph,
     StatsBar,
+    PortfolioImageGallery,
+    PortfolioProjects,
     mailForm,
     sideBar,
     AgroPonicsS1,

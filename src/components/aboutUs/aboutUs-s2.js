@@ -26,6 +26,7 @@ const AboutUsS2 = () => {
                 {founders.map((founder, index) => (
                     <div>
                         <Avatar
+                            className="shadow-lg"
                             sx={{
                                 width: [150, 200, 200], // 150 on small devices, 200 on medium and large devices
                                 height: [150, 200, 200]
