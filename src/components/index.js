@@ -5,7 +5,7 @@ import { HomeBanner, OurMission, HomeProjects } from "./home";
 import { Sponsors } from './common'
 import { InfoParagraph, StatsBar } from './portfolio';
 import { mailForm, sideBar } from "./contactUs";
-import { AgroPonicsS1, AgroPonicsS2, AgroPonicsS3, AgroPonicsS4, AgroPonicsS5, } from './agroponics';
+import { AgroPonicsS1, AgroPonicsS2, AgroPonicsS3, AgroPonicsS4, AgroPonicsS5, Agroponicsnest, } from './agroponics';
 import { AgroBotIntro, AgroBotKeyFeatures, AgroBotSubteams, AgroBotWantToHelp, } from './agrobot';
 
 export {
@@ -31,4 +31,5 @@ export {
     AgroBotKeyFeatures,
     AgroBotSubteams,
     AgroBotWantToHelp,
+    Agroponicsnest,
 }

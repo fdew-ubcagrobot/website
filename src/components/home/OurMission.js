@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, AgroBotInWild } from '../../assets';
+import { HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking } from '../../assets';
 
 function MissionBox(props) {
     return (
@@ -34,7 +34,7 @@ function OurMission() {
                         <MissionBox imgSrc={HomeOurMissionStocks}>Ensure Economic Viability</MissionBox>
                     </div>
                     <div className="w-[60%] flex justify-center items-center p-16 max-sm:hidden">
-                        <img src={AgroBotInWild} className="object-cover h-full" />
+                        <img src={StudentsWorking} className="object-cover h-full rounded-[14px]" />
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ function Subteam(props) {
     };
     return (
         <div style={background} className={`w-full rounded-[14px] p-10 flex text-white my-[5vh]`}>
-            <div className='w-[50%]'>
+            <div className='w-[47.5%] mr-[5%]'>
                 <h2 className='text-4xl mb-[2%]'>{props.children}</h2>
                 <div className='flex flex-wrap text-[#8BC34A]'>
                     {props.hlights.map((highlight, index) => (
@@ -16,7 +16,7 @@ function Subteam(props) {
                 </div>
                 <p className='mt-[5%]'>{props.text}</p>
             </div>
-            <div className='w-[50%] flex justify-center align-middle'>
+            <div className='w-[47.5%] flex justify-center align-middle'>
                 <img src={HomeModularChassis} alt='modular-chassis' className='rounded-[14px]'></img>
             </div>
         </div>
