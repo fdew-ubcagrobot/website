@@ -22,13 +22,13 @@ const AboutUsS2 = () => {
                 Founders
             </h1>
 
-            <div className="row mx-auto px-6 md:px-12 flex justify-around">
+            <div className="row mx-auto mt-3 px-6 md:px-12 flex flex-wrap gap-4 justify-around">
                 {founders.map((founder, index) => (
                     <div>
                         <Avatar
                             sx={{
-                                width: [100, 200, 200], // 100 on small devices, 200 on medium and large devices
-                                height: [100, 200, 200]
+                                width: [150, 200, 200], // 150 on small devices, 200 on medium and large devices
+                                height: [150, 200, 200]
                             }}
                             key={index}
                             alt={founder.name}
