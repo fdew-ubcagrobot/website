@@ -1,10 +1,12 @@
 import React from "react";
 import { TeamPhoto, ShadowTeamPhoto, Agrobot } from "../../assets/image";
 import { PS1Title } from "../../constant";
+import NotificationBanner from "../common/NotificationBanner";
+
 
 
 function InfoParagraph(props) {
-    const { text } = props;
+    const { text, title } = props;
 
     // This will turn the "<br />" in to a real <br />
     const processedPS1Title = PS1Title.split('<br />').map((processedPS1Title, index) => (
@@ -16,14 +18,15 @@ function InfoParagraph(props) {
 
     return (
         <>
-        <div className="min-h-screen w-screen p-[10%] font-RobotoMono">
+        <div className="w-screen mb-12 px-[10%] font-RobotoMono">
             <h1 className=" text-[40px] pb-10">{processedPS1Title}</h1>
-            <div className="flex justify-center">
-                <div className="w-[50%] relative inline-block">
-                    <img src={Agrobot} alt="Team" className="absolute top-0 left-0 z-10 rounded-[14px]" style={{ width: '100%', height: 'auto' }} />
+            <div className="relative mx-auto">
+                <div className="w-[50%] inline-block">
+                    <img src={Agrobot} alt="Team" className="rounded-[14px]" style={{ width: '100%', height: 'auto' }} />
                 </div>
-                <div className="w-[50%] p-5 flex flex-col justify-center">
-                    <p className="pb-10">{text}</p>
+                <div className="w-[50%] flex flex-col justify-center absolute top-10 left-[40%] z-10">
+                    // TODO: Add transparent background
+                    <NotificationBanner titleText={title} descriptionText={text}></NotificationBanner>
                 </div>
             </div>
         </div>

@@ -6,6 +6,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 
 import { navLinks } from "../../constant";
 import { agrobot } from "../../assets";
+import { dropdown_hover_timing } from "../../constant/navbar";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,8 +39,8 @@ const Navbar = () => {
                 {nav.dropdown && (
                   <div
                     className="dropdown"
-                    onMouseEnter={() => setTimeout(togglesubMenu, 500)}
-                    onMouseLeave={() => setTimeout(togglesubMenu, 500)}
+                    onMouseEnter={() => setTimeout(togglesubMenu, dropdown_hover_timing)}
+                    onMouseLeave={() => setTimeout(togglesubMenu, dropdown_hover_timing)}
                   >
                     <button
                       className="dropbtn"
