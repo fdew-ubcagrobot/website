@@ -44,6 +44,7 @@ import
     ArgoBotAutomation, 
     AgroBotDataCollection,
     TeamDiscussion,
+    AgroponicsRooftop
 } from './image';
 
 
@@ -92,4 +93,5 @@ export {
     ArgoBotAutomation, 
     AgroBotDataCollection,
     TeamDiscussion,
+    AgroponicsRooftop
 }

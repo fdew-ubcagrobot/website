@@ -44,6 +44,7 @@ import AgroBotTargetedAction from './AgroBotTargetedAction.png';
 import ArgoBotAutomation from './AgroBotAutomation.png';
 import AgroBotDataCollection from './AgroBotDataCollection.png';
 import TeamDiscussion from './Discussion.png';
+import AgroponicsRooftop from './AgroponicsRooftop.png'
 
 export {
     apsc,
@@ -92,4 +93,5 @@ export {
     ArgoBotAutomation,
     AgroBotDataCollection,
     TeamDiscussion,
+    AgroponicsRooftop
 }

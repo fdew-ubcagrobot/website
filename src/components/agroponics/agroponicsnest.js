@@ -1,5 +1,5 @@
 import React from "react";
-import { AgroBotWihTeamOnGrass } from '../../assets';
+import { AgroponicsRooftop } from '../../assets';
 
 function Agroponicsnest() {
     return (
@@ -21,7 +21,7 @@ function Agroponicsnest() {
 
                 {/* Right side (image) */}
                 <div className='flex-1 h-full' style={{ width: '90%' }}>
-                    <img src={AgroBotWihTeamOnGrass} className='w-full h-full check-img' alt="AgroBot with Team on Grass" style={{ width: '100%' }} />
+                    <img src={AgroponicsRooftop} className='w-full h-full check-img' alt="AgroBot with Team on Grass" style={{ width: '100%' }} />
                 </div>
             </div>
 
@@ -40,8 +40,6 @@ function Agroponicsnest() {
                         .check-img {
                             height : 79%;
                         }
-                        
-                        
                         
                     }
                    
