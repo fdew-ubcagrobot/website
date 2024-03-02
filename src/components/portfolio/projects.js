@@ -1,6 +1,7 @@
 import React from "react";
 import { projects } from "../../constant/portfolio";
 import { MdChevronRight } from "react-icons/md";
+import { projectButton } from "../../constant/portfolio";
 
 function Img(props) {
   return (
@@ -13,10 +14,13 @@ function Img(props) {
   );
 }
 
-function Project({ title, description, learnMoreNavigationUrl, images }) {
+function Project({ title, description, learnMoreNavigationUrl, images, index }) {
   return (
     <div className="w-[49%] bg-[#3a3a3a] rounded-[16px] p-8 mr-[2%] max-md:w-full max-md:mr-0 max-md:mb-[2%] text-white">
-    <div className="flex justify-end mb-5">
+    <div className="flex items-center justify-end mb-5">
+        <div className="bg-[#88BE22] rounded-[5px] text-white w-[22%] text-center font-inter flex justify-center items-center mr-auto py-1.5">
+          <p>{projectButton}{index + 1}</p>
+        </div>
         <button
           className="border border-[#88BE22] text-white px-4 py-2 rounded-[14px] flex items-center justify-center font-bold"
           onClick={() => (window.location.href = learnMoreNavigationUrl)}
@@ -49,7 +53,7 @@ function PortfolioProjects() {
         <h1 className="text-4xl py-8">Projects</h1>
         <div className="flex w-full max-md:flex-col">
           {projects.map((project, index) => (
-            <Project {...project} key={index} />
+            <Project {...project} key={index} index={index} />
           ))}
         </div>
       </div>

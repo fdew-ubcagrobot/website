@@ -24,8 +24,7 @@ function InfoParagraph(props) {
                 <div className="w-[50%] inline-block">
                     <img src={Agrobot} alt="Team" className="rounded-[14px]" style={{ width: '100%', height: 'auto' }} />
                 </div>
-                <div className="w-[50%] flex flex-col justify-center absolute top-10 left-[40%] z-10">
-                    // TODO: Add transparent background
+                <div className="w-[50%] flex flex-col justify-center absolute top-10 left-[40%] z-10 opacity-70">
                     <NotificationBanner titleText={title} descriptionText={text}></NotificationBanner>
                 </div>
             </div>
