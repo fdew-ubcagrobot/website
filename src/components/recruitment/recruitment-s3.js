@@ -54,7 +54,7 @@ function RecruitmentTimeline() {
             </TimelineSeparator>
             <div className="h-[130px]"></div>
             <TimelineContent>
-            <div className="rounded p-5 shadow-lg">
+            <div className="bg-lime-50 rounded p-5 shadow-lg">
                   <h6 className="text-lg text-green-500">
                     {timelineItem.title}
                   </h6>
