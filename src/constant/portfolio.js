@@ -6,6 +6,8 @@ import { HomeAutomation, HomeDataCollection, HomeModularChassis, HomeTargetedAct
 
 export const PS1Title = "Achievements and Participation";
 
+export const projectButton = "Project ";
+
 export const stats = [
   {
     icon: <BsGraphUp className="text-3xl text-white" />,
