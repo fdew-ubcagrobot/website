@@ -44,7 +44,10 @@ import
     ArgoBotAutomation, 
     AgroBotDataCollection,
     TeamDiscussion,
-    AgroponicsRooftop
+    AgroponicsRooftop,
+    EmailSideIcon,
+    SocialSideIcon,
+    LocationSideIcon
 } from './image';
 
 
@@ -93,5 +96,8 @@ export {
     ArgoBotAutomation, 
     AgroBotDataCollection,
     TeamDiscussion,
-    AgroponicsRooftop
+    AgroponicsRooftop,
+    EmailSideIcon,
+    SocialSideIcon,
+    LocationSideIcon
 }

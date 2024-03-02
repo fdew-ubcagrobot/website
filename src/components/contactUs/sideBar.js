@@ -1,13 +1,12 @@
 import React from "react";
 
-function sideBar() {
+function SideBar() {
 
     return (
-        <div style={{ width: '100%', height: '500px' }}>
-            AOSKDNASKDNASOKAOSDK
+        <div >
         </div>
     );
 
 }
 
-export default sideBar;
+export default SideBar;

@@ -1,7 +1,9 @@
-import mailForm from "./mailForm";
-import sideBar from "./sideBar";
+import MailForm from "./mailForm.js";
+import SideBar from "./sideBar";
+// import TitleBanner from "./TitleBanner.js";
 
 export {
-    mailForm,
-    sideBar
+    MailForm,
+    SideBar,
+    // TitleBanner
 }

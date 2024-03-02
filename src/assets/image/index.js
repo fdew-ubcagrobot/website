@@ -45,6 +45,9 @@ import ArgoBotAutomation from './AgroBotAutomation.png';
 import AgroBotDataCollection from './AgroBotDataCollection.png';
 import TeamDiscussion from './Discussion.png';
 import AgroponicsRooftop from './AgroponicsRooftop.png'
+import EmailSideIcon from './EmailSideIcon.png';
+import SocialSideIcon from './SocialSideIcon.png';
+import LocationSideIcon from './LocationSideIcon.png';
 
 export {
     apsc,
@@ -93,5 +96,8 @@ export {
     ArgoBotAutomation,
     AgroBotDataCollection,
     TeamDiscussion,
-    AgroponicsRooftop
+    AgroponicsRooftop,
+    EmailSideIcon,
+    SocialSideIcon,
+    LocationSideIcon
 }
