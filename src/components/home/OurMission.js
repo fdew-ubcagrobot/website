@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking } from '../../assets';
+import { MdChevronRight, MdChevronLeft } from 'react-icons/md';
 
 function MissionBox(props) {
     return (
@@ -22,8 +23,24 @@ function OurMission() {
         background: `linear-gradient(to top, #CFEF94, #cfef9400)`
     };
 
+    const images = [HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking];
+
+    const [currentImgIndex, setCurrentImgIndex] = useState(0);
+
+    const previousImg = () => {
+        setCurrentImgIndex(prevIndex =>
+            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
+    }
+
+    const nextImg = () => {
+        setCurrentImgIndex(prevIndex => 
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+      };
+
     return (
-        <div style={bannerStyle} className="w-full pb-[10vh]">
+        <div style={bannerStyle} className="w-full pb-[10vh] flex justify-center items-center">
             <div className='w-[80vw] mx-auto font-Inter'>
                 <h1 className="text-[48px]">Our Mission</h1>
                 <p className='my-2 mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
@@ -33,8 +50,12 @@ function OurMission() {
                         <MissionBox imgSrc={HomeOurMissionStrawberry}>Enhance Food Security</MissionBox>
                         <MissionBox imgSrc={HomeOurMissionStocks}>Ensure Economic Viability</MissionBox>
                     </div>
-                    <div className="w-[60%] flex justify-center items-center p-16 max-sm:hidden">
-                        <img src={StudentsWorking} className="object-cover h-full rounded-[14px]" />
+                    <div className="w-[60%] flex flex-col justify-center items-center p-16 max-sm:hidden">
+                        <img src={images[currentImgIndex]} className="object-cover h-full rounded-[14px]" />
+                        <div className='flex'>
+                            <MdChevronLeft onClick={previousImg} size={48} />
+                            <MdChevronRight onClick={nextImg} size={48} />
+                        </div>
                     </div>
                 </div>
             </div>
