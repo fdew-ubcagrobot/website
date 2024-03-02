@@ -1,14 +1,14 @@
-export const RECRUITMENT_STATUS_TITLE = "Mid-Year Recruitments now closed";
+export const RECRUITMENT_STATUS_TITLE = "🚨 Mid-Year Recruitments now closed";
 export const RECRUITMENT_STATUS_DESCRIPTION =
   "Mid-Year Recruitments for the academic year 2023-2024 are now closed. Applications will be reviewed on a rolling basis, and the deadline for submission is January 20, 2024. Selected candidates will be invited for interviews.";
 
 export const RECRUITMENT_INFO_PARAGRAPH = `
 Are you interested in future-proofing agriculture? Our team is working on the next generation of agricultural technologies that will allow us to grow food for the ever growing population and minimize our negative environmental impact. 
-
-Learn more on how to be a part of our team below or
+<br />
+Learn more on how to be a part of our team below and click the button to apply!
 `;
 
-export const APPLICATION_LINK_TEXT = "Click Here to Apply";
+export const APPLICATION_LINK_TEXT = "Apply";
 
 // ! Warning: Temporary
 // TODO: Change this to the actual application link
