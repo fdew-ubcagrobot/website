@@ -30,6 +30,3 @@ export const navLinks = [
     
     
 ]
-
-
-export const dropdown_hover_timing = 350; // milliseconds

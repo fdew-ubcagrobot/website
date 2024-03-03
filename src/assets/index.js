@@ -1,5 +1,6 @@
 import 
 { 
+    TeamPhoto,
     apsc,
     chbe,
     ece,
@@ -49,6 +50,7 @@ import
 
 
 export {
+    TeamPhoto,
     apsc,
     chbe,
     ece,

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking } from '../../assets';
+import { HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking, AgroBotWihTeamOnGrass, TeamPhoto } from '../../assets';
 import { MdChevronRight, MdChevronLeft } from 'react-icons/md';
 
 function MissionBox(props) {
@@ -23,20 +23,24 @@ function OurMission() {
         background: `linear-gradient(to top, #CFEF94, #cfef9400)`
     };
 
-    const images = [HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking];
+    const images = [AgroBotWihTeamOnGrass, TeamPhoto, HomeOurMissionStocks, StudentsWorking];
 
     const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
-    const previousImg = () => {
-        setCurrentImgIndex(prevIndex =>
-            prevIndex === 0 ? images.length - 1 : prevIndex - 1
-        );
+    function prevImg() {
+        setCurrentImgIndex(currentImgIndex => {
+            if (currentImgIndex === 0)
+                return images.length - 1;
+            return currentImgIndex - 1;
+        });
     }
 
     const nextImg = () => {
-        setCurrentImgIndex(prevIndex => 
-          prevIndex === images.length - 1 ? 0 : prevIndex + 1
-        );
+        setCurrentImgIndex(index => {
+            if (index === images.length - 1)
+                return 0;
+            return index + 1;
+        });
       };
 
     return (
@@ -53,7 +57,7 @@ function OurMission() {
                     <div className="w-[60%] flex flex-col justify-center items-center p-16 max-sm:hidden">
                         <img src={images[currentImgIndex]} className="object-cover h-full rounded-[14px]" />
                         <div className='flex'>
-                            <MdChevronLeft onClick={previousImg} size={48} />
+                            <MdChevronLeft onClick={prevImg} size={48} />
                             <MdChevronRight onClick={nextImg} size={48} />
                         </div>
                     </div>
