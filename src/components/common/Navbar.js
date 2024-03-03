@@ -49,14 +49,14 @@ const Navbar = () => {
                 </a>
                 {e.dropdown && isSubMenuOpen && (
                   <ul
-                    className="absolute top-full left-0 text-[#8cbc24] bg-[#F8F7F1] rounded py-2"
+                    className="absolute top-full left-0 text-[#8cbc24] bg-[#F8F7F1] rounded"
                     style={{ transition: `all ${dropdown_hover_timing}ms` }}
                   >
                     {e.dropdown.map((item) => (
                       <li key={item.id}>
                         <a
                           href={item.link}
-                          className="block hover:text-grey-400 py-0 px-0"
+                          className="block hover:text-grey-400 py-[2px] px-0"
                         >
                           {item.id}
                         </a>
