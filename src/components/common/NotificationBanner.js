@@ -9,7 +9,7 @@ function NotificationBanner(props) {
   };
   return (
     <div
-      className={`w-[90%] mx-auto ${subtle ? 'text-grey shadow border-b-2' : 'text-white'} rounded-lg p-12 flex flex-col justify-center items-center` + " " + additionalClasses}
+      className={`w-[90%] mx-auto ${subtle ? 'text-grey shadow border-b-2' : 'text-white'} rounded-lg p-8 flex flex-col justify-center items-center` + " " + additionalClasses}
       style={bannerStyle}
     >
       <p className="text-lg leading-6">{titleText}</p>

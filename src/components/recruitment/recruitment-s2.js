@@ -44,7 +44,7 @@ const RecruitmentS2 = () => {
 function InfoCard(props) {
   const { titleText, descriptionText } = props;
   return (
-    <div className="rounded-lg mx-auto bg-white border border-black p-6 my-7 max-w-[500px] shadow-lg">
+    <div className="rounded-lg mx-auto bg-white border border-black p-6 my-7 max-w-[500px] shadow-lg hover:shadow-xl transition-shadow duration-2000">
       <h2 className="text-xl font-bold mb-2">{titleText}</h2>
       <p>{descriptionText}</p>
     </div>
@@ -54,7 +54,7 @@ function InfoCard(props) {
 function ExpandedInfoCard(props) {
   const { titleText, descriptionText, linkText, image } = props;
   return (
-    <div className="rounded-lg mx-auto border bg-gray-700 my-5 max-w-[500px] shadow-lg">
+    <div className="rounded-lg mx-auto border bg-gray-700 my-5 max-w-[500px] shadow-lg hover:shadow-xl transition-shadow duration-2000">
       <div class="p-4">
         <h2 className="text-xl font-bold mb-2 text-white-500">{titleText}</h2>
         <p className="text-white mb-3">{descriptionText}</p>
