@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking, AgroBotWihTeamOnGrass, TeamPhoto } from '../../assets';
+import { HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking, AgroBotWihTeamOnGrass, TeamPhoto, Agrobot } from '../../assets';
 import { MdChevronRight, MdChevronLeft } from 'react-icons/md';
 
 function MissionBox(props) {
@@ -23,7 +23,7 @@ function OurMission() {
         background: `linear-gradient(to top, #CFEF94, #cfef9400)`
     };
 
-    const images = [AgroBotWihTeamOnGrass, TeamPhoto, HomeOurMissionStocks, StudentsWorking];
+    const images = [AgroBotWihTeamOnGrass, TeamPhoto, Agrobot, StudentsWorking];
 
     const [currentImgIndex, setCurrentImgIndex] = useState(0);
 

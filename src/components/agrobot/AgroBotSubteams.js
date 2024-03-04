@@ -9,12 +9,12 @@ function Subteam(props) {
         <div style={background} className={`w-full rounded-[14px] p-10 flex text-white my-[5vh]`}>
             <div className='w-[47.5%] mr-[5%]'>
                 <h2 className='text-4xl mb-[2%]'>{props.children}</h2>
-                <div className='flex flex-wrap text-[#8BC34A]'>
+                <div className=' text-[#8BC34A]'>
                     {props.hlights.map((highlight, index) => (
                         <li key={index} className='min-w-[45%] mr-[5%]'>{highlight}</li>
                     ))}
                 </div>
-                <p className='mt-[5%]'>{props.text}</p>
+                <p className='mt-[5%] text-justify'>{props.text}</p>
             </div>
             <div className='w-[47.5%] flex justify-center align-middle'>
                 <img src={HomeModularChassis} alt='modular-chassis' className='rounded-[14px]'></img>

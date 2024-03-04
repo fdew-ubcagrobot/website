@@ -1,5 +1,5 @@
 import React from "react";
-import { AgroBotInWild } from "../../assets";
+import { Agrobot } from "../../assets";
 import { MdChevronRight } from 'react-icons/md';
 
 
@@ -13,7 +13,7 @@ function AgroBotWantToHelp() {
                     <button className='bg-[#88BE22] text-white px-4 py-2 rounded-[14px] flex items-center justify-center font-bold my-4' onClick={() => window.location.href = '/recruitment'}>Apply Here <MdChevronRight/></button>
                 </div>
                 <div className='w-[50%] flex justify-center items-center'>
-                    <img src={AgroBotInWild} alt='modular-chassis' className='rounded-[14px]'></img>
+                    <img src={Agrobot} alt='modular-chassis' className='rounded-[14px]'></img>
                 </div>
             </div>
         </div>

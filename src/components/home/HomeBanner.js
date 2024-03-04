@@ -6,13 +6,20 @@ function HomeBanner(props) {
 
     const { isMobile } = props;
 
+    const componentBottom = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
     if (!isMobile) {
         return (
             <div className="h-[90vh] w-full bg-[#F8F7F1] flex relative z-[0]">
                 <div style={{ backgroundImage: `url(${ConcentricOctagons})` }} className='absolute w-full h-full bg-center bg-no-repeat z-[1]  '></div>
                 <div className="h-full w-[40%] flex flex-col items-center justify-center z-[2]">
                     <h1 className="uppercase text-[48px] text-[#3A3A3A] font-bold">where <br /> innovation <br /> meets <br /> agriculture</h1>
-                    <button className="w-[316px] h-[50px] mt-[20px] bg-[#3A3A3A] rounded-md text-[#F8F7F1] font-RobotoMono font-bold" onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
+                    <button
+                        className="w-[316px] h-[50px] mt-[20px] bg-[#3A3A3A] rounded-md text-[#F8F7F1] font-RobotoMono font-bold"
+                        onClick={() => window.scrollTo({
+                            top: window.innerHeight*0.9, // Need to multiply by 0.9 so that nav does not cover next section
+                            behavior: 'smooth'
+                        })}>
                         <h3 className="flex items-center justify-center ">Learn More <FaChevronDown size='14px' className='mx-1 mt-1' /></h3>
                     </button>
                 </div>

@@ -49,7 +49,7 @@ const Navbar = () => {
                 </a>
                 {e.dropdown && isSubMenuOpen && (
                   <ul
-                    className="absolute top-full left-0 text-[#8cbc24] bg-[#F8F7F1] rounded"
+                    className="absolute top-full left-[-40px] px-[40px] pb-[20px] text-[#8cbc24] bg-[#F8F7F1] rounded"
                     style={{ transition: `all ${dropdown_hover_timing}ms` }}
                   >
                     {e.dropdown.map((item) => (
