@@ -81,7 +81,7 @@ const Navbar = () => {
 
         {/* nav items for small devices */}
         {isMenuOpen && (
-          <div className="mt-4 bg-[#8cbc24] text-white rounded py-4">
+          <div className="h-[10vh] mt-4 bg-[#8cbc24] text-white rounded py-4">
             <a href="/" className="block hover:text-grey-400 py-2 px-4">
               Home
             </a>
