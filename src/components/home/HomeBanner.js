@@ -6,8 +6,6 @@ function HomeBanner(props) {
 
     const { isMobile } = props;
 
-    const componentBottom = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
     if (!isMobile) {
         return (
             <div className="h-[90vh] w-full bg-[#F8F7F1] flex relative z-[0]">
