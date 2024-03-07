@@ -1,26 +1,29 @@
 import React from "react";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 
 const RecruitmentS4 = () => {
   // TODO: Constantize text, add icons
   return (
-    <div className="text-center mx-auto p-6 flex flex-wrap justify-center">
-      <h1 className="text-2xl mb-[2%] text-[#3A3A3A] text-center">
+    <div className="text-center mx-auto px-auto md:max-w-[60%] flex flex-wrap justify-around">
+      <h1 className="text-2xl my-auto py-auto text-[#3A3A3A] text-center">
         Follow us on social media for the latest updates:{" "}
-        <a
-          className="text-lime-500 underline"
-          href="https://www.instagram.com/ubcagrobots"
-          target="_blank"
-        >
-          Instagram
-        </a>{" "}
-        <a
-          className="text-lime-500 underline"
-          href="https://www.linkedin.com/company/ubc-agrobot"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
       </h1>
+      <a
+        className="text-lime-500 underline"
+        href="https://www.instagram.com/ubcagrobots"
+        target="_blank"
+      >
+        <FaInstagram size={40} />
+      </a>{" "}
+      <a
+        className="text-lime-500 underline"
+        href="https://www.linkedin.com/company/ubc-agrobot"
+        target="_blank"
+      >
+        <FaLinkedin size={40} />
+      </a>
     </div>
   );
 };
