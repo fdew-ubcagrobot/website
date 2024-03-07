@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking } from '../../assets';
+import { HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking, AgroBotWihTeamOnGrass, TeamPhoto, Agrobot } from '../../assets';
 import { MdChevronRight, MdChevronLeft } from 'react-icons/md';
 
 function MissionBox(props) {
@@ -9,10 +9,10 @@ function MissionBox(props) {
                 <h4 className="text-white font-bold p-2 bg-[#88BE22] rounded-[8px] text-center inline-block">{props.children}</h4>
             </div>
             <div className="flex w-full p-8 pt-4">
-                <div className="w-[30%] mr-[5%] flex justify-center items-center">
-                    <img src={props.imgSrc} alt='mission'></img>
+                <div className=" min-w-[60px] max-w-[30%] mr-[5%] flex justify-center items-center">
+                    <img src={props.imgSrc} alt='mission' className='w-full'></img>
                 </div>
-                <p className="w-[65%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                <p className="flex-grow">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
             </div>
         </div>
     );
@@ -20,24 +20,28 @@ function MissionBox(props) {
 
 function OurMission() {
     const bannerStyle = {
-        background: `linear-gradient(to top, #CFEF94, #cfef9400)`
+        background: `linear-gradient(to top, #CFEF94, #CfEF9400)`
     };
 
-    const images = [HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking];
+    const images = [AgroBotWihTeamOnGrass, TeamPhoto, Agrobot, StudentsWorking];
 
     const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
-    const previousImg = () => {
-        setCurrentImgIndex(prevIndex =>
-            prevIndex === 0 ? images.length - 1 : prevIndex - 1
-        );
+    function prevImg() {
+        setCurrentImgIndex(currentImgIndex => {
+            if (currentImgIndex === 0)
+                return images.length - 1;
+            return currentImgIndex - 1;
+        });
     }
 
     const nextImg = () => {
-        setCurrentImgIndex(prevIndex => 
-          prevIndex === images.length - 1 ? 0 : prevIndex + 1
-        );
-      };
+        setCurrentImgIndex(index => {
+            if (index === images.length - 1)
+                return 0;
+            return index + 1;
+        });
+    };
 
     return (
         <div style={bannerStyle} className="w-full pb-[10vh] flex justify-center items-center">
@@ -53,7 +57,12 @@ function OurMission() {
                     <div className="w-[60%] flex flex-col justify-center items-center p-16 max-sm:hidden">
                         <img src={images[currentImgIndex]} className="object-cover h-full rounded-[14px]" />
                         <div className='flex'>
-                            <MdChevronLeft onClick={previousImg} size={48} />
+                            <MdChevronLeft onClick={prevImg} size={48} />
+                            <div className='flex justify-center items-center'>
+                                {images.map((img, index) => (
+                                    <div key={index} className={`${index === currentImgIndex ? 'bg-black' : 'bg-[#F8F7F1]'} w-6 h-2 m-1 rounded-sm`} />
+                                ))}
+                            </div>
                             <MdChevronRight onClick={nextImg} size={48} />
                         </div>
                     </div>

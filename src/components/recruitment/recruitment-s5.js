@@ -8,7 +8,7 @@ const RecruitmentS5 = (props) => {
     console.log(title);
     console.log(subTeamDescriptions);
     return (
-        <div id={id} className="mt-1 text-center mx-auto p-6">
+        <div id={id} className="mt-12 text-center mx-auto p-6">
             <div class="col">
                 <h1 className="text-4xl mb-[2%] text-[#3A3A3A] text-left md:ml-24 ml-12">
                     {title}
@@ -66,11 +66,12 @@ function SubTeamList(props) {
                             <div className="rounded-b p-7 bg-white shadow mb-3">
                                 <p className="text-left">{subteam.description}</p>
                                 <div
-                                    className={`mt-6 mx-auto px-1 grid grid-cols-${
-                                        (subteam.requirements.length > 0 ? 1 : 0) +
-                                        (subteam.extra_points.length > 0 ? 1 : 0) +
-                                        (subteam.what_you_will_learn.length > 0 ? 1 : 0)
-                                    }`}
+                                className="mt-6 mx-auto px-1 grid grid-cols-3"
+                                    // className={`mt-6 mx-auto px-1 grid grid-cols-${
+                                    //     (subteam.requirements.length > 0 ? 1 : 0) +
+                                    //     (subteam.extra_points.length > 0 ? 1 : 0) +
+                                    //     (subteam.what_you_will_learn.length > 0 ? 1 : 0)
+                                    // }`}
                                 >
                                     {renderBullets("Required Skills", subteam.requirements)}
                                     {renderBullets("Extra Points", subteam.extra_points)}

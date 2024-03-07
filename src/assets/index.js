@@ -1,5 +1,6 @@
 import 
 { 
+    TeamPhoto,
     apsc,
     chbe,
     ece,
@@ -30,7 +31,6 @@ import
     HomeOurMissionRecycle,
     HomeOurMissionStrawberry,
     HomeOurMissionStocks,
-    AgroBotInWild,
     HomeAutomation,
     HomeDataCollection,
     HomeModularChassis,
@@ -52,6 +52,7 @@ import
 
 
 export {
+    TeamPhoto,
     apsc,
     chbe,
     ece,
@@ -82,7 +83,6 @@ export {
     HomeOurMissionRecycle,
     HomeOurMissionStrawberry,
     HomeOurMissionStocks,
-    AgroBotInWild,
     HomeAutomation,
     HomeDataCollection,
     HomeModularChassis,

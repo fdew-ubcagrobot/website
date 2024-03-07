@@ -30,7 +30,6 @@ import AgroPonicsTitleImg from './AgroPonicsTitleImg.png';
 import HomeOurMissionRecycle from './HomeOurMissionRecycle.png';
 import HomeOurMissionStrawberry from './HomeOurMissionStrawberry.png';
 import HomeOurMissionStocks from './HomeOurMissionStocks.png';
-import AgroBotInWild from './agrobotInWild.png';
 import HomeAutomation from './HomeAutomation.gif';
 import HomeDataCollection from './HomeDataCollection.png';
 import HomeModularChassis from './HomeModularChassis.png';
@@ -82,7 +81,6 @@ export {
     HomeOurMissionRecycle,
     HomeOurMissionStrawberry,
     HomeOurMissionStocks,
-    AgroBotInWild,
     HomeAutomation,
     HomeDataCollection,
     HomeModularChassis,
