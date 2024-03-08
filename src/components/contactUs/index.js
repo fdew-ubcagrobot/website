@@ -1,9 +1,9 @@
 import MailForm from "./mailForm.js";
 import SideBar from "./sideBar";
-// import TitleBanner from "./TitleBanner.js";
+import ContactUsBanner from "./contactUsBanner.js";
 
 export {
     MailForm,
     SideBar,
-    // TitleBanner
+    ContactUsBanner
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { mailPhoto } from '../assets';
 import { TitleBanner } from '../components';
-import { MailForm, SideBar } from '../components';
+import { MailForm, SideBar, ContactUsBanner} from '../components';
 
 function debounce(func, wait) {
   let timeout;
@@ -36,10 +36,8 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <div className="bg-[#F8F7F1] w-screen">
-        <TitleBanner fromColor="#086E62" toColor="#97A28C" imageSrc={mailPhoto} imageClassName="absolute right-0 bottom-0 w-5/12">
-            <h1 className="text-[48px] font-bold text-[#FFFFFF]">Contact Us</h1>
-        </TitleBanner>
+    <div className="bg-[#F8F7F1] h-full w-screen p-10" style={{ background: 'linear-gradient(to bottom, #F8F7F1, #E2F4C1)' }}>
+        <ContactUsBanner isMobile={isMobile}></ContactUsBanner>
         <MailForm isMobile={isMobile}></MailForm>
         <SideBar></SideBar>
     </div>
