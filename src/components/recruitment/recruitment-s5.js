@@ -66,7 +66,7 @@ function SubTeamList(props) {
                             <div className="rounded-b p-7 bg-white shadow mb-3">
                                 <p className="text-left">{subteam.description}</p>
                                 <div
-                                className="mt-6 mx-auto px-1 grid grid-cols-3"
+                                className="mt-6 mx-auto px-1 grid md:grid-cols-3"
                                     // className={`mt-6 mx-auto px-1 grid grid-cols-${
                                     //     (subteam.requirements.length > 0 ? 1 : 0) +
                                     //     (subteam.extra_points.length > 0 ? 1 : 0) +

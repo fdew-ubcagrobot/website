@@ -36,8 +36,8 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <div className="bg-[#F8F7F1] h-full w-screen p-10" style={{ background: 'linear-gradient(to bottom, #F8F7F1, #E2F4C1)' }}>
-        <ContactUsBanner isMobile={isMobile}></ContactUsBanner>
+    <div className="bg-[#F8F7F1] h-full w-screen px-10 pb-10" style={{ background: 'linear-gradient(to bottom, #F8F7F1, #E2F4C1)' }}>
+        <TitleBanner fromColor="#007165" toColor="#00b491" imageSrc={mailPhoto} imageAltText="Mail">Contact Us</TitleBanner>
         <MailForm isMobile={isMobile}></MailForm>
         <SideBar></SideBar>
     </div>
