@@ -1,8 +1,8 @@
 import React from "react";
-import { HomeModularChassis } from "../../assets";
+import { HomeModularChassis, AgroBotBannerImg } from "../../assets";
 
 function Subteam(props) {
-    const { fromColor, toColor } = props;
+    const { fromColor, toColor, img } = props;
 
     const bannerStyle = {
         background: `linear-gradient(to top, ${fromColor}, ${toColor})`
@@ -20,7 +20,7 @@ function Subteam(props) {
                 <p className='mt-[5%] text-justify'>{props.text}</p>
             </div>
             <div className='w-[47.5%] flex justify-center align-middle'>
-                <img src={HomeModularChassis} alt='modular-chassis' className='rounded-[14px]'></img>
+                <img src={img} alt='modular-chassis' className='object-cover rounded-[14px]'></img>
             </div>
         </div>
     );
@@ -45,10 +45,10 @@ function AgroBotSubteams() {
             <h2 className='text-4xl text-[#12200B]'>Subteams</h2>
             {/* made gradients to make the color of agrobots title banner simiar to subteam components */}
 
-            <Subteam fromColor={chassGradient.fromColor} toColor={chassGradient.toColor} hlights={chassHlights} text={chassText}>Chassis</Subteam>
-            <Subteam fromColor={extGradient.fromColor} toColor={extGradient.toColor} hlights={extHlights} text={extText}>Extermination</Subteam>
-            <Subteam fromColor={navGradient.fromColor} toColor={navGradient.toColor} hlights={navHlights} text={navText}>Navigation</Subteam>
-            <Subteam fromColor={appAIGradient.fromColor} toColor={appAIGradient.toColor} hlights={appAIHlights} text={appAIText}>Applied AI</Subteam>
+            <Subteam fromColor={chassGradient.fromColor} toColor={chassGradient.toColor} hlights={chassHlights} text={chassText} img={AgroBotBannerImg}>Chassis</Subteam>
+            <Subteam fromColor={extGradient.fromColor} toColor={extGradient.toColor} hlights={extHlights} text={extText} img={HomeModularChassis}>Extermination</Subteam>
+            <Subteam fromColor={navGradient.fromColor} toColor={navGradient.toColor} hlights={navHlights} text={navText} img={HomeModularChassis}>Navigation</Subteam>
+            <Subteam fromColor={appAIGradient.fromColor} toColor={appAIGradient.toColor} hlights={appAIHlights} text={appAIText} img={HomeModularChassis}>Applied AI</Subteam>
         </div>
     );
 }
