@@ -32,12 +32,12 @@ const Publications = () => {
       <div className="row mx-auto mt-6 px-6 md:px-12 flex gap-28 scrollbar-hide overflow-x-auto flex-nowrap">
         {past_publications.map((publication) => (
           <div>
-            <MediaCard
+            <PublicationTile
               imageUrl={publication.imageUrl}
               title={publication.title}
               description={publication.description}
               learnMoreUrl={publication.learnMoreUrl}
-            ></MediaCard>
+            ></PublicationTile>
           </div>
         ))}
       </div>
@@ -45,7 +45,7 @@ const Publications = () => {
   );
 };
 
-function MediaCard(props) {
+function PublicationTile(props) {
   const { imageUrl, title, description, learnMoreNavigationUrl } = props;
   return (
     <Card

@@ -48,7 +48,7 @@ function Project({ title, description, learnMoreNavigationUrl, images, index }) 
 
 function PortfolioProjects() {
   return (
-    <div className="w-full pb-[10vh]">
+    <div className="w-full">
       <div className="w-[80vw] mx-auto">
         <h1 className="text-4xl py-8">Projects</h1>
         <div className="flex w-full max-md:flex-col">
