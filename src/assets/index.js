@@ -47,11 +47,13 @@ import
     AgroponicsRooftop,
     EmailSideIcon,
     SocialSideIcon,
-    LocationSideIcon
+    LocationSideIcon,
+    AgroponicsS2
 } from './image';
 
 
 export {
+    AgroponicsS2,
     TeamPhoto,
     apsc,
     chbe,

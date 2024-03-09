@@ -5,7 +5,7 @@ import { AgroPonicsHeader } from "../constant";
 
 function AgroPonics() {
     return (
-        <div className="bg-[#F8F7F1] w-screen">
+        <div className="bg-gradient-to-b from-[#F8F7F1] via-[#d0ec94] to-[#F8F7F1] w-screen">
             <TitleBanner fromColor="#12200B" toColor="#4C5934" imageSrc={AgroPonicsTitleImg}>{AgroPonicsHeader}</TitleBanner>
             <AgroPonicsS1></AgroPonicsS1>
             <AgroPonicsS2></AgroPonicsS2>

@@ -47,8 +47,10 @@ import AgroponicsRooftop from './AgroponicsRooftop.png'
 import EmailSideIcon from './EmailSideIcon.png';
 import SocialSideIcon from './SocialSideIcon.png';
 import LocationSideIcon from './LocationSideIcon.png';
+import AgroponicsS2 from './AgroponicsS2.png';
 
 export {
+    AgroponicsS2,
     apsc,
     chbe,
     ece,
