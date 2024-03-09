@@ -1,6 +1,7 @@
 import React from "react";
 import { ConcentricOctagons, HomeFarm } from "../../assets";
 import { FaChevronDown } from 'react-icons/fa';
+import '../../index.css';
 
 function HomeBanner(props) {
 
@@ -10,8 +11,8 @@ function HomeBanner(props) {
         return (
             <div className="h-[90vh] w-full bg-[#F8F7F1] flex relative z-[0]">
                 <div style={{ backgroundImage: `url(${ConcentricOctagons})` }} className='absolute w-full h-full bg-center bg-no-repeat z-[1]  '></div>
-                <div className="h-full w-[40%] flex flex-col items-center justify-center z-[2]">
-                    <h1 className="uppercase text-[48px] text-[#3A3A3A] font-bold">where <br /> innovation <br /> meets <br /> agriculture</h1>
+                <div className="h-full w-[50%] flex flex-col items-center justify-center z-[2]">
+                    <h1 className="uppercase text-[48px] text-[#3A3A3A] font-bold roboto-custom">where <br /> innovation <br /> meets <br /> agriculture</h1>
                     <button
                         className="w-[316px] h-[50px] mt-[20px] bg-[#3A3A3A] rounded-md text-[#F8F7F1] font-RobotoMono font-bold"
                         onClick={() => window.scrollTo({
@@ -21,7 +22,7 @@ function HomeBanner(props) {
                         <h3 className="flex items-center justify-center ">Learn More <FaChevronDown size='14px' className='mx-1 mt-1' /></h3>
                     </button>
                 </div>
-                <div className="h-full w-[60%] bg-center bg-no-repeat flex items-center justify-center z-[2]" >
+                <div className="h-full w-[50%] bg-center bg-no-repeat flex items-center justify-center z-[2]" >
                     <img className="" alt="a farm being manned by cute robots" src={HomeFarm} />
                 </div>
             </div>

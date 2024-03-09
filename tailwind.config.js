@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         'RobotoMono': ['Roboto Mono', 'monospace'],
         'Inter': ['Inter', 'sans-serif'],
+        'Roboto': ['Roboto', 'sans-serif'],
       },
     },
   },
