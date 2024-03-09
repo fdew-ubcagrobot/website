@@ -43,20 +43,20 @@ const Navbar = () => {
               >
                 <a
                   href={e.link}
-                  className="text-[#8cbc24] hover:text-[#8cbc24] transition-all duration-300 flex items-center"
+                  className="text-[#163815] hover:text-[#8cbc24] transition-all duration-200 flex items-center"
                 >
                   {e.id} {e.dropdown && <FaChevronDown size='16px' style={{margin: '3px 0 0 4px'}}/>}
                 </a>
                 {e.dropdown && isSubMenuOpen && (
                   <ul
-                    className="absolute top-full left-[-40px] px-[40px] pb-[20px] text-[#8cbc24] bg-[#F8F7F1] rounded"
+                    className="absolute top-full left-[-40px] px-[40px] pb-[20px]  bg-[#F8F7F1] rounded"
                     style={{ transition: `all ${dropdown_hover_timing}ms` }}
                   >
                     {e.dropdown.map((item) => (
                       <li key={item.id}>
                         <a
                           href={item.link}
-                          className="block hover:text-grey-400 py-[2px] px-0"
+                          className="block text-[#163815] hover:text-[#8cbc24] py-[2px] px-0"
                         >
                           {item.id}
                         </a>
