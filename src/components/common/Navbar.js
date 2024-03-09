@@ -29,7 +29,7 @@ const Navbar = () => {
     <header className="h-[10vh] bg-[#F8F7F1] w-full sticky top-0 left-0 right-0 z-[100]">
       <nav className="h-full py-4 md:px-8 px-4">
         <div className="h-full flex items-center justify-between">
-          <div className="h-full font-bold cursor-pointer text-black ">
+          <div className="h-full font-bold cursor-pointer ">
             <img className="h-full" src={agrobot} alt="UBC Agrobot" />
           </div>
 
@@ -43,7 +43,7 @@ const Navbar = () => {
               >
                 <a
                   href={e.link}
-                  className="text-[#163815] hover:text-[#8cbc24] transition-all duration-200 flex items-center"
+                  className="text-[#8cbc24] hover:text-[#8cbc24] transition-all duration-200 flex items-center"
                 >
                   {e.id} {e.dropdown && <FaChevronDown size='16px' style={{margin: '3px 0 0 4px'}}/>}
                 </a>
@@ -56,7 +56,7 @@ const Navbar = () => {
                       <li key={item.id}>
                         <a
                           href={item.link}
-                          className="block text-[#163815] hover:text-[#8cbc24] py-[2px] px-0"
+                          className="block text-[#204f1e] hover:text-[#8cbc24] py-[2px] px-0"
                         >
                           {item.id}
                         </a>

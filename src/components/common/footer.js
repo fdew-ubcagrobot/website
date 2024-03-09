@@ -11,15 +11,7 @@ function Footer() {
                 <ul className='w-full pt-1 font-bold capitalize flex justify-evenly flex-wrap'>
                     <li className='px-[10px]'><a href="/">Home</a></li>
                     <li className='px-[10px]'>
-                        <a href="/portfolio">Portfolio</a>
-                        <ul className='text-[#2a2a2a] font-normal leading-6'>
-                            <li><a href="/achievements">Achievements</a></li>
-                            <li><a href="/publications">Publications</a></li>
-                            <li><a href="/gallery">Gallery</a></li>
-                        </ul>
-                    </li>
-                    <li className='px-[10px]'>
-                        <a href="/projects">Projects</a>
+                        <a href="/portfolio">Portfolio </a>
                         <ul className='text-[#2a2a2a] font-normal leading-6'>
                             <li><a href="/agrobot">AgroBot</a></li>
                             <li><a href="/agroponics">AgroPonics</a></li>
