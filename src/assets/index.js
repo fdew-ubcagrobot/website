@@ -48,7 +48,12 @@ import
     EmailSideIcon,
     SocialSideIcon,
     LocationSideIcon,
+<<<<<<< HEAD
     AgroponicsS2
+=======
+    SponsorIcon,
+    WorkingWithWires,
+>>>>>>> 7704bef8877ae05b3fc33489412296affbf9b1b6
 } from './image';
 
 
@@ -101,5 +106,7 @@ export {
     AgroponicsRooftop,
     EmailSideIcon,
     SocialSideIcon,
-    LocationSideIcon
+    LocationSideIcon,
+    SponsorIcon,
+    WorkingWithWires,
 }

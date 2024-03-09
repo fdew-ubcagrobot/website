@@ -23,7 +23,7 @@ function OurMission() {
         background: `linear-gradient(to top, #CFEF94, #CfEF9400)`
     };
 
-    const images = [AgroBotWihTeamOnGrass, TeamPhoto, Agrobot, StudentsWorking];
+    const images = [AgroBotWihTeamOnGrass, TeamPhoto, StudentsWorking];
 
     const [currentImgIndex, setCurrentImgIndex] = useState(0);
 

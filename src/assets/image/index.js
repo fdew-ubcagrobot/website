@@ -47,7 +47,12 @@ import AgroponicsRooftop from './AgroponicsRooftop.png'
 import EmailSideIcon from './EmailSideIcon.png';
 import SocialSideIcon from './SocialSideIcon.png';
 import LocationSideIcon from './LocationSideIcon.png';
+<<<<<<< HEAD
 import AgroponicsS2 from './AgroponicsS2.png';
+=======
+import SponsorIcon from './SponsorIcon.png';
+import WorkingWithWires from './WorkingWithWires.png';
+>>>>>>> 7704bef8877ae05b3fc33489412296affbf9b1b6
 
 export {
     AgroponicsS2,
@@ -99,5 +104,7 @@ export {
     AgroponicsRooftop,
     EmailSideIcon,
     SocialSideIcon,
-    LocationSideIcon
+    LocationSideIcon,
+    SponsorIcon,
+    WorkingWithWires,
 }
