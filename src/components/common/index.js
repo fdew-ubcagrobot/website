@@ -3,6 +3,7 @@ import TitleBanner from "./TitleBanner";
 import Sponsors from './sponsor';
 import Footer from "./footer";
 import WantToHelp from "./WantToHelp";
+import SectionHeader from "./SectionHeader";
 
 export {
     Navbar,
@@ -10,4 +11,5 @@ export {
     Sponsors,
     Footer,
     WantToHelp,
+    SectionHeader,
 }

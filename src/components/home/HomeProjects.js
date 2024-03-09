@@ -1,6 +1,7 @@
 import React from "react";
 import { HomeAutomation, HomeDataCollection, HomeModularChassis, HomeTargetedAction, HomeChemicalBalancing, HomeFullyAutonomous, HomeNutrientCycling, } from '../../assets';
 import { MdChevronRight } from 'react-icons/md';
+import { SectionHeader } from '../common';
 
 function Img(props) {
     return (
@@ -20,8 +21,8 @@ function HomeProjects() {
     return (
         <div style={bannerStyle} className="w-full pb-[10vh]">
             <div className='w-[80vw] mx-auto text-[#3A3A3A]'>
-                <h1 className='font-Inter text-[48px] py-8'>Projects</h1>
-                <div className="flex w-full max-md:flex-col">
+                <SectionHeader>Projects</SectionHeader>
+                <div className="flex w-full max-md:flex-col pt-8">
                     <div className='relative w-[49%] bg-white rounded-[16px] p-8 py-12 mr-[2%] max-md:w-full max-md:mr-0 max-md:mb-[2%]'>
                         <div className='flex w-full items-center max-md:flex-col'>
                             <div className='w-[50%]'>

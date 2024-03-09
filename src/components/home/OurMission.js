@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking, AgroBotWihTeamOnGrass, TeamPhoto, Agrobot } from '../../assets';
+import { HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking, AgroBotWihTeamOnGrass, TeamPhoto } from '../../assets';
+import { SectionHeader, } from '../../components';
 import { MdChevronRight, MdChevronLeft } from 'react-icons/md';
 
 function MissionBox(props) {
@@ -46,8 +47,8 @@ function OurMission() {
     return (
         <div style={bannerStyle} className="w-full pb-[10vh] flex justify-center items-center">
             <div className='w-[80vw] mx-auto font-Inter'>
-                <h1 className="text-[48px]">Our Mission</h1>
-                <p className='my-2 mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <SectionHeader>Our Mission</SectionHeader>
+                <p className='mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                 <div id="ourMission" className="flex w-full">
                     <div className="w-[40%] flex flex-col max-sm:w-full">
                         <MissionBox imgSrc={HomeOurMissionRecycle}>Mitigate Climate Impacts</MissionBox>

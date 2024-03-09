@@ -26,7 +26,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className="h-[10vh] bg-[#f8f7f1ea] backdrop-blur-md w-full sticky top-0 left-0 right-0 z-[100]">
+    <header className="h-[10vh] bg-[#f8f7f1ea] hover:bg-[#f8f7f1] backdrop-blur-md w-full sticky top-0 left-0 right-0 z-[100]">
       <nav className="h-full py-4 md:px-8 px-4">
         <div className="h-full flex items-center justify-between">
           <div className="h-full font-bold cursor-pointer ">
@@ -49,7 +49,7 @@ const Navbar = () => {
                 </a>
                 {e.dropdown && isSubMenuOpen && (
                   <ul
-                    className="absolute top-full left-[-40px] px-[40px] pb-[20px]  bg-[#F8F7F1] rounded"
+                    className="absolute top-full left-[-40px] px-[40px] pb-[20px]  bg-[#f8f7f1] backdrop-blur-md rounded"
                     style={{ transition: `all ${dropdown_hover_timing}ms` }}
                   >
                     {e.dropdown.map((item) => (
