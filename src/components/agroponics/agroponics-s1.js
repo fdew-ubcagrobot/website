@@ -9,16 +9,18 @@ function AgroPonicsS1() {
           </div>
           <section className="p-10 flex">
             <div className='font-sans text-[22px] ml-[10%] flex-1'>
-              <p className ="text-center mt-[5%] mb-[3%]">
+              <div className="h-[600px] justify-center ">
+                <p className ="justify-left mt-[5%] mb-[3%]">
                 Our newly launched project that aims to build a fully autonomous hydroponics system. 
                 We plan to create efficient and reliable systems that can be implemented throughout campus.
               </p>
               
-              <p className ="text-center">
+              <p className ="justify-left">
                 A hydroponics system is an integrated system that grows crops, without soil. 
                 By cycling mineral nutrients dissolved in water, the system is able to produce food at any location, 
                 year-round, in a more sustainable way.
               </p>
+              </div>
             </div>
             <div className="flex-1">
               {/* Here you can add the image of the hydroponics system */}
