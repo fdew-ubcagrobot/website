@@ -1,5 +1,5 @@
 import React from "react";
-import { TitleBanner, AgroPonicsS1, AgroPonicsS2, AgroPonicsS3, AgroPonicsS4, AgroPonicsS5, Agroponicsnest } from "../components";
+import { TitleBanner, AgroPonicsS1, AgroPonicsS2, AgroPonicsS3, AgroPonicsS4, AgroPonicsS5, Agroponicsnest, WantToHelp } from "../components";
 import { AgroPonicsTitleImg } from "../assets";
 import { AgroPonicsHeader } from "../constant";
 
@@ -13,6 +13,7 @@ function AgroPonics() {
             <AgroPonicsS4></AgroPonicsS4>
             <AgroPonicsS5></AgroPonicsS5>
             <Agroponicsnest></Agroponicsnest>
+            <WantToHelp></WantToHelp>
         </div>
     );
 };

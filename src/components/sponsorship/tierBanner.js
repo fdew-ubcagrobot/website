@@ -5,7 +5,7 @@ function TierBanner({ tierElements, starImg, tierColor }) {
     const { name, price, perks } = tierElements;
 
     return (
-        <div className="bg-[#F8F7F1] font-Inter w-full m-[1%] rounded-[14px] text-center flex flex-col">
+        <div className="bg-white font-Inter w-full m-[1%] rounded-[14px] text-center flex flex-col">
             <div className='flex-grow'>
                 <div className="flex justify-center items-center pt-10">
                     <img src={starImg} alt="sponsor star"></img>
@@ -21,7 +21,7 @@ function TierBanner({ tierElements, starImg, tierColor }) {
                     ))}
                 </ul>
             </div>
-            <a href="https://donate.support.ubc.ca/page/20924/donate/1?transaction.dirgift=AgroBot%20G2551" target="_blank" className="p-4 m-4 border-2 rounded-[14px] border-[#56B259] text-[#56B259] font-bold">Sponsor Us</a>
+            <a href="https://donate.support.ubc.ca/page/20924/donate/1?transaction.dirgift=AgroBot%20G2551" target="_blank" className="p-4 m-4 border-2 rounded-[14px] border-[#8cbc24] text-[#8cbc24] font-bold">Sponsor Us</a>
         </div>
     );
 }

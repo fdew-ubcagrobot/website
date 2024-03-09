@@ -1,5 +1,5 @@
 import React from "react";
-import { TitleBanner, AgroBotIntro, AgroBotKeyFeatures, AgroBotSubteams, AgroBotWantToHelp, } from "../components";
+import { TitleBanner, AgroBotIntro, AgroBotKeyFeatures, AgroBotSubteams, WantToHelp, } from "../components";
 import { AgroBotBannerImg } from "../assets";
 import { AgroBotHeader } from "../constant";
 
@@ -11,7 +11,7 @@ function AgroBot() {
             <AgroBotIntro></AgroBotIntro>
             <AgroBotKeyFeatures></AgroBotKeyFeatures>
             <AgroBotSubteams></AgroBotSubteams>
-            <AgroBotWantToHelp></AgroBotWantToHelp>
+            <WantToHelp></WantToHelp>
         </div>
     );
 }

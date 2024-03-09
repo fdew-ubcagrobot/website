@@ -47,6 +47,8 @@ import AgroponicsRooftop from './AgroponicsRooftop.png'
 import EmailSideIcon from './EmailSideIcon.png';
 import SocialSideIcon from './SocialSideIcon.png';
 import LocationSideIcon from './LocationSideIcon.png';
+import SponsorIcon from './SponsorIcon.png';
+import WorkingWithWires from './WorkingWithWires.png';
 
 export {
     apsc,
@@ -97,5 +99,7 @@ export {
     AgroponicsRooftop,
     EmailSideIcon,
     SocialSideIcon,
-    LocationSideIcon
+    LocationSideIcon,
+    SponsorIcon,
+    WorkingWithWires,
 }

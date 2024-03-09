@@ -47,7 +47,9 @@ import
     AgroponicsRooftop,
     EmailSideIcon,
     SocialSideIcon,
-    LocationSideIcon
+    LocationSideIcon,
+    SponsorIcon,
+    WorkingWithWires,
 } from './image';
 
 
@@ -99,5 +101,7 @@ export {
     AgroponicsRooftop,
     EmailSideIcon,
     SocialSideIcon,
-    LocationSideIcon
+    LocationSideIcon,
+    SponsorIcon,
+    WorkingWithWires,
 }
