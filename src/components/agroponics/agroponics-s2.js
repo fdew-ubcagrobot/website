@@ -20,7 +20,7 @@ function AgroPonicsS2() {
             </div>
             <div className="w-1/2">
                     {/* Here you can add the image of the hydroponics system */}
-                    <img src={AgroponicsS2} alt="Hydroponics System" className="shadow-2xl ml-[0%] h-[600px] mr-[100px] shadow-2xl border-[3px] rounded-r-[30px] bg-[#d8d4dc] h-auto" />
+                    <img src={AgroponicsS2} alt="Hydroponics System" className="shadow-2xl ml-[0%] h-[600px] mr-[100px] shadow-2xl border-[3px] rounded-r-[30px] bg-[#d8d4dc]" />
             </div>
         </div>
     </div>
