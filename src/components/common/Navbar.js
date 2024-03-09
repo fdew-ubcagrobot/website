@@ -56,7 +56,7 @@ const Navbar = () => {
                       <li key={item.id}>
                         <a
                           href={item.link}
-                          className="block text-[#204f1e] hover:text-[#8cbc24] py-[2px] px-0"
+                          className="block text-[#8cbc24] py-[2px] px-0"
                         >
                           {item.id}
                         </a>
