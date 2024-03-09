@@ -2,11 +2,17 @@ import React from "react";
 import { HomeModularChassis } from "../../assets";
 
 function Subteam(props) {
-    const background = {
-        background: props.bgColor
+    const { fromColor, toColor } = props;
+
+    const bannerStyle = {
+        background: `linear-gradient(to top, ${fromColor}, ${toColor})`
     };
+
+    console.log(fromColor);
+    console.log(toColor);
+
     return (
-        <div style={background} className={`w-full rounded-[14px] p-10 flex text-white my-[5vh]`}>
+        <div style={bannerStyle} className={`w-full rounded-[14px] p-10 flex text-white my-[5vh]`}>
             <div className='w-[47.5%] mr-[5%]'>
                 <h2 className='text-4xl mb-[2%]'>{props.children}</h2>
                 <div className=' text-[#8BC34A]'>
@@ -32,14 +38,20 @@ function AgroBotSubteams() {
     const navText = 'Develops the self-driving software for the Agrobot to autonomously navigate crop rows using an on-board camera. In our first year, our team explored methods of crop-row detection and developed software to facilitate real-time motion planning. We have worked together to research different methods of computer vision and error control algorithms and applied these concepts to Python code using OpenCV. The software loads live-stream video, employs a series of filtering and transformations to detect crop-rows, and then applies a centering algorithm to determine the direction of the AgroBot. In our upcoming year, our team plans to improve the accuracy of our navigation software while also integrating the software with the motor control system. This entails incorporating additional computer vision techniques to our code, implementing a robust software controller for continuous error adjustment and incorporating ROS for communication between subsystems.';
     const appAIHlights = ["Crops and weeds detection", "Crop health analysis", "Biomass Estimation", "Artificial Intelligence"];
     const appAIText = 'Applied AI is looking to change the way we farm and is paving the way for a sustainable future. Leveraging cutting edge research in artificial intelligence and machine learning to develop practical solutions to optimize crop yield, minimize costs, and reduce environmental impact. Using computer vision and machine learning algorithms, the team has developed models for weed destruction that detect and classify weeds, enabling targeted extermination and reducing the use of herbicides. In addition, the team focuses on developing models for biomass estimation. These models help farmers to accurately determine the amount of biomass that their crops are producing, which is a crucial factor in making informed decisions about fertilizer and water application. With this knowledge, farmers can achieve better crop yields and save on costs, all while minimizing their environmental impact.';
-    
+    const chassGradient = { fromColor: 'rgb(18, 32, 11)', toColor: 'rgb(76, 89, 52)' };
+    const extGradient = { fromColor: 'rgb(18, 32, 11)', toColor: 'rgb(76, 89, 52)' };
+    const navGradient = { fromColor: 'rgb(18, 32, 11)', toColor: 'rgb(76, 89, 52)' };
+    const appAIGradient = { fromColor: 'rgb(18, 32, 11)', toColor: 'rgb(76, 89, 52)' };
+
     return (
         <div className='w-[80%] mx-auto my-[20vh] font-Inter'>
             <h2 className='text-4xl text-[#12200B]'>Subteams</h2>
-            <Subteam bgColor='#351C1F' hlights={chassHlights} text={chassText}>Chassis</Subteam>
-            <Subteam bgColor='#1E1612' hlights={extHlights} text={extText}>Extermination</Subteam>
-            <Subteam bgColor='#271f30' hlights={navHlights} text={navText}>Navigation</Subteam>
-            <Subteam bgColor='#351C1F' hlights={appAIHlights} text={appAIText}>Applied AI</Subteam>
+            {/* made gradients to make the color of agrobots title banner simiar to subteam components */}
+
+            <Subteam fromColor={chassGradient.fromColor} toColor={chassGradient.toColor} hlights={chassHlights} text={chassText}>Chassis</Subteam>
+            <Subteam fromColor={extGradient.fromColor} toColor={extGradient.toColor} hlights={extHlights} text={extText}>Extermination</Subteam>
+            <Subteam fromColor={navGradient.fromColor} toColor={navGradient.toColor} hlights={navHlights} text={navText}>Navigation</Subteam>
+            <Subteam fromColor={appAIGradient.fromColor} toColor={appAIGradient.toColor} hlights={appAIHlights} text={appAIText}>Applied AI</Subteam>
         </div>
     );
 }
