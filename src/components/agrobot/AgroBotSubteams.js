@@ -8,9 +8,6 @@ function Subteam(props) {
         background: `linear-gradient(to top, ${fromColor}, ${toColor})`
     };
 
-    console.log(fromColor);
-    console.log(toColor);
-
     return (
         <div style={bannerStyle} className={`w-full rounded-[14px] p-10 flex text-white my-[5vh]`}>
             <div className='w-[47.5%] mr-[5%]'>
