@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', monospace;
   background-color: #F8F7F1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,8 +29,7 @@ code {
 }
 
 .sponsorTitle {
-  font-family: 'Inter', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding-left: 40px;
   font-size: 75px;
 }
