@@ -6,58 +6,59 @@ import { SectionHeader } from '../common';
 function Img(props) {
     return (
         <div className='w-full h-full flex justify-center items-center flex-col'>
-            <h3 className='p-2 text-center font-bold text-[18px] font-Inter'>{props.children}</h3>
             <img src={props.imgSrc} className='h-[90%] rounded-[14px]'></img>
+            <h3 className='p-2 text-center font-bold text-[18px] font-Inter'>{props.children}</h3>
+        </div>
+    );
+}
+
+function Project(props) {
+
+    const { children, projectNum, text, img1, img2, img3, img4, imgText1, imgText2, imgText3, imgText4, panelStyle, link } = props;
+
+    return (
+        <div style={panelStyle} className='flex flex-col p-10 w-[49%] rounded-[16px] mr-[2%] max-md:w-full max-md:mr-0 max-md:mb-[2%]'>
+            <div className='flex w-full items-center max-md:flex-col'>
+                <div className='w-[50%]'>
+                    <h3 className='text-[#88BE22] font-bold'>PROJECT_{projectNum}</h3>
+                    <h2 className='text-[36px]'>{children}</h2>
+                </div>
+                <p className='w-[50%] text-[16px] font-Inter text-right'>{text}</p>
+            </div>
+            <div className='py-10'>
+                <div className='flex justify-between'>
+                    <div className='w-[48%] rounded-[14px]'><Img imgSrc={img1}>{imgText1}</Img></div>
+                    <div className='w-[48%] rounded-[14px]'><Img imgSrc={img2}>{imgText2}</Img></div>
+                </div>
+                <div className='flex justify-between py-4'>
+                    <div className='w-[48%] rounded-[14px]'><Img imgSrc={img3}>{imgText3}</Img></div>
+                    <div className='w-[48%] rounded-[14px]'><Img imgSrc={img4}>{imgText4}</Img></div>
+                </div>
+            </div>
+            <div className='flex items-center justify-center mt-auto'>
+                <a href={link} className='flex items-center justify-center text-black font-bold border-2 border-black rounded-[14px] p-4 px-[10%]'>More About {children} <MdChevronRight /></a>
+            </div>
         </div>
     );
 }
 
 function HomeProjects() {
 
-    const bannerStyle = {
-        background: `linear-gradient(to top, #cfef9480, #CFEF94)`
-    };
+    const leftPanelStyle = {
+        background: `linear-gradient(35deg, rgba(207,239,148,1) 0%, rgba(207,239,148,0.5) 35%, rgba(207,239,148,0.5) 65%, rgba(207,239,148,1) 100%)`
+    }
+
+    const rightPanelStyle = {
+        background: `linear-gradient(75deg, rgba(207,239,148,1) 0%, rgba(207,239,148,0.5) 35%, rgba(207,239,148,0.5) 65%, rgba(207,239,148,1) 100%)`
+    }
 
     return (
-        <div style={bannerStyle} className="w-full pb-[10vh]">
-            <div className='w-[80vw] mx-auto text-[#3A3A3A]'>
+        <div className="w-full pb-[10vh] bg-white pt-[10vh]">
+            <div className='w-[80vw] mx-auto text-black'>
                 <SectionHeader>Projects</SectionHeader>
                 <div className="flex w-full max-md:flex-col pt-8">
-                    <div className='relative w-[49%] bg-white rounded-[16px] p-8 py-12 mr-[2%] max-md:w-full max-md:mr-0 max-md:mb-[2%]'>
-                        <div className='flex w-full items-center max-md:flex-col'>
-                            <div className='w-[50%]'>
-                                <h3 className='text-[#88BE22]'>PROJECT_2</h3>
-                                <h2 className='text-[32px] font-bold'>AgroPonics</h2>
-                            </div>
-                            <p className='w-[50%] text-[14px] font-Inter'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                        </div>
-                        <div className='flex flex-wrap w-full mt-8'>
-                            <div className='w-[48%] p-[3%] m-[1%] rounded-[14px] bg-[#cfef94]'><Img imgSrc={HomeTargetedAction}>Targeted Action</Img></div>
-                            <div className='w-[48%] p-[3%] m-[1%] rounded-[14px] bg-[#cfef94]'><Img imgSrc={HomeDataCollection}>Data collection</Img></div>
-                            <div className='w-[48%] p-[3%] m-[1%] rounded-[14px] bg-[#cfef94]'><Img imgSrc={HomeModularChassis}>Modular chassis</Img></div>
-                            <div className='w-[48%] p-[3%] m-[1%] rounded-[14px] bg-[#cfef94]'><Img imgSrc={HomeAutomation}>Automation</Img></div>
-                        </div>
-                        <div className='flex items-center justify-center pt-8'>
-                            <a href="/agrobot" className='flex items-center justify-center text-[#8cbc24] border-[#cfef94] border-[2px] font-Inter p-3 rounded-[14px] font-bold'>More About AgroBot <MdChevronRight /></a>
-                        </div>
-                    </div>
-                    <div className='w-[49%] bg-white rounded-[16px] p-8 py-12 max-md:w-full'>
-                        <div className='flex w-full items-center max-md:flex-col'>
-                            <div className='w-[50%]'>
-                                <h3 className='text-[#88BE22]'>PROJECT_2</h3>
-                                <h2 className='text-[32px] font-bold'>AgroPonics</h2>
-                            </div>
-                            <p className='w-[50%] text-[14px] font-Inter'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                        </div>
-                        <div className='flex flex-wrap w-full mt-8'>
-                            <div className='w-[45%] p-[3%] m-[1.5%] rounded-[14px] bg-[#cfef94]'><Img imgSrc={HomeFullyAutonomous}>Fully Autonomous</Img></div>
-                            <div className='w-[45%] p-[3%] m-[1.5%] rounded-[14px] bg-[#cfef94]'><Img imgSrc={HomeNutrientCycling}>Nutrient Cycling</Img></div>
-                            <div className='w-[97.5%] p-[3%] m-[2.5%] rounded-[14px] bg-[#cfef94]'><Img imgSrc={HomeChemicalBalancing}>Chemical Balancing</Img></div>
-                        </div>
-                        <div className='flex items-center justify-center pt-8'>
-                            <a href="/agroponics" className='flex items-center justify-center text-[#8cbc24] border-[#cfef94] border-[2px] font-Inter p-3 rounded-[14px] font-bold'>More About AgroPonics <MdChevronRight /></a>
-                        </div>
-                    </div>
+                    <Project projectNum="1" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." img1={HomeTargetedAction} img2={HomeDataCollection} img3={HomeModularChassis} img4={HomeAutomation} imgText1="Targeted Action" imgText2="Data collection" imgText3="Modular chassis" imgText4="Automation" panelStyle={leftPanelStyle} link='/agrobot'>AgroBot</Project>
+                    <Project projectNum="2" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." img1={HomeFullyAutonomous} img2={HomeNutrientCycling} img3={HomeChemicalBalancing} img4={HomeChemicalBalancing} imgText1="Fully Autonomous" imgText2="Nutrient Cycling" imgText3="Chemical Balancing" imgText4="Chemical Balancing" panelStyle={rightPanelStyle} link='/agroponics'>AgroPonics</Project>
                 </div>
             </div>
         </div>

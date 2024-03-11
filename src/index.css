@@ -19,74 +19,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.roboto {
-  font-family: 'Roboto', sans-serif;
-
-}
-
-.sponsorTitle {
-  font-family: 'Roboto', sans-serif;
-  padding-left: 40px;
-  font-size: 75px;
-}
-
-.line-container {
-  display: flex;
-  align-items: center;
-}
-
-.line {
-  flex-grow: 1;
-  border: 1px solid black; /* Customize line appearance */
-}
-
-.centered-text {
-  padding: 0 20px;
-  font-size: 18px; /* Customize text size */
-  font-weight: bold; /* Customize text style */
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.sponsorLogos {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: flex;
-  justify-content: center; /* Adjust as needed */
-}
-
-.sponsorLogos img {
-  /* padding-left: 20px;
-  padding-right: 20px; */
-  margin-top: 15px;
-  margin-bottom: 15px;
-  max-width: 275px;
-  margin: 0 20px; /* Adjust as needed */
-}
-
-@media (max-width: 500px) {
-  .sponsorLogos {
-    flex-direction: column;
-    align-items: center; /* Optional: Center images in the column */
-  }
-
-  .sponsorLogos img {
-    /* padding-left: 0px;
-    padding-right: 0px; */
-    margin-top: 15px;
-    margin-bottom: 15px;
-    flex-direction: column;
-    align-items: center; /* Optional: Center images in the column */
-  }
-
-  .sponsorsContainer {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+  font-family: 'Roboto', monospace;
 }
 
 /* === Arman styles: === */

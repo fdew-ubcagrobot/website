@@ -1,5 +1,4 @@
 import React from "react";
-import { AgroPonicsTitleImg } from "../../assets/image";
 
 function ProjectInstance(props) {
     const { children, projectNum, text, img} = props;
@@ -10,9 +9,9 @@ function ProjectInstance(props) {
 				<div className='font-sans text-[22px] w-[45%]'>
 					<div className="">
 						<h1 className="text-[24px] font-bold text-[#88BE22]">PROJECT_{projectNum}</h1>
-						<h2 className=" font-roboto font-bold text-[60px]">{children}</h2>
+						<h2 className=" font-roboto text-[60px] leading-[1.1]">{children}</h2>
 					</div>
-					<p className="mt-[3%]">
+					<p className="mt-6">
                         {text}
 					</p>
 				</div>

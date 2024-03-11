@@ -4,10 +4,17 @@ import { SectionHeader, } from '../../components';
 import { MdChevronRight, MdChevronLeft } from 'react-icons/md';
 
 function MissionBox(props) {
+
+    const angle = useState(() => Math.random() * 360 - 180)[0];
+
+    const gradient = {
+        background: `linear-gradient(${angle}deg, rgba(207,239,148,0.4) 0%, rgba(207,239,148,0.7) 100%)`
+    }
+
     return (
-        <div className='rounded-[14px] border-[#979797] border my-8'>
-            <div className='flex justify-center items-center mt-[-1.25rem]'>
-                <h4 className="text-white font-bold p-2 bg-[#88BE22] rounded-[8px] text-center inline-block">{props.children}</h4>
+        <div style={gradient} className='bg-[#cfef94] rounded-[14px] my-8'>
+            <div className='flex justify-center items-center mt-[-1rem]'>
+                <h4 className="text-black font-bold p-2 px-4 bg-white rounded-[8px] text-center inline-block]">{props.children}</h4>
             </div>
             <div className="flex w-full p-8 pt-4">
                 <div className=" min-w-[60px] max-w-[30%] mr-[5%] flex justify-center items-center">
@@ -20,9 +27,6 @@ function MissionBox(props) {
 }
 
 function OurMission() {
-    const bannerStyle = {
-        background: `linear-gradient(to top, #CFEF94, #CfEF9400)`
-    };
 
     const images = [AgroBotWihTeamOnGrass, TeamPhoto, StudentsWorking];
 
@@ -45,8 +49,8 @@ function OurMission() {
     };
 
     return (
-        <div style={bannerStyle} className="w-full pb-[10vh] flex justify-center items-center">
-            <div className='w-[80vw] mx-auto font-Inter'>
+        <div className="bg-white w-full pb-[10vh] flex justify-center items-center">
+            <div className='w-[80vw] mx-auto'>
                 <SectionHeader>Our Mission</SectionHeader>
                 <p className='mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                 <div id="ourMission" className="flex w-full">

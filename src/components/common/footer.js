@@ -3,8 +3,9 @@ import { LOGO } from "../../assets";
 
 function Footer() {
     return (
-        <footer className="bg-[#f8f7f1] text-[#88BE22] w-full flex p-10">
-            <div className='w-[20%] text-center'>
+        <footer className="text-[#88BE22] w-full flex p-10">
+
+            <div className='w-[20%] text-center bg-[#f8f7f1]'>
                 <img src={LOGO} alt="footer logo" className="inline-block w-[70%]"></img>
             </div>
             <div className='w-[80%] text-[18px]'>

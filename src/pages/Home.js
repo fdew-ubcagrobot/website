@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HomeBanner, Sponsors, OurMission, HomeProjects } from '../components';
+import { HomeBanner, OurSponsors, OurMission, HomeProjects } from '../components';
 
 function debounce(func, wait) {
     let timeout;
@@ -34,14 +34,14 @@ function Home() {
     }, []);
 
     return (
-        <div>
+        <div className='bg-white'>
             <HomeBanner isMobile={isMobile}></HomeBanner>
-
+            <div className="h-[10vh]" style={{ background: 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(248,247,241,1) 100%)' }}></div>
             <OurMission></OurMission>
             
             <HomeProjects></HomeProjects>
 
-            <Sponsors/>
+            <OurSponsors/>
         </div>
     );
 };

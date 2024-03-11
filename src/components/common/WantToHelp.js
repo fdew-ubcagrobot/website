@@ -1,5 +1,5 @@
 import React from "react";
-import { WorkingWithWires } from "../../assets";
+import { TeamDiscussion } from "../../assets";
 import { MdChevronRight } from 'react-icons/md';
 
 
@@ -13,7 +13,7 @@ function WantToHelp() {
                     <button className='bg-[#88BE22] text-white px-4 py-2 rounded-[14px] flex items-center justify-center font-bold my-4' onClick={() => window.location.href = '/recruitment'}>Apply Here <MdChevronRight/></button>
                 </div>
                 <div className='w-[49%] flex justify-center items-center'>
-                    <img src={WorkingWithWires} alt='modular-chassis' className='rounded-[14px] w-full'></img>
+                    <img src={TeamDiscussion} alt='modular-chassis' className='rounded-[14px] w-full'></img>
                 </div>
             </div>
         </div>

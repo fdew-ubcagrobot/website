@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import TitleBanner from "./TitleBanner";
-import Sponsors from './sponsor';
+import OurSponsors from './OurSponsors';
 import Footer from "./footer";
 import WantToHelp from "./WantToHelp";
 import SectionHeader from "./SectionHeader";
@@ -8,7 +8,7 @@ import SectionHeader from "./SectionHeader";
 export {
     Navbar,
     TitleBanner,
-    Sponsors,
+    OurSponsors,
     Footer,
     WantToHelp,
     SectionHeader,
