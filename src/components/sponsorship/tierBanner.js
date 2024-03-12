@@ -5,13 +5,13 @@ function TierBanner({ tierElements, starImg, tierColor }) {
     const { name, price, perks } = tierElements;
 
     return (
-        <div className="bg-white font-Inter w-full m-[1%] rounded-[14px] text-center flex flex-col">
+        <div className="bg-white w-full m-[1%] rounded-[14px] text-center flex flex-col">
             <div className='flex-grow'>
                 <div className="flex justify-center items-center pt-10">
                     <img src={starImg} alt="sponsor star"></img>
                 </div>
                 <h4 className="text-[30px] font-bold p-5">{name}</h4>
-                <h5 className="p-2 font-RobotoMono font-bold text-[24px]" style={{ color: tierColor }}>{price}</h5>
+                <h5 className="p-2 font-bold text-[24px]" style={{ color: tierColor }}>{price}</h5>
                 <ul className="p-5">
                     {perks.map((perk, index) => (
                         <>

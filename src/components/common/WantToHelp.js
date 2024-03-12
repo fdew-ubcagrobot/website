@@ -5,7 +5,7 @@ import { MdChevronRight } from 'react-icons/md';
 
 function WantToHelp() {
     return (
-        <div className='w-[80%] mx-auto my-[20vh] font-Inter'>
+        <div className='w-[80%] mx-auto my-[20vh]'>
             <h2 className='text-4xl'>Interested in joining the team?</h2>
             <div className='w-full flex my-[5vh]'>
                 <div className='w-[49%] mr-[2%] flex flex-col justify-center items-center bg-[#d5eea7c2] rounded-[14px] py-6'>

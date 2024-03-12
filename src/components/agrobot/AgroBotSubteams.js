@@ -42,7 +42,7 @@ function AgroBotSubteams() {
     const appAIGradient = { fromColor: '#226F5450', toColor: '#226F5480' };
 
     return (
-        <div className='w-[80%] mx-auto my-[20vh] font-Inter'>
+        <div className='w-[80%] mx-auto my-[20vh]'>
             <SectionHeader>Subteams</SectionHeader>
             {/* made gradients to make the color of agrobots title banner simiar to subteam components */}
             <Subteam fromColor={chassGradient.fromColor} toColor={chassGradient.toColor} hlights={chassHlights} text={chassText} img={AgroBotBannerImg}>Chassis</Subteam>

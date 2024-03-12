@@ -20,7 +20,7 @@ function KeyBox(props) {
 
 function AgroBotKeyFeatures() {
     return (
-        <div className='w-[80%] mx-auto my-[20vh] font-Inter'>
+        <div className='w-[80%] mx-auto my-[20vh]'>
             <SectionHeader>Key Features</SectionHeader>
             <div className='flex justify-between py-6'>
                 <KeyBox imgSrc={AgroBotTargetedAction}>Targeted Action</KeyBox>

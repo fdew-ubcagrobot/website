@@ -7,7 +7,7 @@ function Img(props) {
     return (
         <div className='w-full h-full flex justify-center items-center flex-col'>
             <img src={props.imgSrc} className='h-[90%] rounded-[14px]'></img>
-            <h3 className='p-2 text-center font-bold text-[18px] font-Inter'>{props.children}</h3>
+            <h3 className='p-2 text-center font-bold text-[18px]'>{props.children}</h3>
         </div>
     );
 }
@@ -23,7 +23,7 @@ function Project(props) {
                     <h3 className='text-[#88BE22] font-bold'>PROJECT_{projectNum}</h3>
                     <h2 className='text-[36px]'>{children}</h2>
                 </div>
-                <p className='w-[50%] text-[16px] font-Inter text-right'>{text}</p>
+                <p className='w-[50%] text-[16px] text-right'>{text}</p>
             </div>
             <div className='py-10'>
                 <div className='flex justify-between'>

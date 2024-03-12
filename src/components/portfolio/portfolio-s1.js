@@ -18,7 +18,7 @@ function InfoParagraph(props) {
 
     return (
         <>
-        <div className="w-screen mb-12 px-[10%] font-RobotoMono">
+        <div className="w-screen mb-12 px-[10%]">
             <h1 className=" text-[40px] pb-10">{processedPS1Title}</h1>
             <div className="relative mx-auto">
                 <div className="w-[50%] inline-block">

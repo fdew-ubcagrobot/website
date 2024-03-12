@@ -6,7 +6,7 @@ import { projectButton } from "../../constant/portfolio";
 function Img(props) {
   return (
     <div className="w-full h-full flex justify-center items-center flex-col">
-      <h3 className="p-2 text-center font-bold text-[18px] font-Inter">
+      <h3 className="p-2 text-center font-bold text-[18px]">
         {props.children}
       </h3>
       <img src={props.imgSrc} className="h-[90%] rounded-[14px]"></img>
@@ -18,7 +18,7 @@ function Project({ title, description, learnMoreNavigationUrl, images, index }) 
   return (
     <div className="w-[49%] bg-[#3a3a3a] rounded-[16px] p-8 mr-[2%] max-md:w-full max-md:mr-0 max-md:mb-[2%] text-white">
     <div className="flex items-center justify-end mb-5">
-        <div className="bg-[#88BE22] rounded-[5px] text-white w-[22%] text-center font-inter flex justify-center items-center mr-auto py-1.5">
+        <div className="bg-[#88BE22] rounded-[5px] text-white w-[22%] text-center flex justify-center items-center mr-auto py-1.5">
           <p>{projectButton}{index + 1}</p>
         </div>
         <button

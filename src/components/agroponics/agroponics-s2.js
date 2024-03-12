@@ -9,7 +9,7 @@ function AgroPonicsS2() {
             <SectionHeader>System Components</SectionHeader>
             <div className="flex py-8 w-full">
                 <div className="w-full shadow-2xl flex text-black rounded-[30px] bg-gradient-to-b from-white to-[#e8ecf4]">
-                    <ul className="w-[50%] flex flex-col justify-center font-sans p-[60px]">
+                    <ul className="w-[50%] flex flex-col justify-center p-[60px]">
                         <li className="mb-[6%] flex items-center"><FaChevronRight color={'#88BE22'} size={'20px'} />Media Bed with Bell Siphon</li>
                         <li className="mb-[6%] flex items-center"><FaChevronRight color={'#88BE22'} size={'20px'} />Nutrient Solution Reservoir</li>
                         <li className="mb-[6%] flex items-center"><FaChevronRight color={'#88BE22'} size={'20px'} />Chemical Balancing System</li>
