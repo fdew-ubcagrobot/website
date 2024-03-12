@@ -1,1 +1,1 @@
-export const headers = ["OUR SPONSORS", "Diamond", "Gold", "Silver", "Bronze"]
+export const headers = ["Our Sponsors", "Diamond", "Gold", "Silver", "Bronze"]
