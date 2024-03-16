@@ -50,9 +50,9 @@ function OurMission() {
 
     return (
         <div className="bg-white w-full pb-[10vh] flex justify-center items-center">
-            <div className='w-[80vw] mx-auto'>
-                <SectionHeader>Our Mission</SectionHeader>
-                <p className='mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <div className='w-[80vw] mx-auto mt-16 sm:mt-0'>
+                <SectionHeader className='mt-16'>Our Mission</SectionHeader>
+                <p className='mt-2 sm:mt-0 mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                 <div id="ourMission" className="flex w-full">
                     <div className="w-[40%] flex flex-col max-sm:w-full">
                         <MissionBox imgSrc={HomeOurMissionRecycle}>Mitigate Climate Impacts</MissionBox>
@@ -60,7 +60,7 @@ function OurMission() {
                         <MissionBox imgSrc={HomeOurMissionStocks}>Ensure Economic Viability</MissionBox>
                     </div>
                     <div className="w-[60%] flex flex-col justify-center items-center p-16 max-sm:hidden">
-                        <img src={images[currentImgIndex]} className="object-cover h-full rounded-[14px]" />
+                        <img alt='our mission' src={images[currentImgIndex]} className="object-cover h-full rounded-[14px]" />
                         <div className='flex'>
                             <MdChevronLeft onClick={prevImg} size={48} />
                             <div className='flex justify-center items-center'>

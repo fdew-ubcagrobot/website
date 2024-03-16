@@ -17,13 +17,13 @@ function Project(props) {
     const { children, projectNum, text, img1, img2, img3, img4, imgText1, imgText2, imgText3, imgText4, panelStyle, link } = props;
 
     return (
-        <div style={panelStyle} className='flex flex-col p-10 w-[49%] rounded-[16px] mr-[2%] max-md:w-full max-md:mr-0 max-md:mb-[2%]'>
-            <div className='flex w-full items-center max-md:flex-col'>
-                <div className='w-[50%]'>
-                    <h3 className='text-[#88BE22] font-bold'>PROJECT_{projectNum}</h3>
-                    <h2 className='text-[36px]'>{children}</h2>
+        <div style={panelStyle} className='flex flex-col rounded-[16px] w-full sm:w-[49%] mt-4 sm:mt-0 p-4 sm:p-10'>
+            <div className='flex w-full items-center'>
+                <div className=''>
+                    <h3 className='text-[#88BE22] font-bold text-[16px] sm:text-[20px]'>PROJECT_{projectNum}</h3>
+                    <h2 className='text-[24px] sm:text-[36px]'>{children}</h2>
                 </div>
-                <p className='w-[50%] text-[16px] text-right'>{text}</p>
+                <p className='ml-4 text-[16px] text-right'>{text}</p>
             </div>
             <div className='py-10'>
                 <div className='flex justify-between'>
@@ -56,7 +56,7 @@ function HomeProjects() {
         <div className="w-full pb-[10vh] bg-white pt-[10vh]">
             <div className='w-[80vw] mx-auto text-black'>
                 <SectionHeader>Projects</SectionHeader>
-                <div className="flex w-full max-md:flex-col pt-8">
+                <div className="flex w-full flex-col sm:flex-row sm:justify-between pt-8">
                     <Project projectNum="1" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." img1={HomeTargetedAction} img2={HomeDataCollection} img3={HomeModularChassis} img4={HomeAutomation} imgText1="Targeted Action" imgText2="Data collection" imgText3="Modular chassis" imgText4="Automation" panelStyle={leftPanelStyle} link='/agrobot'>AgroBot</Project>
                     <Project projectNum="2" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." img1={HomeFullyAutonomous} img2={HomeNutrientCycling} img3={HomeChemicalBalancing} img4={HomeChemicalBalancing} imgText1="Fully Autonomous" imgText2="Nutrient Cycling" imgText3="Chemical Balancing" imgText4="Chemical Balancing" panelStyle={rightPanelStyle} link='/agroponics'>AgroPonics</Project>
                 </div>
