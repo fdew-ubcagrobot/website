@@ -55,7 +55,10 @@ import
     AgrobotFacebookIcon,
     AgrobotInstagramIcon,
     AgrobotLinkedInIcon,
-    AgrobotLocationIcon
+    AgrobotLocationIcon,
+    temp_circuitry,
+    temp_robot_blueprint,
+    temp_maintenance
 
 } from './image';
 
@@ -116,5 +119,8 @@ export {
     AgrobotFacebookIcon,
     AgrobotInstagramIcon,
     AgrobotLinkedInIcon,
-    AgrobotLocationIcon
+    AgrobotLocationIcon,
+    temp_robot_blueprint,
+    temp_circuitry,
+    temp_maintenance
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { TitleBanner, AgroBotIntro, AgroBotKeyFeatures, AgroBotSubteams, WantToHelp, } from "../components";
 import { AgroBotBannerImg } from "../assets";
 import { AgroBotHeader } from "../constant";
+import { AgroBotSpecifications } from "../components/agrobot";
 
 
 function AgroBot() {
@@ -10,6 +11,7 @@ function AgroBot() {
             <TitleBanner fromColor="#12200B" toColor="#4C5934" imageSrc={AgroBotBannerImg}>{AgroBotHeader}</TitleBanner>
             <AgroBotIntro></AgroBotIntro>
             <AgroBotKeyFeatures></AgroBotKeyFeatures>
+            <AgroBotSpecifications></AgroBotSpecifications>
             <AgroBotSubteams></AgroBotSubteams>
             <WantToHelp></WantToHelp>
         </div>
