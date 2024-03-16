@@ -35,7 +35,7 @@ function AgroBotSpecifications() {
                     <img className="mx-4 w-1/3" src={temp_robot_blueprint} alt="blueprint of robot showing dimensions"></img>
                     <div className="mx-4 w-1/2">
                         <SpecificationText category="Dimensions" descriptionPoints={dimensions}></SpecificationText>
-                        <div className="pt-10"><hr></hr></div>
+                        <div className="py-10"><hr></hr></div>
                         <SpecificationText category="Speeds" descriptionPoints={speeds}></SpecificationText>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ function AgroBotSpecifications() {
                 <div className="flex my-4 justify-evenly">
                     <div className="mx-4 py-5 w-1/2">
                         <SpecificationText category="Power Consumption" descriptionPoints={powerConsumption}></SpecificationText>
-                        <div className="pt-10"><hr></hr></div>
+                        <div className="py-10"><hr></hr></div>
                         <SpecificationText category="Operational Range" descriptionPoints={operationalRange}></SpecificationText>
                     </div>
                     <img className="mx-4 w-1/3" src={temp_circuitry} alt="circuitboard"></img>
@@ -53,7 +53,7 @@ function AgroBotSpecifications() {
                     <img className="mx-4 w-1/3" src={temp_maintenance} alt="woman doing maintenance"></img>
                     <div className="mx-4 py-5 w-1/2">
                         <SpecificationText category="Weather Resistance" descriptionPoints={weatherResistance}></SpecificationText>
-                        <div className="pt-10"><hr></hr></div>
+                        <div className="py-10"><hr></hr></div>
                         <SpecificationText category="Maintenance" descriptionPoints={maintenance}></SpecificationText>
                     </div>
                 </div>
