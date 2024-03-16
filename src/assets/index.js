@@ -51,6 +51,11 @@ import
     AgroponicsS2,
     SponsorIcon,
     WorkingWithWires,
+    AgrobotEmailIcon,
+    AgrobotFacebookIcon,
+    AgrobotInstagramIcon,
+    AgrobotLinkedInIcon,
+    AgrobotLocationIcon
 
 } from './image';
 
@@ -107,4 +112,9 @@ export {
     LocationSideIcon,
     SponsorIcon,
     WorkingWithWires,
+    AgrobotEmailIcon,
+    AgrobotFacebookIcon,
+    AgrobotInstagramIcon,
+    AgrobotLinkedInIcon,
+    AgrobotLocationIcon
 }
