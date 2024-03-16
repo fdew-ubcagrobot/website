@@ -30,7 +30,7 @@ const Navbar = () => {
       <nav className="h-full py-4 md:px-8 px-4">
         <div className="h-full flex items-center justify-between">
           <div className="h-full font-bold cursor-pointer ">
-            <img className="h-full" src={agrobot} alt="UBC Agrobot" />
+            <a href="/"><img className="h-full" src={agrobot} alt="UBC Agrobot" /></a>
           </div>
 
           <ul className="list-none lg:flex items-center gap-8 hidden">
