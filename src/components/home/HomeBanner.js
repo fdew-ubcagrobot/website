@@ -14,7 +14,7 @@ function HomeBanner(props) {
                 <div className="h-full w-[50%] flex flex-col items-center justify-center z-[2]">
                     <h1 className="uppercase text-[48px] text-[#3A3A3A] font-bold roboto-custom">where <br /> innovation <br /> meets <br /> agriculture</h1>
                     <button
-                        className="w-[316px] h-[50px] mt-[20px] bg-[#3A3A3A] rounded-md text-[#F8F7F1] font-Roboto font-bold"
+                        className="w-[316px] h-[50px] mt-[20px] bg-[#3A3A3A] rounded-md text-[#F8F7F1] font-bold"
                         onClick={() => window.scrollTo({
                             top: window.innerHeight*0.9, // Need to multiply by 0.9 so that nav does not cover next section
                             behavior: 'smooth'
