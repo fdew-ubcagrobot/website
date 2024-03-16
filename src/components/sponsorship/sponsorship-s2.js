@@ -1,5 +1,5 @@
 import React from "react";
-import { TeamPhoto, ShadowTeamPhoto } from "../../assets/image";
+import { TeamPhoto } from "../../assets/image";
 import { S2Title, S2BenefitsParagraph, S2ButtonText } from "../../constant";
 import { MdChevronRight } from 'react-icons/md';
 import '../../index.css';
