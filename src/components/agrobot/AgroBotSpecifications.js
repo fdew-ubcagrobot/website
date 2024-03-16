@@ -40,7 +40,7 @@ function AgroBotSpecifications() {
                     </div>
                 </div>
 
-                <div className="flex my-4 justify-evenly">
+                <div className="flex my-4 py-10 justify-evenly">
                     <div className="mx-4 py-5 w-1/2">
                         <SpecificationText category="Power Consumption" descriptionPoints={powerConsumption}></SpecificationText>
                         <div className="py-10"><hr></hr></div>
