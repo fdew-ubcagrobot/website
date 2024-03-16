@@ -23,7 +23,7 @@ function HomeBanner(props) {
                     </button>
                 </div>
                 <div className="h-full w-[50%] bg-center bg-no-repeat flex items-center justify-center z-[2]" >
-                    <img className="" alt="a farm being manned by cute robots" src={HomeFarm} />
+                    <img className="" height={575} width={547} alt="a farm being manned by cute robots" src={HomeFarm} />
                 </div>
             </div>
         );
