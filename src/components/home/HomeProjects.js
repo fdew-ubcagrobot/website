@@ -6,7 +6,7 @@ import { SectionHeader } from '../common';
 function Img(props) {
     return (
         <div className='w-full h-full flex justify-center items-center flex-col'>
-            <img src={props.imgSrc} className='h-[90%] rounded-[14px]'></img>
+            <img alt='slideshow' src={props.imgSrc} className='h-[90%] rounded-[14px]'></img>
             <h3 className='p-2 text-center font-bold text-[18px]'>{props.children}</h3>
         </div>
     );
