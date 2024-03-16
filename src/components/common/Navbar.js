@@ -81,20 +81,20 @@ const Navbar = () => {
 
         {/* nav items for small devices */}
         {isMenuOpen && (
-          <div className="h-[10vh] mt-4 bg-[#8cbc24] text-white rounded py-4">
+          <div className="mt-4 bg-[#8cbc24] text-white rounded py-4">
             <a href="/" className="block hover:text-grey-400 py-2 px-4">
               Home
             </a>
-            <a href="/" className="block hover:text-grey-400 py-2 px-4">
+            <a href="/portfolio" className="block hover:text-grey-400 py-2 px-4">
               Portfolio
             </a>
-            <a href="/" className="block hover:text-grey-400 py-2 px-4">
+            <a href="/sponsorship" className="block hover:text-grey-400 py-2 px-4">
               Sponsorship
             </a>
-            <a href="/" className="block hover:text-grey-400 py-2 px-4">
+            <a href="/recruitment" className="block hover:text-grey-400 py-2 px-4">
               Recruitment
             </a>
-            <a href="/" className="block hover:text-grey-400 py-2 px-4">
+            <a href="/aboutus" className="block hover:text-grey-400 py-2 px-4">
               About us
             </a>
           </div>
