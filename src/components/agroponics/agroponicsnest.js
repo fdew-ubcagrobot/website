@@ -11,7 +11,7 @@ function Agroponicsnest() {
             {/* Middle section (text and image) */}
             <div className='w-full h-[30vw] flex flex-col-reverse sm:flex-row items-center my-8'>
                 {/* Left side (text) */}
-                <p className='flex-1 h-full text-[18px] tracking-wide flex items-center justify-center sm:justify-start text-lg rounded-l-[30px]' style={{
+                <p className='flex-1 h-full text-[20px] tracking-wide flex items-center justify-center sm:justify-start text-lg rounded-l-[30px]' style={{
                     background: 'linear-gradient(114.8deg, #597A00 23.7%, #072600 76.36%)', color: 'white', padding: '50px'
                 }}>
                     We hope to develop efficient and self-sufficient systems that can be implemented in a variety of locations including the UBC campus. Our first prototype is being built on the roof of the nest.
