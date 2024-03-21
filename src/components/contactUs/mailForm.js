@@ -82,21 +82,21 @@ function MailForm(props) {
               <h1 className="text-[18px] text-center font-bold mt-3">Social Media</h1>
               <p className="text-[12px] text-[#3A3A3A] font-bold roboto-custom text-center mt-2">Feel free to connect with us on Social Media! </p>
               <div className="flex" style={{position: "absolute", bottom: 7, right: 14}}>
-              <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              <a target="_blank" href="https://www.facebook.com/UBCAgroBot/">
                   <img
                     src={AgrobotFacebookIcon}
                     alt="FacebookIcon"
                     className="w-[40px] h-[40px] mr-3 mr-1 mx-auto"
                   />
                   </a>
-                <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <a target="_blank" href="https://www.instagram.com/ubcagrobot/">
                   <img
                     src={AgrobotInstagramIcon}
                     alt="InstagramIcon"
                     className="w-[40px] h-[40px] mr-1 mx-auto"
                   />
                 </a>
-                <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <a target="_blank" href="https://www.linkedin.com/company/ubc-agrobot/?originalSubdomain=ca">
                   <img
                     src={AgrobotLinkedInIcon}
                     alt="LinkedInIcon"
