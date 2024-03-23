@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 function Footer() {
     return (
-        <footer className="text-[#f8f7f1] w-full  p-10 bg-lime-500">
+        <footer className="text-[#f8f7f1] w-full  p-7 bg-lime-500">
             <div className='flex'>
                 <div className='w-0 md:w-[20%] bg-[#f8f7f1] flex justify-center items-center rounded-xl'>
                     <img src={LOGO} alt="footer logo" className="w-[70%]"></img>
@@ -31,23 +31,22 @@ function Footer() {
 
             <div className='py-7'><hr></hr></div>
 
-            <div className='flex'>
-                <div className="text-[#f8f7f1]">Copright ©</div>
-                <a
-                    className="text-lime-500 underline pt:2 md:pt-0"
-                    href="https://www.instagram.com/ubcagrobots"
-                    target="_blank"
-                >
-                <FaInstagram size={40} />
-                </a>{" "}
+            <div className='flex justify-between'>
+                <div className="text-[#f8f7f1]">Copright © 2024. All rights Reserved.</div>
+                
+                <div>
+                    <a
+                        className="text-[#f8f7f1] underline pt:2 md:pt-0 inline-block"
+                        href="https://www.instagram.com/ubcagrobots"
+                        target="_blank"
+                    > <FaInstagram size={30} /> </a>{" "}
 
-                <a
-                    className="text-lime-500 underline pt:2 md:pt-0"
-                    href="https://www.linkedin.com/company/ubc-agrobot"
-                    target="_blank"
-                >
-                    <FaLinkedin size={40} />
-                </a>
+                    <a
+                        className="text-[#f8f7f1] underline pt:2 md:pt-0 inline-block"
+                        href="https://www.linkedin.com/company/ubc-agrobot"
+                        target="_blank"
+                    > <FaLinkedin size={30} /> </a>
+                </div>
             </div>
 
         </footer>
