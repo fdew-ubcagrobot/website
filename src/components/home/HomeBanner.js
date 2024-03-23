@@ -20,9 +20,9 @@ function HomeBanner(props) {
                 <div className="h-full w-[50%] flex flex-col items-center justify-center z-[2]">
                     <h1 className="uppercase text-[48px] text-[#3A3A3A] font-bold roboto-custom text-center">
                         where <br /> 
-                        <TypingEffect messages={array1} start_index={randomIndex} message="innovation" speed='200'/><br /> 
+                        <TypingEffect messages={array1} start_index={randomIndex}/><br /> 
                         meets <br /> 
-                        <TypingEffect messages={array2} start_index={randomIndex} message="agriculture" speed='200'/>
+                        <TypingEffect messages={array2} start_index={randomIndex}/>
                     </h1>
                     <button
                         className="w-[316px] h-[50px] mt-[20px] bg-[#3A3A3A] rounded-md text-[#F8F7F1] font-bold"

@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
 
-function TypingEffect({ messages, start_index = 0, speed = 50, changeInterval = 5000 }) {
+function TypingEffect({ messages, start_index = 0, speed = 175, changeInterval = 7500 }) {
     const [text, setText] = useState("");
     const [index, setIndex] = useState(0);
-    const [wordIndex, setWordIndex] = useState(0);
+    const [wordIndex, setWordIndex] = useState(start_index);
 
     useEffect(() => {
         // Reset text when the word changes
