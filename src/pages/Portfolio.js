@@ -12,7 +12,7 @@ function Portfolio() {
            <InfoParagraph title="Hello" text="Lorem Ipsum AgroBot Very good"></InfoParagraph>
            <StatsBar></StatsBar>
            <Divider></Divider>
-           <Publications></Publications>
+           {/* <Publications></Publications> */}
            <Divider></Divider>
            <PortfolioImageGallery></PortfolioImageGallery>
         </div>

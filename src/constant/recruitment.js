@@ -1,4 +1,4 @@
-export const RECRUITMENT_STATUS_TITLE = "🚨 Mid-Year Recruitments now closed";
+export const RECRUITMENT_STATUS_TITLE = "📢 Mid-Year Recruitments now closed";
 export const RECRUITMENT_STATUS_DESCRIPTION =
   "Mid-Year Recruitments for the academic year 2023-2024 are now closed. Applications will be reviewed on a rolling basis, and the deadline for submission is January 20, 2024. Selected candidates will be invited for interviews.";
 

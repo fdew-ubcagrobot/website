@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { past_publications } from "../../constant/portfolio";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Publications = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -24,6 +25,9 @@ const Publications = () => {
     (currentSlide + 1) % totalPublications,
     (currentSlide + 2) % totalPublications,
   ];
+  
+  const isMobile = useMediaQuery("(max-width:600px)");
+  const displayItems = isMobile ? 1 : 3;
 
   return (
     <div className="mt-20 mx-auto p-6">
@@ -52,8 +56,8 @@ const Publications = () => {
         <MdChevronRight onClick={nextSlide} size={48} className="cursor-pointer" />
       </div>
       <div className='flex justify-center items-center mt-4'>
-        {Array(Math.ceil(totalPublications / 3)).fill(0).map((_, idx) => (
-          <div key={idx} className={`h-2 w-6 m-1 rounded-sm ${idx * 3 === currentSlide ? 'bg-lime-600' : 'bg-gray-300'}`}></div>
+        {Array(Math.ceil(totalPublications / displayItems)).fill(0).map((_, idx) => (
+          <div key={idx} className={`h-2 w-6 m-1 rounded-sm ${idx * displayItems === currentSlide ? 'bg-lime-600' : 'bg-gray-300'}`}></div>
         ))}
       </div>
     </div>
