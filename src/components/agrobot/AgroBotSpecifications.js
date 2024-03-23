@@ -32,7 +32,7 @@ function AgroBotSpecifications() {
             <div className="w-full rounded-[14px] p-10 text-white my-[5vh] bg-slate-800">
                 <h1 className="text-white text-[32px] sm:text-[48px] capitalize">Specifications</h1>
                 <div className="flex my-4 py-5 justify-evenly">
-                    <img className="mx-4 w-1/3" src={temp_robot_blueprint} alt="blueprint of robot showing dimensions"></img>
+                    <img className="mx-4 w-1/3 h-auto object-cover" src={temp_robot_blueprint} alt="blueprint of robot showing dimensions"></img>
                     <div className="mx-4 w-1/2">
                         <SpecificationText category="Dimensions" descriptionPoints={dimensions}></SpecificationText>
                         <div className="py-10"><hr></hr></div>
@@ -46,11 +46,11 @@ function AgroBotSpecifications() {
                         <div className="py-10"><hr></hr></div>
                         <SpecificationText category="Operational Range" descriptionPoints={operationalRange}></SpecificationText>
                     </div>
-                    <img className="mx-4 w-1/3" src={temp_circuitry} alt="circuitboard"></img>
+                    <img className="mx-4 w-1/3 h-auto object-cover" src={temp_circuitry} alt="circuitboard"></img>
                 </div>
 
                 <div className="flex my-4 py-5 justify-evenly">
-                    <img className="mx-4 w-1/3" src={temp_maintenance} alt="woman doing maintenance"></img>
+                    <img className="mx-4 w-1/3 h-auto object-cover" src={temp_maintenance} alt="woman doing maintenance"></img>
                     <div className="mx-4 py-5 w-1/2">
                         <SpecificationText category="Weather Resistance" descriptionPoints={weatherResistance}></SpecificationText>
                         <div className="py-10"><hr></hr></div>
