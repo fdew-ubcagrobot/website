@@ -110,14 +110,13 @@ function MailForm(props) {
                   <img
                     src={AgrobotLocationIcon}
                     alt="LocationIcon"
-                    className="w-[45px] h-[38px] mt-1 mx-auto"
+                    className="w-[45px] h-[45px] mt-1 mx-auto"
                   />
                 </a>
                 <h1 className="text-[18px] text-center font-bold">Location</h1>
-                <p className="text-[11px] text-[#3A3A3A] font-bold roboto-custom text-center" > University of British Columbia </p>
-                <p className="text-[11px] text-[#3A3A3A] font-bold roboto-custom text-center"> 2370 E Mall </p>
-                <p className="text-[11px] text-[#3A3A3A] font-bold roboto-custom text-center"> Vancouver, BC </p>
-                <p className="text-[11px] text-[#3A3A3A] font-bold roboto-custom text-center"> V6T 1Z3 </p>
+                <p className="text-[11px] pt-[2px] text-[#3A3A3A] font-bold roboto-custom text-center" > University of British Columbia </p>
+                <p className="text-[11px] pt-[2px] text-[#3A3A3A] font-bold roboto-custom text-center"> 2370 E Mall, Vancouver, BC </p>
+                <p className="text-[11px] pt-[2px] text-[#3A3A3A] font-bold roboto-custom text-center"> V6T 1Z3 </p>
             </div>
           </div>
         </div>
