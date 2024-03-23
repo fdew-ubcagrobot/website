@@ -15,11 +15,11 @@ function MailForm(props) {
   if (!isMobile) {
     return (
       <div
-        className="mx-auto bg-[#F8F7F1] border border-gray-300 rounded-md p-4 w-4/5 flex items-center justify-center"
-        style={{ display: "flex", height: "55vh", width: "75%"}}
+        className="mx-auto h-auto bg-[#F8F7F1] border border-gray-300 rounded-md p-6 w-4/5 flex items-center justify-center"
+        style={{ display: "flex", width: "77%", overflow: "auto"}}
       >
         <div style={{ width: "120%" }}>
-          <div className="w-4/5 max-h-full p-4">
+          <div className="w-4/5 max-h-full p-4 m-2">
             <div className="flex flex-col items-left justify-left w-full h-full">
               <h1 className="text-3xl font-bold text-left text-[#4C5934] ml-4">
                 Message Us
@@ -63,8 +63,9 @@ function MailForm(props) {
             </div>
           </div>
         </div>
+
         <div style={{ width: "40%" }}>
-          <div className="flex flex-wrap justified-center items-left flex-col w-full">
+          <div className="flex flex-wrap justified-center items-left flex-col w-full m-1">
             <div className="w-[180px] h-[140px] bg-[#F8F7F1] border border-gray-300 rounded-md">
             <a target="_blank" href="mailto:ubcagrobot@gmail.com">
                 <img
@@ -81,21 +82,21 @@ function MailForm(props) {
               <h1 className="text-[18px] text-center font-bold mt-3">Social Media</h1>
               <p className="text-[12px] text-[#3A3A3A] font-bold roboto-custom text-center mt-2">Feel free to connect with us on Social Media! </p>
               <div className="flex" style={{position: "absolute", bottom: 7, right: 14}}>
-              <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              <a target="_blank" href="https://www.facebook.com/UBCAgroBot/">
                   <img
                     src={AgrobotFacebookIcon}
                     alt="FacebookIcon"
                     className="w-[40px] h-[40px] mr-3 mr-1 mx-auto"
                   />
                   </a>
-                <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <a target="_blank" href="https://www.instagram.com/ubcagrobot/">
                   <img
                     src={AgrobotInstagramIcon}
                     alt="InstagramIcon"
                     className="w-[40px] h-[40px] mr-1 mx-auto"
                   />
                 </a>
-                <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <a target="_blank" href="https://www.linkedin.com/company/ubc-agrobot/?originalSubdomain=ca">
                   <img
                     src={AgrobotLinkedInIcon}
                     alt="LinkedInIcon"
@@ -109,14 +110,13 @@ function MailForm(props) {
                   <img
                     src={AgrobotLocationIcon}
                     alt="LocationIcon"
-                    className="w-[45px] h-[38px] mt-1 mx-auto"
+                    className="w-[45px] h-[45px] mt-1 mx-auto"
                   />
                 </a>
                 <h1 className="text-[18px] text-center font-bold">Location</h1>
-                <p className="text-[11px] text-[#3A3A3A] font-bold roboto-custom text-center" > University of British Columbia </p>
-                <p className="text-[11px] text-[#3A3A3A] font-bold roboto-custom text-center"> 2370 E Mall </p>
-                <p className="text-[11px] text-[#3A3A3A] font-bold roboto-custom text-center"> Vancouver, BC </p>
-                <p className="text-[11px] text-[#3A3A3A] font-bold roboto-custom text-center"> V6T 1Z3 </p>
+                <p className="text-[11px] pt-[2px] text-[#3A3A3A] font-bold roboto-custom text-center" > University of British Columbia </p>
+                <p className="text-[11px] pt-[2px] text-[#3A3A3A] font-bold roboto-custom text-center"> 2370 E Mall, Vancouver, BC </p>
+                <p className="text-[11px] pt-[2px] text-[#3A3A3A] font-bold roboto-custom text-center"> V6T 1Z3 </p>
             </div>
           </div>
         </div>

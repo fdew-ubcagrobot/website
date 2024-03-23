@@ -27,10 +27,13 @@ function Recruitment() {
       >
         Recruitment
       </TitleBanner>
-      <NotificationBanner
-        titleText={RECRUITMENT_STATUS_TITLE}
-        descriptionText={RECRUITMENT_STATUS_DESCRIPTION}
-      ></NotificationBanner>
+      <div className="md:max-w-[90%] md:mx-auto">
+        <NotificationBanner
+          titleText={RECRUITMENT_STATUS_TITLE}
+          descriptionText={RECRUITMENT_STATUS_DESCRIPTION}
+          dismissable={true}
+        ></NotificationBanner>
+      </div>
       <RecruitmentS1></RecruitmentS1>
       <RecruitmentS2></RecruitmentS2>
       <RecruitmentS3></RecruitmentS3>
@@ -48,12 +51,12 @@ function Recruitment() {
           (subTeam) => subTeam.technical === false
         )}
       ></RecruitmentS5>
-      <NotificationBanner
+      {/* <NotificationBanner
         titleText={NON_UBC_TITLE}
         descriptionText={NON_UBC_DESCRIPTION}
         subtle={true}
         additionalClasses={"my-12"}
-      ></NotificationBanner>
+      ></NotificationBanner> */}
     </div>
   );
 }
