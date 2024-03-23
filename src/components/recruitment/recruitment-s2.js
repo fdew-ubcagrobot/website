@@ -32,7 +32,7 @@ const RecruitmentS2 = () => {
         </div>
         <div class="row md:col">
           <h1 className="text-4xl mb-[2%] text-[#3A3A3A] text-left md:ml-24 ml-12">
-            Who you are
+            Whom we're looking for
           </h1>
           <InfoCard descriptionText={INFOCARD_1_TEXT}></InfoCard>
           <InfoCard descriptionText={INFOCARD_2_TEXT}></InfoCard>
