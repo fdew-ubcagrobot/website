@@ -2,17 +2,28 @@ import React from "react";
 import { ConcentricOctagons, HomeFarm } from "../../assets";
 import { FaChevronDown } from 'react-icons/fa';
 import '../../index.css';
+import TypingEffect from "./TypingEffect";
 
 function HomeBanner(props) {
 
     const { isMobile } = props;
+
+    const array1 = ["INNOVATION", "ENGINEERING", "AUTOMATION", "SCIENCE"];
+    const array2 = ["AGRICULTURE", "ECOLOGY", "AGRONOMY", "SUSTAINABILITY"];
+
+    const randomIndex = Math.floor(Math.random() * array1.length);
 
     if (!isMobile) {
         return (
             <div className="h-[90vh] w-full bg-[#F8F7F1] flex relative z-[0]">
                 <div style={{ backgroundImage: `url(${ConcentricOctagons})` }} className='absolute w-full h-full bg-center bg-no-repeat z-[1]  '></div>
                 <div className="h-full w-[50%] flex flex-col items-center justify-center z-[2]">
-                    <h1 className="uppercase text-[48px] text-[#3A3A3A] font-bold roboto-custom">where <br /> innovation <br /> meets <br /> agriculture</h1>
+                    <h1 className="uppercase text-[48px] text-[#3A3A3A] font-bold roboto-custom text-center">
+                        where <br /> 
+                        <TypingEffect messages={array1} start_index={randomIndex} message="innovation" speed='200'/><br /> 
+                        meets <br /> 
+                        <TypingEffect messages={array2} start_index={randomIndex} message="agriculture" speed='200'/>
+                    </h1>
                     <button
                         className="w-[316px] h-[50px] mt-[20px] bg-[#3A3A3A] rounded-md text-[#F8F7F1] font-bold"
                         onClick={() => window.scrollTo({
