@@ -8,7 +8,7 @@ function TierBanner({ tierElements, starImg, tierColor }) {
         <div className="bg-white w-full m-[1%] rounded-[14px] text-center flex flex-col">
             <div className='flex-grow'>
                 <div className="flex justify-center items-center pt-10">
-                    <img src={starImg} alt="sponsor star"></img>
+                    <img src={starImg} alt="sponsor star" className="h-24"></img>
                 </div>
                 <h4 className="text-[30px] font-bold p-5">{name}</h4>
                 <h5 className="p-2 font-bold text-[24px]" style={{ color: tierColor }}>{price}</h5>
