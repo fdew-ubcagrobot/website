@@ -13,7 +13,7 @@ function Portfolio() {
            <StatsBar></StatsBar>
            <Divider></Divider>
            {/* <Publications></Publications> */}
-           <Divider></Divider>
+           {/* <Divider></Divider> */}
            <PortfolioImageGallery></PortfolioImageGallery>
         </div>
     );
