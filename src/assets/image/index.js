@@ -60,6 +60,7 @@ import WorkingWithWires from './WorkingWithWires.png';
 import temp_robot_blueprint from './temp_robot_blueprint.png';
 import temp_circuitry from './temp_circuitry.png';
 import temp_maintenance from './temp_maintenance.png';
+import agrobotChassisTemp from './agrobotChassisTemp.jpeg';
 
 
 export {
@@ -122,5 +123,6 @@ export {
     AgrobotInstagramIcon,
     temp_robot_blueprint,
     temp_circuitry,
-    temp_maintenance
+    temp_maintenance,
+    agrobotChassisTemp
 }

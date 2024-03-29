@@ -58,7 +58,8 @@ import
     AgrobotLocationIcon,
     temp_circuitry,
     temp_robot_blueprint,
-    temp_maintenance
+    temp_maintenance,
+    agrobotChassisTemp
 
 } from './image';
 
@@ -122,5 +123,6 @@ export {
     AgrobotLocationIcon,
     temp_robot_blueprint,
     temp_circuitry,
-    temp_maintenance
+    temp_maintenance,
+    agrobotChassisTemp
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeModularChassis, AgroBotBannerImg, WorkingWithWires, HomeAutomation } from "../../assets";
+import { HomeModularChassis, WorkingWithWires, HomeAutomation, agrobotChassisTemp } from "../../assets";
 import { SectionHeader } from "../common";
 
 function Subteam(props) {
@@ -45,7 +45,7 @@ function AgroBotSubteams() {
         <div className='w-[80%] mx-auto my-[20vh]'>
             <SectionHeader>Subteams</SectionHeader>
             {/* made gradients to make the color of agrobots title banner simiar to subteam components */}
-            <Subteam fromColor={chassGradient.fromColor} toColor={chassGradient.toColor} hlights={chassHlights} text={chassText} img={AgroBotBannerImg}>Chassis</Subteam>
+            <Subteam fromColor={chassGradient.fromColor} toColor={chassGradient.toColor} hlights={chassHlights} text={chassText} img={agrobotChassisTemp}>Chassis</Subteam>
             <Subteam fromColor={extGradient.fromColor} toColor={extGradient.toColor} hlights={extHlights} text={extText} img={HomeModularChassis}>Extermination</Subteam>
             <Subteam fromColor={navGradient.fromColor} toColor={navGradient.toColor} hlights={navHlights} text={navText} img={WorkingWithWires}>Navigation</Subteam>
             <Subteam fromColor={appAIGradient.fromColor} toColor={appAIGradient.toColor} hlights={appAIHlights} text={appAIText} img={HomeAutomation}>Applied AI</Subteam>
