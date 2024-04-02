@@ -6,7 +6,7 @@ function AgroPonicsS3() {
     return (
         <div className='w-[80%] mx-auto my-16'>
             <SectionHeader>Chemical Balancing System</SectionHeader>
-            <div className="w-full flex items-stretch justify-between rounded-[30px] my-8 bg-gradient-to-br from-[#597a00] to-76% to-[rgb(7,38,0)] from-23%">
+            <div className="w-full flex items-stretch justify-between rounded-[30px] my-8 bg-gradient-to-br from-[#1E293B] to-76% to-[rgb(7,38,0)] from-23%">
                 <img className="w-[40%] rounded-l-[20px] object-cover" src={HomeChemicalBalancing} alt="HomeChemicalBalancing" />
 
                 <div className="w-[60%] my-auto p-8 text-white leading-6 text-[20px] tracking-wide">
