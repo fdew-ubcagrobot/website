@@ -5,12 +5,12 @@ import { FaLinkedin } from "react-icons/fa";
 
 function Footer() {
     return (
-        <footer className="text-[#8cbc24] w-full  p-7 bg-[#F8F7F1]">
+        <footer className="text-[#8CBC24] w-full p-10 mt-[7vh] bg-[#202020]">
             <div className='flex'>
-                <div className='w-0 md:w-[20%] bg-[#f8f7f1] flex justify-center items-center rounded-xl'>
+                <div className='w-0 md:w-[20%] bg-[#3A3A3A] flex justify-center items-center rounded-xl'>
                     <img src={LOGO} alt="footer logo" className="w-[70%]"></img>
                 </div>
-                
+
                 <div className='w-full md:w-[80%] text-[18px]'>
                     <ul className='w-full font-bold capitalize  flex flex-col md:flex-row md:justify-evenly'>
                         <li className='p-[10px]'><a href="/">Home</a></li>
@@ -29,11 +29,11 @@ function Footer() {
                 </div>
             </div>
 
-            <div className='py-7'><hr className=""></hr></div>
+            <div className='py-7'><hr className="border-[#3A3A3A]"></hr></div>
 
-            <div className='flex justify-between text-[#3A3A3A]'>
+            <div className='flex justify-between'>
                 <div className="">Copright © 2024. All rights Reserved.</div>
-                
+
                 <div>
                     <a
                         className="underline pt:2 md:pt-0 inline-block"

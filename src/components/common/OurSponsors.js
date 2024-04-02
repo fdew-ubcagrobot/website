@@ -11,7 +11,7 @@ function SponsorSection(props) {
     return (
         <div className="my-6">
             <div className='w-full flex items-center justify-center'>
-                <h2 className="text-lg text-bold px-4 bg-white z-20">{children}</h2>
+                <h2 className="text-lg text-bold px-4 bg-[#F8F7F1] z-20">{children}</h2>
             </div>
             <div className='flex items-center justify-center mt-[-0.9rem] mb-[0.9rem]'>
                 <div className='w-[75%] h-[2px] bg-black z-10'></div>
@@ -27,7 +27,7 @@ function SponsorSection(props) {
 
 function OurSponsor() {
     return (
-        <div className='w-full bg-white'>
+        <div className='w-full'>
             <div className="w-[80%] mx-auto pt-[10vh]">
                 <SectionHeader>{headers[0]}</SectionHeader>
                 <SponsorSection images={[apsc, fcc, ece]}>{headers[1]}</SponsorSection>
@@ -35,7 +35,6 @@ function OurSponsor() {
                 <SponsorSection images={[egbc, verdi]}>{headers[3]}</SponsorSection>
                 <SponsorSection images={[proto, solidworks]}>{headers[4]}</SponsorSection>
             </div>
-            <div style={{ background: 'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(248,247,241,1) 100%)' }} className='h-[10vh] w-full'></div>
         </div>
     );
 }

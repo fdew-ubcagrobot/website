@@ -49,7 +49,7 @@ function OurMission() {
     };
 
     return (
-        <div className="bg-white w-full pb-[10vh] flex justify-center items-center">
+        <div className="w-full pb-[10vh] flex justify-center items-center">
             <div className='w-[80vw] mx-auto mt-16 sm:mt-0'>
                 <SectionHeader className='mt-16'>Our Mission</SectionHeader>
                 <p className='mt-2 sm:mt-0 mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
