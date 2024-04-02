@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 function Footer() {
     return (
-        <footer className="text-[#f8f7f1] w-full  p-7 bg-lime-500">
+        <footer className="text-[#8cbc24] w-full  p-7 bg-[#F8F7F1]">
             <div className='flex'>
                 <div className='w-0 md:w-[20%] bg-[#f8f7f1] flex justify-center items-center rounded-xl'>
                     <img src={LOGO} alt="footer logo" className="w-[70%]"></img>
@@ -16,7 +16,7 @@ function Footer() {
                         <li className='p-[10px]'><a href="/">Home</a></li>
                         <li className='p-[10px]'>
                             <a href="/portfolio">Portfolio </a>
-                            <ul className='text-[#f8f7f1] font-normal leading-6 text-left'>
+                            <ul className='font-normal leading-6 text-left'>
                                 <li><a href="/agrobot">AgroBot</a></li>
                                 <li><a href="/agroponics">AgroPonics</a></li>
                             </ul>
@@ -29,20 +29,20 @@ function Footer() {
                 </div>
             </div>
 
-            <div className='py-7'><hr></hr></div>
+            <div className='py-7'><hr className=""></hr></div>
 
-            <div className='flex justify-between'>
-                <div className="text-[#f8f7f1]">Copright © 2024. All rights Reserved.</div>
+            <div className='flex justify-between text-[#3A3A3A]'>
+                <div className="">Copright © 2024. All rights Reserved.</div>
                 
                 <div>
                     <a
-                        className="text-[#f8f7f1] underline pt:2 md:pt-0 inline-block"
+                        className="underline pt:2 md:pt-0 inline-block"
                         href="https://www.instagram.com/ubcagrobots"
                         target="_blank"
                     > <FaInstagram size={30} /> </a>{" "}
 
                     <a
-                        className="text-[#f8f7f1] underline pt:2 md:pt-0 inline-block"
+                        className="underline pt:2 md:pt-0 inline-block"
                         href="https://www.linkedin.com/company/ubc-agrobot"
                         target="_blank"
                     > <FaLinkedin size={30} /> </a>
