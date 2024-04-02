@@ -18,7 +18,7 @@ function HomeBanner(props) {
             <div className="h-[90vh] w-full bg-[#F8F7F1] flex relative z-[0]">
                 <div style={{ backgroundImage: `url(${ConcentricOctagons})` }} className='absolute w-full h-full bg-center bg-no-repeat z-[1]  '></div>
                 <div className="h-full w-[50%] flex flex-col items-center justify-center z-[2]">
-                    <h1 className="h-[40%] [uppercase text-[48px] text-[#3A3A3A] font-bold roboto-custom text-center">
+                    <h1 className="h-[40%] uppercase text-[48px] text-[#3A3A3A] font-bold roboto-custom text-center">
                         where <br /> 
                         <TypingEffect messages={array1} start_index={randomIndex}/><br /> 
                         meets <br /> 
