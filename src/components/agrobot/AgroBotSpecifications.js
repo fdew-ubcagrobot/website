@@ -29,7 +29,7 @@ function AgroBotSpecifications() {
 
     return (
         <div className="w-[80%] mx-auto my-[20vh]">
-            <div className="w-full rounded-[14px] p-10 text-white my-[5vh] bg-slate-800">
+            <div className="w-full rounded-[14px] p-6 md:p-10 text-white my-[5vh] bg-slate-800">
                 <h1 className="pb-5 mb-1 text-white text-[32px] sm:text-[48px] capitalize md:pb-0">Specifications</h1>
                 
                 <div className="flex flex-col md:flex-row md:my-4 md:py-5 md:justify-evenly">
