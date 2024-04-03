@@ -4,6 +4,7 @@ import OurSponsors from './OurSponsors';
 import Footer from "./footer";
 import WantToHelp from "./WantToHelp";
 import SectionHeader from "./SectionHeader";
+import ProjectInstance from "./ProjectInstance";
 
 export {
     Navbar,
@@ -12,4 +13,5 @@ export {
     Footer,
     WantToHelp,
     SectionHeader,
+    ProjectInstance,
 }

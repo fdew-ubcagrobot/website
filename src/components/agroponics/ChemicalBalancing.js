@@ -2,7 +2,7 @@ import React from "react";
 import { HomeChemicalBalancing } from "../../assets";
 import { SectionHeader } from "../common";
 
-function AgroPonicsS3() {
+function ChemicalBalancing() {
     return (
         <div className='w-[80%] mx-auto my-16'>
             <SectionHeader>Chemical Balancing System</SectionHeader>
@@ -23,4 +23,4 @@ function AgroPonicsS3() {
     );
 };
 
-export default AgroPonicsS3;
+export default ChemicalBalancing;

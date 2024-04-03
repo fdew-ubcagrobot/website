@@ -3,7 +3,7 @@ import { AgroponicsS2 } from "../../assets";
 import { SectionHeader } from "../common";
 import { FaChevronRight } from 'react-icons/fa';
 
-function AgroPonicsS2() {
+function SysComponents() {
     return (
         <div className='w-[80%] m-auto my-[10%]'>
             <SectionHeader>System Components</SectionHeader>
@@ -25,4 +25,4 @@ function AgroPonicsS2() {
     );
 };
 
-export default AgroPonicsS2;
+export default SysComponents;
