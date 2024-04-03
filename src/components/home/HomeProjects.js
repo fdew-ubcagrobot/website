@@ -53,7 +53,7 @@ function HomeProjects() {
     }
 
     return (
-        <div className="w-full pb-[10vh] pt-[10vh]">
+        <div className="w-full my-[10vh]">
             <div className='w-[80vw] mx-auto text-black'>
                 <SectionHeader>Projects</SectionHeader>
                 <div className="flex w-full flex-col md:flex-row md:justify-between pt-8">

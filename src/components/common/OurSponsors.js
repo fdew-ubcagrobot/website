@@ -27,7 +27,7 @@ function SponsorSection(props) {
 
 function OurSponsor() {
     return (
-        <div className='w-full'>
+        <div className='w-full my-[10vh]'>
             <div className="w-[80%] mx-auto pt-[10vh]">
                 <SectionHeader>{headers[0]}</SectionHeader>
                 <SponsorSection images={[apsc, fcc, ece]}>{headers[1]}</SponsorSection>

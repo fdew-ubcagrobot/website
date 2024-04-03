@@ -14,7 +14,7 @@ function MissionBox(props) {
     return (
         <div style={gradient} className='bg-[#cfef94] rounded-[14px] my-8'>
             <div className='flex justify-center items-center mt-[-1rem]'>
-                <h4 className="text-black font-bold p-2 px-4 bg-white rounded-[8px] text-center inline-block]">{props.children}</h4>
+                <h4 className="text-black font-bold p-2 px-4 bg-[#F8F7F1] rounded-[8px] text-center inline-block]">{props.children}</h4>
             </div>
             <div className="flex w-full p-8 pt-4">
                 <div className=" min-w-[60px] max-w-[30%] mr-[5%] flex justify-center items-center">
