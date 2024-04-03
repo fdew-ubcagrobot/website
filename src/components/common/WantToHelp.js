@@ -13,8 +13,8 @@ function WantToHelp() {
             <SectionHeader>Want to help?</SectionHeader>
             <div className='w-full flex justify-between my-4'>
                 <div style={gradient} className='w-full lg:w-[49%] rounded-[14px] flex flex-col justify-center items-center p-8'>
-                    <p className='w-[60%] text-md lg:text-lg text-justify mb-4'>Members will work towards solving a real-world problem, go through the engineering design process, and develop technical skills in mechanical, electrical and software design. </p>
-                    <button className='bg-[#202020] text-white px-4 py-2 rounded-[14px] flex items-center justify-center font-bold' onClick={() => window.location.href = '/recruitment'}>Apply Here <MdChevronRight/></button>
+                    <p className='w-[80%] text-lg text-justify mb-4'>Members will work towards solving a real-world problem, go through the engineering design process, and develop technical skills in mechanical, electrical and software design. </p>
+                    <button className='bg-[#202020] text-white px-4 py-2 rounded-md flex items-center justify-center font-bold' onClick={() => window.location.href = '/recruitment'}>Apply Here <MdChevronRight/></button>
                 </div>
                 <div className='hidden lg:flex w-[49%]'>
                     <img src={TeamDiscussion} alt='modular-chassis' className='rounded-[14px] w-full'></img>
