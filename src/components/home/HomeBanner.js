@@ -11,10 +11,10 @@ function HomeBanner() {
 
     const randomIndex = Math.floor(Math.random() * array1.length);
     return (
-        <div className="h-[90vh] w-full bg-[#F8F7F1] flex flex-col-reverse justify-center items-center relative z-[0]">
+        <div className="h-[90vh] w-full bg-[#F8F7F1] flex flex-col-reverse md:flex-row justify-center items-center relative z-[0]">
             <div style={{ backgroundImage: `url(${ConcentricOctagons})` }} className='absolute w-full h-full bg-center bg-no-repeat z-[1] opacity-[0.5]'></div>
-            <div className="w-[50%] flex flex-col items-center justify-center z-[2]">
-                <h1 className="h-[300px] uppercase text-[48px] text-[#3A3A3A] font-bold roboto-custom text-center">
+            <div className="md:w-[50%] flex flex-col items-center justify-center z-[2]">
+                <h1 className="h-[220px] md:h-[300px] text-[38px] md:text-[48px] text-[#3A3A3A] font-bold roboto-custom text-center uppercase">
                     where <br />
                     <TypingEffect messages={array1} start_index={randomIndex} /><br />
                     meets <br />
@@ -29,8 +29,8 @@ function HomeBanner() {
                     <h3 className="flex items-center justify-center ">Learn More <FaChevronDown size='14px' className='mx-1 mt-1' /></h3>
                 </button>
             </div>
-            <div className="w-[80%] md:w-[50%] bg-center bg-no-repeat flex items-center justify-center z-[2]" >
-                <img className="" height={575} width={547} alt="a farm being manned by cute robots" src={HomeFarm} />
+            <div className='h-[40%] md:h-auto md:w-[50%] z-[2]'>
+                <img className="h-full md:h-auto md:w-[547px]" alt="a farm being manned by cute robots" src={HomeFarm} />
             </div>
         </div>
     );
