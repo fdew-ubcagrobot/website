@@ -10,17 +10,17 @@ function Subteam(props) {
     };
 
     return (
-        <div style={bannerStyle} className={`w-full rounded-[14px] p-10 flex text-black my-[5vh]`}>
-            <div className='w-[47.5%] mr-[5%]'>
+        <div style={bannerStyle} className={`w-full rounded-[14px] p-10 flex flex-col md:flex-row text-black my-[5vh]`}>
+            <div className='md:w-[47.5%] md:mr-[5%]'>
                 <h2 className='text-4xl mb-[2%]'>{props.children}</h2>
-                <div className=' text-[#1a491c]'>
+                <div className='py-4 md:py-0 text-[#1a491c]'>
                     {props.hlights.map((highlight, index) => (
                         <li key={index} className='min-w-[45%] mr-[5%]'>{highlight}</li>
                     ))}
                 </div>
                 <p className='mt-[5%] text-justify'>{props.text}</p>
             </div>
-            <div className='w-[47.5%] flex justify-center align-middle'>
+            <div className='pt-4 md:pt-0 md:w-[47.5%] flex justify-center align-middle'>
                 <img src={img} alt='modular-chassis' className='object-cover rounded-[14px]'></img>
             </div>
         </div>
