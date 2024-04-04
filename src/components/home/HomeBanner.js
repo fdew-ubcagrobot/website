@@ -4,53 +4,36 @@ import { FaChevronDown } from 'react-icons/fa';
 import '../../index.css';
 import TypingEffect from "./TypingEffect";
 
-function HomeBanner(props) {
-
-    const { isMobile } = props;
+function HomeBanner() {
 
     const array1 = ["INNOVATION", "ENGINEERING", "AUTOMATION", "SCIENCE"];
     const array2 = ["AGRICULTURE", "ECOLOGY", "AGRONOMY", "SUSTAINABILITY"];
 
     const randomIndex = Math.floor(Math.random() * array1.length);
-
-    if (!isMobile) {
-        return (
-            <div className="h-[90vh] w-full bg-[#F8F7F1] flex relative z-[0]">
-                <div style={{ backgroundImage: `url(${ConcentricOctagons})` }} className='absolute w-full h-full bg-center bg-no-repeat z-[1]  '></div>
-                <div className="h-full w-[50%] flex flex-col items-center justify-center z-[2]">
-                    <h1 className="h-[300px] uppercase text-[48px] text-[#3A3A3A] font-bold roboto-custom text-center">
-                        where <br /> 
-                        <TypingEffect messages={array1} start_index={randomIndex}/><br /> 
-                        meets <br /> 
-                        <TypingEffect messages={array2} start_index={randomIndex}/>
-                    </h1>
-                    <button
-                        className="w-[316px] h-[50px] mt-[20px] bg-[#3A3A3A] rounded-md text-[#F8F7F1] font-bold"
-                        onClick={() => window.scrollTo({
-                            top: window.innerHeight*0.9, // Need to multiply by 0.9 so that nav does not cover next section
-                            behavior: 'smooth'
-                        })}>
-                        <h3 className="flex items-center justify-center ">Learn More <FaChevronDown size='14px' className='mx-1 mt-1' /></h3>
-                    </button>
-                </div>
-                <div className="h-full w-[50%] bg-center bg-no-repeat flex items-center justify-center z-[2]" >
-                    <img className="" height={575} width={547} alt="a farm being manned by cute robots" src={HomeFarm} />
-                </div>
+    return (
+        <div className="h-[90vh] w-full bg-[#F8F7F1] flex flex-col-reverse justify-center items-center relative z-[0]">
+            <div style={{ backgroundImage: `url(${ConcentricOctagons})` }} className='absolute w-full h-full bg-center bg-no-repeat z-[1] opacity-[0.5]'></div>
+            <div className="w-[50%] flex flex-col items-center justify-center z-[2]">
+                <h1 className="h-[300px] uppercase text-[48px] text-[#3A3A3A] font-bold roboto-custom text-center">
+                    where <br />
+                    <TypingEffect messages={array1} start_index={randomIndex} /><br />
+                    meets <br />
+                    <TypingEffect messages={array2} start_index={randomIndex} />
+                </h1>
+                <button
+                    className="w-[316px] h-[50px] mt-[20px] bg-[#3A3A3A] rounded-md text-[#F8F7F1] font-bold"
+                    onClick={() => window.scrollTo({
+                        top: window.innerHeight * 0.9, // Need to multiply by 0.9 so that nav does not cover next section
+                        behavior: 'smooth'
+                    })}>
+                    <h3 className="flex items-center justify-center ">Learn More <FaChevronDown size='14px' className='mx-1 mt-1' /></h3>
+                </button>
             </div>
-        );
-    }
-    else {
-        return (
-            <div className="h-[90vh] w-full bg-[#F8F7F1]">
-                <div className="h-[40%] w-full mt-[10%] mb-[10%] flex items-center justify-center" >
-                    <img className="w-[80%]" alt="a farm being manned by cute robots" src={HomeFarm} />
-                </div>
-                <div className="h-[40%] w-full">
-                    <h1 className="uppercase text-[48px] text-[#3A3A3A] font-bold text-center">where <br /> innovation <br /> meets <br /> agriculture</h1>
-                </div>
+            <div className="w-[80%] md:w-[50%] bg-center bg-no-repeat flex items-center justify-center z-[2]" >
+                <img className="" height={575} width={547} alt="a farm being manned by cute robots" src={HomeFarm} />
             </div>
-        );
-    }
+        </div>
+    );
 }
 
 export default HomeBanner;

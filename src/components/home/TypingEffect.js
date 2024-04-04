@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 
 function TypingEffect({ messages, start_index = 0, speed = 175, changeInterval = 7500 }) {
-    const [text, setText] = useState("");
+    const [text, setText] = useState(" ");
     const [index, setIndex] = useState(0);
     const [wordIndex, setWordIndex] = useState(start_index);
 

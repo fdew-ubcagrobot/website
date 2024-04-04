@@ -16,26 +16,10 @@ function debounce(func, wait) {
 }
 
 function Home() {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const handleResize = debounce(() => {
-            setIsMobile(window.innerWidth < 768);
-        }, 250);
-
-        handleResize();
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-
-    }, []);
 
     return (
         <>
-            <HomeBanner isMobile={isMobile}></HomeBanner>
+            <HomeBanner></HomeBanner>
 
             <OurMission></OurMission>
             
