@@ -15,6 +15,12 @@ function Img(props) {
 }
 
 function Project({ title, description, learnMoreNavigationUrl, images, index }) {
+  const imageStyle = {
+    width: '100%', 
+    height: '200px', 
+    objectFit: 'cover',
+    borderRadius: '3%',
+  };
   return (
     <div className="w-[49%] bg-[#3a3a3a] rounded-[16px] p-8 mr-[2%] max-md:w-full max-md:mr-0 max-md:mb-[2%] text-white">
     <div className="flex items-center justify-end mb-5">
@@ -38,7 +44,8 @@ function Project({ title, description, learnMoreNavigationUrl, images, index }) 
             className="w-[45%] mx-[2.5%] my-[2.5%] rounded-lg p-1 bg-white bg-opacity-30 border border-white"
             key={index}
           >
-            <Img imgSrc={image.src}>{image.label}</Img>
+            <p className="text-center mt-2">{image.label}</p>
+            <img src={image.src} alt={image.label} style={imageStyle}/>
           </div>
         ))}
       </div>

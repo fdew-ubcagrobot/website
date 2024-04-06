@@ -4,6 +4,7 @@ import { MdOutlineSettingsInputHdmi } from "react-icons/md";
 import { HomeAutomation, HomeDataCollection, HomeModularChassis, HomeTargetedAction, HomeChemicalBalancing, HomeFullyAutonomous, HomeNutrientCycling } from '../assets';
 
 
+
 export const PS1Title = "Achievements and Participation";
 
 export const projectButton = "Project ";
@@ -42,9 +43,9 @@ export const projects = [
       title: 'AgroPonics',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
       learnMoreNavigationUrl: '/agroponics',
-      images: [
-          { src: HomeFullyAutonomous, label: 'Fully Autonomous' },
-          { src: HomeNutrientCycling, label: 'Nutrient Cycling' },
+      images: [ 
+          { src: HomeFullyAutonomous, label: 'Fully Autonomous'},
+          { src: HomeNutrientCycling, label: 'Nutrient Cycling'},
           { src: HomeChemicalBalancing, label: 'Chemical Balancing' }
       ]
   }
