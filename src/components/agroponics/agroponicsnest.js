@@ -4,22 +4,15 @@ import { SectionHeader } from "../common";
 
 function Agroponicsnest() {
     return (
-        <div className='w-[80%] mx-auto flex flex-col my-[10%]'>
-            {/* implementation goes here */}
+        <div className='w-[80%] mx-auto my-[10%]'>
             <SectionHeader>Implementation</SectionHeader>
+            <div className="w-full flex flex-col lg:flex-row-reverse rounded-[30px] my-8 bg-gradient-to-br from-[#597a00] to-76% to-[#1E293B] from-23%">
+                <img className="w-full lg:w-[40%] rounded-[20px] object-cover" src={AgroponicsRooftop} alt="HomeChemicalBalancing" />
 
-            {/* Middle section (text and image) */}
-            <div className='w-full h-[24vw] flex flex-col-reverse sm:flex-row items-center my-8'>
-                {/* Left side (text) */}
-                <p className='flex-1 h-full text-[20px] tracking-wide flex items-center justify-center sm:justify-start text-lg rounded-l-[30px]' style={{
-                    background: 'linear-gradient(114.8deg, #597A00 23.7%, #072600 76.36%)', color: 'white', padding: '50px'
-                }}>
-                    We hope to develop efficient and self-sufficient systems that can be implemented in a variety of locations including the UBC campus. Our first prototype is being built on the roof of the nest.
-                </p>
-
-                {/* Right side (image) */}
-                <div className='flex-1 h-full' style={{ width: '90%' }}>
-                    <img src={AgroponicsRooftop} className='w-full h-full check-img' alt="AgroBot with Team on Grass" style={{ width: '100%' }} />
+                <div className="w-full my-auto p-8 text-white leading-6 text-[20px] tracking-wide">
+                    <p className="m-[1rem]">
+                        We hope to develop efficient and self-sufficient systems that can be implemented in a variety of locations including the UBC campus. Our first prototype is being built on the roof of the nest.
+                    </p>
                 </div>
             </div>
         </div>
