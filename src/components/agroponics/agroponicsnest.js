@@ -4,7 +4,7 @@ import { SectionHeader } from "../common";
 
 function Agroponicsnest() {
     return (
-        <div className='w-[80%] mx-auto flex flex-col mb-8'>
+        <div className='w-[80%] mx-auto flex flex-col my-[10%]'>
             {/* implementation goes here */}
             <SectionHeader>Implementation</SectionHeader>
 

@@ -4,7 +4,7 @@ import { SectionHeader } from "../common";
 
 function ChemicalBalancing() {
     return (
-        <div className='w-[80%] mx-auto my-16'>
+        <div className='w-[80%] mx-auto my-[10%]'>
             <SectionHeader>Chemical Balancing System</SectionHeader>
             <div className="w-full flex items-stretch justify-between rounded-[30px] my-8 bg-gradient-to-br from-[#1E293B] to-76% to-[rgb(7,38,0)] from-23%">
                 <img className="w-[40%] rounded-l-[20px] object-cover" src={HomeChemicalBalancing} alt="HomeChemicalBalancing" />
