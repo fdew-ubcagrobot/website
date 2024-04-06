@@ -17,7 +17,7 @@ const founders = [
 
 const AboutUsS2 = () => {
     return (
-        <div className="mt-12 text-center mx-auto p-6">
+        <div className="mt-10 text-center mx-auto p-6">
             <h1 className="text-4xl mb-[2%] text-[#3A3A3A] text-left md:ml-24 ml-12">
                 Founders
             </h1>

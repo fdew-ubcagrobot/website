@@ -1,3 +1,6 @@
+export const introTitle = "How We Started";
+export const introText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.";
+
 export const founders = [
     { name: 'Rick Astley', imageUrl: 'https://i1.wp.com/nypost.com/wp-content/uploads/sites/2/2016/10/rickastley.jpg?quality=90&strip=all&ssl=1' },
     { name: 'Tharun Pranav', imageUrl: 'https://media.licdn.com/dms/image/D5603AQEm49IKoW2uCA/profile-displayphoto-shrink_400_400/0/1696730002451?e=1714003200&v=beta&t=69wJsz-R4F1hJ6WqrVFJjE6NnMp3WqJnwTV6JKzWE5I' },

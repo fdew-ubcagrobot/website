@@ -13,7 +13,7 @@ function AboutUs() {
             <TitleBanner toColor="#2e533e" fromColor="#3b4e3a" imageSrc={RecruitmentImage} imageClassName="absolute right-0 bottom-0 w-4/12">About US</TitleBanner>
            <AboutUsS1 />
            <AboutUsS2 />
-           <AboutUsS3 />
+           {/* TODO: Replace this with the updated AboutUs Timeline once content is received */}
            <RecruitmentS3 />
         </div>
     );
