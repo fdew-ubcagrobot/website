@@ -22,27 +22,6 @@ function Agroponicsnest() {
                     <img src={AgroponicsRooftop} className='w-full h-full check-img' alt="AgroBot with Team on Grass" style={{ width: '100%' }} />
                 </div>
             </div>
-
-            {/* Media query for mobile view */}
-            <style>
-                {`
-                    @media (max-width: 750px) {
-                        .flex-col-reverse {
-                            flex-direction: column;
-                           
-                        }
-                        .mobile-text {
-                            width: 90%;
-                        
-                        }
-                        .check-img {
-                            height : 79%;
-                        }
-                        
-                    }
-                   
-                `}
-            </style>
         </div>
     );
 };
