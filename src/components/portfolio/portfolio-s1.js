@@ -18,13 +18,13 @@ function InfoParagraph(props) {
 
     return (
         <>
-        <div className="w-screen mb-20 md:mb-12 px-[10%]">
+        <div className="w-full mb-20 md:mb-12 px-[10%]">
             <h1 className=" text-[40px] pb-10">{processedPS1Title}</h1>
             <div className="relative mx-auto">
                 <div className="md:w-[50%] w-[100%] inline-block">
                     <img src={Agrobot} alt="Team" className="rounded-[14px]" style={{ width: '100%', height: 'auto' }} />
                 </div>
-                <div className="md:w-[50%] w-[100%] flex flex-col justify-center absolute top-[60%] md:mx-0 mx-auto md:top-10 md:left-[40%] z-10 opacity-70">
+                <div className="md:w-[50%] w-auto justify-center absolute top-[60%] md:mx-0 mx-auto md:top-10 md:left-[40%] z-10 opacity-70">
                     <NotificationBanner titleText={title} descriptionText={text}></NotificationBanner>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import { stats } from "../../constant/portfolio";
 
 function StatsBar() {
   return (
-    <div className="bg-white rounded-lg shadow-lg mb-5 py-4 px-12 mx-20">
+    <div className="max-w-[80%] mx-auto bg-white rounded-lg shadow-lg mt-[120px] md:mt-0 py-4 px-12 mx-20">
       <div className="flex justify-between">
         {stats.map((stat, index) => (
           <div className="flex items-center justify-center" key={index}>
