@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { AgrobotEmailIcon, AgrobotFacebookIcon, AgrobotInstagramIcon,AgrobotLinkedInIcon, AgrobotLocationIcon } from "../../assets";
-import { APPLICATION_LINK } from "../../constant/recruitment";
 import { MdChevronRight } from "react-icons/md";
+import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'https://rpsuamzzbfswevkexntj.supabase.co'
+const supabaseKey = process.env.REACT_APP_SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 function MailForm(props) {
   const [name, setName] = useState("");
@@ -10,7 +14,25 @@ function MailForm(props) {
   const [message, setMessage] = useState("");
   const { isMobile } = props;
 
-  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const { data, error } = await supabase
+      .from('messages')
+      .insert([
+        { name: name, email: email, subject: subject, message: message },
+      ])
+      .select();
+      
+    if (error) {
+      console.error('Error: ', error);
+    } else {
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+    }
+  };
 
   if (!isMobile) {
     return (
@@ -25,7 +47,7 @@ function MailForm(props) {
                 Message Us
               </h1>
 
-              <form className="flex flex-col items-left justify-center w-full h-full">
+              <form onSubmit={handleSubmit} className="flex flex-col items-left justify-center w-full h-full">
                 <input
                   type="text"
                   placeholder="Name"
@@ -55,7 +77,7 @@ function MailForm(props) {
                 />
                 <button
               className="mx-auto bg-[#88BE22] text-white px-4 py-2 rounded-[14px] flex items-center justify-center font-bold my-4 hover:bg-green-500 transition-all duration-300"
-              onClick={() => window.open(APPLICATION_LINK, "_blank")}
+              type='submit'
             >
               Send <MdChevronRight />
             </button>
@@ -129,7 +151,7 @@ function MailForm(props) {
           <h1 className="text-3xl font-bold text-center text-[#4C5934] mb-2 mt-2">
             Message Us!
           </h1>
-          <form className="flex flex-col items-center justify-center w-full">
+          <form onSubmit={handleSubmit} className="flex flex-col items-center justify-center w-full">
             <input
               type="text"
               placeholder="Name"
@@ -159,7 +181,7 @@ function MailForm(props) {
             />
             <button
               className="mx-auto bg-[#88BE22] text-white px-4 py-2 rounded-[14px] flex items-center justify-center font-bold my-4 hover:bg-green-500 transition-all duration-300"
-              onClick={() => window.open(APPLICATION_LINK, "_blank")}
+              type='submit'
             >
               Send <MdChevronRight />
             </button>
