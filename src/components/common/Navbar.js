@@ -96,6 +96,9 @@ const Navbar = () => {
             <a href="/recruitment" className="block hover:text-grey-400 my-2 mx-4">
               Recruitment
             </a>
+            <a href="/contactus" className="block hover:text-grey-400 my-2 mx-4">
+              Contact Us
+            </a>
             <a href="/aboutus" className="block hover:text-grey-400 my-2 mx-4">
               About us
             </a>
