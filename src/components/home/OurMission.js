@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { HomeOurMissionRecycle, HomeOurMissionStrawberry, HomeOurMissionStocks, StudentsWorking, AgroBotWihTeamOnGrass, TeamPhoto } from '../../assets';
 import { SectionHeader, } from '../../components';
 import { MdChevronRight, MdChevronLeft } from 'react-icons/md';
+import * as t from "../../constant/home";
 
 function MissionBox(props) {
+    const text = props.text;
 
     const angle = useState(() => Math.random() * 360 - 180)[0];
 
@@ -20,7 +22,7 @@ function MissionBox(props) {
                 <div className=" min-w-[60px] max-w-[30%] mr-[5%] flex justify-center items-center">
                     <img src={props.imgSrc} alt='mission' className='w-full'></img>
                 </div>
-                <p className="flex-grow">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                <p className="flex-grow">{text}</p>
             </div>
         </div>
     );
@@ -51,13 +53,13 @@ function OurMission() {
     return (
         <div className="w-full pb-[10vh] flex justify-center items-center">
             <div className='w-[80vw] mx-auto mt-16'>
-                <SectionHeader className='mt-16'>Our Mission</SectionHeader>
-                <p className='mt-2 mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <SectionHeader className='mt-16'>{t.OM_title}</SectionHeader>
+                <p className='mt-2 mb-8'>{t.OM_subtitle}</p>
                 <div id="ourMission" className="flex flex-col md:flex-row w-full">
                     <div className="w-full md:w-[40%] flex flex-col">
-                        <MissionBox imgSrc={HomeOurMissionRecycle}>Mitigate Climate Impacts</MissionBox>
-                        <MissionBox imgSrc={HomeOurMissionStrawberry}>Enhance Food Security</MissionBox>
-                        <MissionBox imgSrc={HomeOurMissionStocks}>Ensure Economic Viability</MissionBox>
+                        <MissionBox imgSrc={HomeOurMissionRecycle}    text={t.OM_box1_text}>{t.OM_box1_title}</MissionBox>
+                        <MissionBox imgSrc={HomeOurMissionStrawberry} text={t.OM_box2_text}>{t.OM_box2_title}</MissionBox>
+                        <MissionBox imgSrc={HomeOurMissionStocks}     text={t.OM_box3_text}>{t.OM_box3_title}</MissionBox>
                     </div>
                     <div className="w-full md:w-[60%] flex flex-col justify-center items-center p-[2%]">
                         <img alt='our mission' src={images[currentImgIndex]} className="object-cover h-full rounded-[14px]" />

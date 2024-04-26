@@ -2,6 +2,7 @@ import React from "react";
 import { HomeAutomation, HomeDataCollection, HomeModularChassis, HomeTargetedAction, HomeChemicalBalancing, HomeFullyAutonomous, HomeNutrientCycling, } from '../../assets';
 import { MdChevronRight } from 'react-icons/md';
 import { SectionHeader } from '../common';
+import * as t from "../../constant/home.js";
 
 function Img(props) {
     return (
@@ -36,7 +37,7 @@ function Project(props) {
                 </div>
             </div>
             <div className='flex items-center justify-center mt-auto'>
-                <a href={link} className='flex items-center justify-center text-black font-bold bg-[#FFFFFF80] rounded-[14px] p-4 px-[10%]'>More About {children} <MdChevronRight /></a>
+                <a href={link} className='flex items-center justify-center text-black font-bold bg-[#FFFFFF80] rounded-[14px] p-4 px-[10%]'>{t.project_bottom_text}{children} <MdChevronRight /></a>
             </div>
         </div>
     );
@@ -55,10 +56,10 @@ function HomeProjects() {
     return (
         <div className="w-full my-[10vh]">
             <div className='w-[80vw] mx-auto text-black'>
-                <SectionHeader>Projects</SectionHeader>
+                <SectionHeader>{t.projects_title}</SectionHeader>
                 <div className="flex w-full flex-col md:flex-row md:justify-between pt-8">
-                    <Project projectNum="1" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." img1={HomeTargetedAction} img2={HomeDataCollection} img3={HomeModularChassis} img4={HomeAutomation} imgText1="Targeted Action" imgText2="Data collection" imgText3="Modular chassis" imgText4="Automation" panelStyle={leftPanelStyle} link='/agrobot'>AgroBot</Project>
-                    <Project projectNum="2" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." img1={HomeFullyAutonomous} img2={HomeNutrientCycling} img3={HomeChemicalBalancing} img4={HomeChemicalBalancing} imgText1="Fully Autonomous" imgText2="Nutrient Cycling" imgText3="Chemical Balancing" imgText4="Chemical Balancing" panelStyle={rightPanelStyle} link='/agroponics'>AgroPonics</Project>
+                    <Project projectNum="1" text={t.project_1_subtitle} img1={HomeTargetedAction}  img2={HomeDataCollection}  img3={HomeModularChassis}    img4={HomeAutomation}        imgText1={t.project_1_img_1_subtitle} imgText2={t.project_1_img_2_subtitle} imgText3={t.project_1_img_3_subtitle} imgText4={t.project_1_img_4_subtitle} panelStyle={leftPanelStyle} link='/agrobot'>{t.project_1_title}</Project>
+                    <Project projectNum="2" text={t.project_2_subtitle} img1={HomeFullyAutonomous} img2={HomeNutrientCycling} img3={HomeChemicalBalancing} img4={HomeChemicalBalancing} imgText1={t.project_2_img_1_subtitle} imgText2={t.project_2_img_2_subtitle} imgText3={t.project_2_img_3_subtitle} imgText4={t.project_2_img_4_subtitle} panelStyle={rightPanelStyle} link='/agroponics'>{t.project_2_title}</Project>
                 </div>
             </div>
         </div>
