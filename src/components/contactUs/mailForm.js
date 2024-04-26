@@ -5,7 +5,9 @@ import { createClient } from '@supabase/supabase-js'
 
 const supabaseUrl = 'https://rpsuamzzbfswevkexntj.supabase.co'
 const supabaseKey = process.env.REACT_APP_SUPABASE_KEY
-const supabase = createClient(supabaseUrl, supabaseKey)
+const supabase = supabaseKey ? createClient(supabaseUrl, supabaseKey) : null;
+if (!supabaseKey) console.warn("WARNING: No supabase key found. Requests will not be sent to backend")
+
 
 function MailForm(props) {
   const [name, setName] = useState("");
