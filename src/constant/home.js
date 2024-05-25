@@ -1,9 +1,9 @@
 // HomeBanner.js
 export const titleText = [
     "where",
-    ["INNOVATION", "ENGINEERING", "AUTOMATION", "SCIENCE"],
+    ["INNOVATION", "AGRICULTURE", "ENGINEERING"],
     "meets",
-    ["AGRICULTURE", "ECOLOGY", "AGRONOMY", "SUSTAINABILITY"]
+    ["AGRICULTURE", "ENGINEERING", "ECOLOGY"]
 ];
 
 export const titleButton = "Learn More";
