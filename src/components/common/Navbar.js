@@ -4,13 +4,14 @@ import { useState } from "react";
 // import icons
 import { HiOutlineMenu } from "react-icons/hi";
 import { FaChevronDown } from 'react-icons/fa';
-
+import { useLocation } from 'react-router-dom';
 import { navLinks } from "../../constant";
 import { AGROBOT_ICON } from "../../assets";
 
 const Navbar = () => {
   const [isMenuOpen, setMobileMenu] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+  const location = useLocation();
 
   const dropdown_hover_timing = 0;
 
@@ -42,7 +43,9 @@ const Navbar = () => {
               >
                 <a
                   href={e.link}
-                  className="text-[#2E1B0F] hover:text-[#2E1B0F] transition-all duration-200 flex items-center"
+                  className={`text-[#2E1B0F] hover:text-[#2E1B0F] transition-all duration-200 flex items-center ${
+                    location.pathname === e.link ? 'font-bold' : ''
+                  }`}
                 >
                   {e.id} {e.dropdown && <FaChevronDown size='16px' style={{ margin: '3px 0 0 4px' }} />}
                 </a>
@@ -67,7 +70,6 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* contact me button */}
 
           {/* menu button for small devices */}
           <button
