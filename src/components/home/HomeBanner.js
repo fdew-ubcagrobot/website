@@ -15,30 +15,33 @@ function HomeBanner() {
                 <h1 className="h-[220px] md:h-[300px] text-[38px] md:text-[48px] text-[#3A3A3A] font-bold roboto-custom text-center uppercase">
                     
                     {c.titleText[0]} <br />
-                    <div className="bg-white rounded-[30px] w-[400px] shadow-xl">
-                        <TypingEffect messages={c.titleText[1]} start_index={randomIndex} /><br />
+                    <div className="relative">
+                        <div className="bg-white rounded-[30px] w-[400px] shadow-xl">
+                            <TypingEffect messages={c.titleText[1]} start_index={randomIndex} /><br />
+                        </div>
+                        {/* top left */}
+                        <div className="bg-white opacity-80 rounded-full h-3 w-3 flex items-center justify-center absolute top-[53px] left-[-17px]"></div>
+                        <div className="bg-white opacity-75 rounded-full h-4 w-4 flex items-center justify-center absolute top-[72px] left-[-9px]"></div>
+
+                        {/* top right */}
+                        <div className="bg-white opacity-85 rounded-full h-4 w-4 flex items-center justify-center absolute top-[-15px] right-[-25px]"></div>
+                        <div className="bg-white opacity-60 rounded-full h-3 w-3 flex items-center justify-center absolute top-[-10px] right-[-0px]"></div>
+                        <div className="bg-white opacity-60 rounded-full h-2.5 w-2.5 flex items-center justify-center absolute top-[9px] right-[-12px]"></div>
                     </div>
                     {c.titleText[2]} <br />
-                    <div className="bg-white rounded-[30px] w-[400px] shadow-xl">
-                        <TypingEffect messages={c.titleText[3]} start_index={randomIndex} /><br />
-                    </div>
-
+                    <div className="relative">
+                        <div className="bg-white rounded-[30px] w-[400px] shadow-xl">
+                            <TypingEffect messages={c.titleText[3]} start_index={randomIndex} /><br />
+                        </div>
                     {/* bottom left */}
-                    <div className="bg-white opacity-75 rounded-full h-3 w-3 flex items-center justify-center absolute bottom-[337px] left-[153px]"></div>
-                    <div className="bg-white opacity-80 rounded-full h-4 w-4 flex items-center justify-center absolute bottom-[355px] left-[165px]"></div>
-
+                        <div className="bg-white opacity-75 rounded-full h-3 w-3 flex items-center justify-center absolute bottom-[50px] left-[-20px]"></div>
+                        <div className="bg-white opacity-80 rounded-full h-4 w-4 flex items-center justify-center absolute bottom-[65px] left-[-10px]"></div>
                     {/* bottom right */}
-                    <div className="bg-white opacity-60 rounded-full h-4 w-4 flex items-center justify-center absolute bottom-[290px] left-[580px]"></div>
-                    <div className="bg-white opacity-60 rounded-full h-3 w-3 flex items-center justify-center absolute bottom-[275px] left-[565px]"></div>
+                        <div className="bg-white opacity-60 rounded-full h-4 w-4 flex items-center justify-center absolute bottom-[10px] right-[-22px]"></div>
+                        <div className="bg-white opacity-60 rounded-full h-3 w-3 flex items-center justify-center absolute bottom-[-5px] right-[-6px]"></div>
+                    </div>
                     
-                    {/* top left */}
-                    <div className="bg-white opacity-80 rounded-full h-3 w-3 flex items-center justify-center absolute top-[337px] left-[153px]"></div>
-                    <div className="bg-white opacity-75 rounded-full h-4 w-4 flex items-center justify-center absolute top-[355px] left-[165px]"></div>
-
-                    {/* top right */}
-                    <div className="bg-white opacity-85 rounded-full h-4 w-4 flex items-center justify-center absolute top-[280px] left-[580px]"></div>
-                    <div className="bg-white opacity-60 rounded-full h-3 w-3 flex items-center justify-center absolute top-[266px] left-[565px]"></div>
-                    <div className="bg-white opacity-60 rounded-full h-2.5 w-2.5 flex items-center justify-center absolute top-[260px] left-[585px]"></div>
+                    
                 </h1>
                 <button
                     className="w-[316px] h-[50px] mt-[20px] bg-[#3A3A3A] rounded-md text-[#F8F7F1] font-bold"

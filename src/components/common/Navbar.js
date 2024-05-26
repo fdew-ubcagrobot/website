@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <header className="h-[10vh] bg-[#91D0F2] w-full sticky top-0 left-0 right-0 z-[100]">
       <nav className="h-full flex items-center justify-center">
-        <div className="h-[80%] w-[90%] flex items-center justify-between py-4 md:px-8 px-4 bg-glass shadow-glass backdrop-blur-glass border-glass">
+        <div className="h-[80%] w-[90%] flex items-center justify-between py-4 md:px-8 px-4 bg-glass bg-transparent shadow-glass backdrop-blur-glass border-glass">
           <div className="font-bold cursor-pointer flex items-center">
             <a href="/"><img className="h-12 w-12 mr-5" src={AGROBOT_ICON} alt="UBC Agrobot" /></a>
             <a href="/" className="font-bold text-[20px]">UBC Agrobot</a>

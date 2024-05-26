@@ -8,9 +8,9 @@ function Home() {
 
             <OurMission></OurMission>
             
-            <HomeProjects></HomeProjects>
+            {/* <HomeProjects></HomeProjects> */}
 
-            <OurSponsors/>
+            {/* <OurSponsors/> */}
         </>
     );
 };
