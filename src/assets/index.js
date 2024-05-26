@@ -1,5 +1,6 @@
 import 
 { 
+    AGROBOT_ICON,
     TeamPhoto,
     apsc,
     chbe,
@@ -66,6 +67,7 @@ import
 
 export {
     AgroponicsS2,
+    AGROBOT_ICON,
     TeamPhoto,
     apsc,
     chbe,

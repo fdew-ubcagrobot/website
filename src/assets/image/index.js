@@ -1,4 +1,5 @@
 import apsc from './apsc.png';
+import AGROBOT_ICON from './AGROBOT_ICON.png';
 import chbe from './chbe.png';
 import ece from './ece.jpg';
 import egbc from './egbc.png';
@@ -64,6 +65,7 @@ import agrobotChassisTemp from './agrobotChassisTemp.jpeg';
 
 
 export {
+    AGROBOT_ICON,
     AgroponicsS2,
     apsc,
     chbe,

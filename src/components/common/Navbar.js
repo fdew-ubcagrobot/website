@@ -6,7 +6,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { FaChevronDown } from 'react-icons/fa';
 
 import { navLinks } from "../../constant";
-import { agrobot } from "../../assets";
+import { AGROBOT_ICON } from "../../assets";
 
 const Navbar = () => {
   const [isMenuOpen, setMobileMenu] = useState(false);
@@ -24,11 +24,12 @@ const Navbar = () => {
   }
 
   return (
-    <header className="h-[10vh] bg-[#f8f7f1ea] hover:bg-[#f8f7f1] backdrop-blur-md w-full sticky top-0 left-0 right-0 z-[100]">
-      <nav className="h-full">
-        <div className="h-full flex items-center justify-between py-4 md:px-8 px-4">
-          <div className="h-full font-bold cursor-pointer ">
-            <a href="/"><img className="h-full" src={agrobot} alt="UBC Agrobot" /></a>
+    <header className="h-[10vh] bg-[#91D0F2] w-full sticky top-0 left-0 right-0 z-[100]">
+      <nav className="h-full flex items-center justify-center">
+        <div className="h-[80%] w-[90%] flex items-center justify-between py-4 md:px-8 px-4 bg-glass shadow-glass backdrop-blur-glass border-glass">
+          <div className="font-bold cursor-pointer flex items-center">
+            <a href="/"><img className="h-12 w-12 mr-5" src={AGROBOT_ICON} alt="UBC Agrobot" /></a>
+            <a href="/" className="font-bold text-[20px]">UBC Agrobot</a>
           </div>
 
           <ul className="list-none lg:flex items-center gap-8 hidden">
@@ -41,7 +42,7 @@ const Navbar = () => {
               >
                 <a
                   href={e.link}
-                  className="text-[#8cbc24] hover:text-[#8cbc24] transition-all duration-200 flex items-center"
+                  className="text-[#2E1B0F] hover:text-[#2E1B0F] transition-all duration-200 flex items-center"
                 >
                   {e.id} {e.dropdown && <FaChevronDown size='16px' style={{ margin: '3px 0 0 4px' }} />}
                 </a>

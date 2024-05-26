@@ -9,8 +9,8 @@ function HomeBanner() {
 
     const randomIndex = Math.floor(Math.random() * c.titleText[1].length);
     return (
-        <div className="h-[90vh] w-full bg-[#F8F7F1] flex flex-col-reverse md:flex-row justify-center items-center relative z-[0]">
-            <div style={{ backgroundImage: `url(${ConcentricOctagons})` }} className='absolute w-full h-full bg-center bg-no-repeat z-[1] opacity-[0.5]'></div>
+        <div className="h-[90vh] w-full bg-[#91D0F2] flex flex-col-reverse md:flex-row justify-center items-center relative z-[0]">
+            <div className='absolute w-full h-full bg-center bg-no-repeat z-[1] opacity-[0.5]'></div>
             <div className="md:w-[50%] flex flex-col items-center justify-center z-[2]">
                 <h1 className="h-[220px] md:h-[300px] text-[38px] md:text-[48px] text-[#3A3A3A] font-bold roboto-custom text-center uppercase">
                     {c.titleText[0]} <br />
