@@ -3,7 +3,7 @@ export const titleText = [
     "where",
     ["INNOVATION", "AGRICULTURE", "ENGINEERING"],
     "meets",
-    ["AGRICULTURE", "ENGINEERING", "ECOLOGY"]
+    ["AGRICULTURE", "ENGINEERING", "INNOVATION"]
 ];
 
 export const titleButton = "Learn More";

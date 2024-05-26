@@ -13,10 +13,15 @@ function HomeBanner() {
             <div className='absolute w-full h-full bg-center bg-no-repeat z-[1] opacity-[0.5]'></div>
             <div className="md:w-[50%] flex flex-col items-center justify-center z-[2]">
                 <h1 className="h-[220px] md:h-[300px] text-[38px] md:text-[48px] text-[#3A3A3A] font-bold roboto-custom text-center uppercase">
+                    
                     {c.titleText[0]} <br />
+                    <div className="bg-white rounded-[30px] w-[400px] shadow-xl">
                     <TypingEffect messages={c.titleText[1]} start_index={randomIndex} /><br />
+                    </div>
                     {c.titleText[2]} <br />
-                    <TypingEffect messages={c.titleText[3]} start_index={randomIndex} />
+                    <div className="bg-white rounded-[30px] w-[400px] shadow-xl">
+                    <TypingEffect messages={c.titleText[3]} start_index={randomIndex} /><br />
+                    </div>
                 </h1>
                 <button
                     className="w-[316px] h-[50px] mt-[20px] bg-[#3A3A3A] rounded-md text-[#F8F7F1] font-bold"
