@@ -1,16 +1,14 @@
-import React from "react";
-import { useState } from "react";
-
-// import icons
+import React, { useState, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import { HiOutlineMenu } from "react-icons/hi";
 import { FaChevronDown } from 'react-icons/fa';
-import { useLocation } from 'react-router-dom';
 import { navLinks } from "../../constant";
 import { AGROBOT_ICON } from "../../assets";
 
 const Navbar = () => {
   const [isMenuOpen, setMobileMenu] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+  const [navbarBg, setNavbarBg] = useState(false);
   const location = useLocation();
 
   const dropdown_hover_timing = 0;
@@ -24,8 +22,23 @@ const Navbar = () => {
       setIsSubMenuOpen(!isSubMenuOpen);
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 180) { 
+        setNavbarBg(true);
+      } else {
+        setNavbarBg(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="h-[10vh] bg-[#91D0F2] w-full sticky top-0 left-0 right-0 z-[100]">
+    <header className={`h-[10vh] w-full sticky top-0 left-0 right-0 z-[100] ${navbarBg ? '' : 'bg-[#91D0F2]'}`}>
       <nav className="h-full flex items-center justify-center">
         <div className="h-[80%] w-[90%] flex items-center justify-between py-4 md:px-8 px-4 bg-glass bg-transparent shadow-glass backdrop-blur-glass border-glass">
           <div className="font-bold cursor-pointer flex items-center">
@@ -69,7 +82,6 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-
 
           {/* menu button for small devices */}
           <button
