@@ -22,9 +22,12 @@ const Navbar = () => {
       setIsSubMenuOpen(!isSubMenuOpen);
   }
 
+
+
+  
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 180) { 
+      if (window.scrollY > 180 || location.pathname !== '/') { 
         setNavbarBg(true);
       } else {
         setNavbarBg(false);
@@ -32,6 +35,7 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll();
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -64,14 +68,14 @@ const Navbar = () => {
                 </a>
                 {e.dropdown && isSubMenuOpen && (
                   <ul
-                    className="absolute top-full left-[-40px] px-[40px] pb-[20px]  bg-[#f8f7f1] backdrop-blur-md rounded"
+                    className="absolute top-full left-[-40px] px-[40px] pb-[20px] bg-glass bg-transparent shadow-glass backdrop-blur-glass border-glass backdrop-blur-md rounded"
                     style={{ transition: `all ${dropdown_hover_timing}ms` }}
                   >
                     {e.dropdown.map((item) => (
                       <li key={item.id}>
                         <a
                           href={item.link}
-                          className="block text-[#8cbc24] py-[2px] px-0"
+                          className="block text-[#291305] py-[2px] px-0"
                         >
                           {item.id}
                         </a>
