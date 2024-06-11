@@ -12,11 +12,19 @@ module.exports = {
         'Inter': ['Inter', 'sans-serif'],
         'Roboto': ['Roboto', 'sans-serif'],
       },
+      placeholderColor: {
+        'custom-green': '#78BE20', // Example custom color
+      },
+    },
+  },
+  variants: {
+    extend: {
+      placeholderColor: ['focus'],
     },
   },
   plugins: [
     require('tailwindcss-filters'),
-    plugin(function({ addUtilities }) {
+    plugin(function ({ addUtilities }) {
       addUtilities({
         '.bg-glass': {
           background: 'rgba(255, 255, 255, 0.81)',
@@ -33,6 +41,16 @@ module.exports = {
           'border': '1px solid rgba(255, 255, 255, 0.49)',
         },
       }, ['responsive', 'hover']);
-    })
+    }),
+    require('@tailwindcss/forms'),
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.placeholder-custom-green::placeholder': {
+          color: '#78BE20',
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover', 'focus'])
+    }
   ],
+
 }
