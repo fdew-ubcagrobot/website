@@ -1,70 +1,117 @@
 import LeafIcon from "../../assets/image/brown-leaf-icon.png"
 import { useSpring, animated } from 'react-spring';
 
-function InfoCard({title}) {
-	return(
-		<div className="w-full h-full p-10  text-white bg-[#2E1B0F] rounded-md">
-			<h2 className="font-bold">{title}</h2>
-		</div>
-	)
-}
-
 const RectangleAnimation = () => {
-	const rectangles = [
-		{ top: 0, left: 540 },
-		{ top: 0, left: 0 },
-		{ top: 540, left: 0 },
-		{ top: 540, left: 540 },
-	  ];
-	  
-	const props = useSpring({
-		from: { top: 0, left: 540 },
-		to: async (next) => {
+	const height = 440
+	const width = 540
+
+	const cardWidth = 400
+	const cardHeight = 250
+
+	const centerX = cardWidth / 2
+	const centerY = height - (cardHeight / 2)
+	const offsetX = (width - cardWidth) / 2
+	const offsetY = (height - cardHeight) / 2
+
+	const homePos = { left: centerX, top: centerY }
+	const offsetOne = { left: centerX + offsetX, top: centerY - offsetY }
+	const offsetTwo = { left: centerX + 2 * offsetX, top: centerY - 2 * offsetY }
+
+	const bottomPos = { left: centerX, top: height + cardHeight / 2 }
+	const bottomLeftPos = { left: width + cardWidth / 2, top: height + cardHeight / 2 }
+	const topRightPos = { left: width + cardWidth / 2, top: 0 }
+
+	const brownCard = useSpring({
+		from: homePos,
+		to: async next => {
 			while (true) {
-				await new Promise((resolve) => setTimeout(resolve, 4000)); // Wait for 6 seconds
-				await next({ top: 270, left: 270 });
-				await new Promise((resolve) => setTimeout(resolve, 4000)); // Wait for 6 seconds
-				await next({ top: 540, left: 270 });
-				await next({ top: 530, left: 540 });
-				await next({ top: 0, left: 540 });
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(bottomPos)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(bottomLeftPos)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(topRightPos)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(offsetTwo)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(offsetOne)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(homePos)
 			}
-		},
-		config: { duration: 500 },
+		}
 	});
 
-	const prop2 = useSpring({
-		from: { top: 270, left: 270 },
-		to: async (next) => {
+	const greenCard = useSpring({
+		from: offsetOne,
+		to: async next => {
 			while (true) {
-				await new Promise((resolve) => setTimeout(resolve, 4000));
-				await next({ top: 530, left: 270 });
-				await next({ top: 530, left: 530 });
-				await next({ top: 0, left: 540 });
-				await new Promise((resolve) => setTimeout(resolve, 4000)); // Wait for 6 seconds
-				await next({ top: 270, left: 270 });
-
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(homePos)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(bottomPos)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(bottomLeftPos)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(topRightPos)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(offsetTwo)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(offsetOne)
 			}
-		},
-		config: { duration: 500 },
-	});
+		}
+	})
+
+	const redCard = useSpring({
+		from: offsetTwo,
+		to: async next => {
+			while (true) {
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(offsetOne)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(homePos)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(bottomPos)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(bottomLeftPos)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(topRightPos)
+				await new Promise(resolve => setTimeout(resolve, 2000))
+				await next(offsetTwo)
+			}
+		}
+	})
 
 	return (
-		<div className="relative w-[540px] h-[540px] overflow-hidden">
-			<animated.div className="absolute w-[400px] h-[250px] bg-[#2E1B0F] rounded-md"
+		<div className="relative overflow-hidden"
+			style={{
+				height: height,
+				width: width,
+			}}>
+			<animated.div className="absolute w-[400px] h-[250px] bg-[#E13131] rounded-md"
 				style={{
 					transform: 'translate(-50%, -50%)',
-					...props,
+					...redCard,
 				}}
 			>
-				<InfoCard title="AGROBOT"/>
+				<h2 className="font-bold p-10  text-white">AGROBOT</h2>
 			</animated.div>
+
+			<animated.div className="absolute w-[400px] h-[250px] bg-[#1CF33E] rounded-md"
+				style={{
+					transform: 'translate(-50%, -50%)',
+					...greenCard,
+				}}
+			>
+				<h2 className="font-bold p-10  text-white">AGROBOT</h2>
+			</animated.div>
+
 			<animated.div className="absolute w-[400px] h-[250px] bg-[#2E1B0F] rounded-md"
 				style={{
 					transform: 'translate(-50%, -50%)',
-					...prop2,
+					...brownCard,
 				}}
 			>
-				<InfoCard title="TWOTEST"/>
+				<h2 className="font-bold p-10  text-white">AGROBOT</h2>
 			</animated.div>
 		</div>
 	);
