@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import LeafIcon from "../../assets/image/brown-leaf-icon.png"
 import { useSpring, animated } from 'react-spring';
 
@@ -12,24 +13,22 @@ const centerY = height - (cardHeight / 2)
 const offsetX = (width - cardWidth) / 2
 const offsetY = (height - cardHeight) / 2
 
-const homePos = { left: centerX, top: centerY }
-const offsetOne = { left: centerX + offsetX, top: centerY - offsetY }
-const offsetTwo = { left: centerX + 2 * offsetX, top: centerY - 2 * offsetY }
+const homePos = { left: centerX, top: centerY, zIndex: 4, opacity: 1, }
+const offsetOne = { left: centerX + offsetX, top: centerY - offsetY, zIndex:3, opacity: 1, }
+const offsetTwo = { left: centerX + 2 * offsetX, top: centerY - 2 * offsetY, zIndex: 2, opacity: 1, }
 
-const bottomPos = { left: centerX, top: height + cardHeight / 2 }
-const bottomLeftPos = { left: width + cardWidth / 2, top: height + cardHeight / 2 }
-const topRightPos = { left: width + cardWidth / 2, top: 0 }
+const bottomPos = { left: centerX, top: height + cardHeight / 2, zIndex: 1, opacity: 1, }
 
 function getNextPos(currentPos) {
 	switch (currentPos) {
-		case offsetTwo:
-			return offsetOne
-		case offsetOne:
-			return homePos
 		case homePos:
 			return bottomPos
 		case bottomPos:
 			return offsetTwo
+		case offsetTwo:
+			return offsetOne
+		case offsetOne:
+			return homePos
 	}
 }
 
