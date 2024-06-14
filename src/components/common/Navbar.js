@@ -17,7 +17,7 @@ const Navbar = () => {
     setMobileMenu(!isMenuOpen);
   };
 
-  function togglePortfolioMenu(hasDropdown) {
+  function toggleProjectsMenu(hasDropdown) {
     if (hasDropdown)
       setIsSubMenuOpen(!isSubMenuOpen);
   }
@@ -55,8 +55,8 @@ const Navbar = () => {
               <li
                 key={e.id}
                 className="relative"
-                onMouseEnter={() => togglePortfolioMenu(e.dropdown)}
-                onMouseLeave={() => togglePortfolioMenu(e.dropdown)}
+                onMouseEnter={() => toggleProjectsMenu(e.dropdown)}
+                onMouseLeave={() => toggleProjectsMenu(e.dropdown)}
               >
                 <a
                   href={e.link}
@@ -102,8 +102,8 @@ const Navbar = () => {
             <a href="/" className="block hover:text-grey-400 my-2 mx-4">
               Home
             </a>
-            <a href="/portfolio" className="block hover:text-grey-400 my-2 mx-4">
-              Portfolio
+            <a href="/projects" className="block hover:text-grey-400 my-2 mx-4">
+              Projects
               <span className='font-normal'>
                 <a href="/agrobot" className="block hover:text-grey-400 my-2 mx-4">AgroBot</a>
                 <a href="/agroponics" className="block hover:text-grey-400 my-2 mx-4">AgroPonics</a>

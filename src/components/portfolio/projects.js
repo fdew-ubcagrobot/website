@@ -1,7 +1,7 @@
 import React from "react";
-import { projects } from "../../constant/portfolio";
+import { projects } from "../../constant/Projects";
 import { MdChevronRight } from "react-icons/md";
-import { projectButton } from "../../constant/portfolio";
+import { projectButton } from "../../constant/Projects";
 
 function Img(props) {
   return (

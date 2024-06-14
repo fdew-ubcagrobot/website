@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import {
     Home,
-    Portfolio,
+    Projects,
     Sponsorship,
     Recruitment,
     ContactUs,
@@ -28,7 +28,7 @@ function App() {
             <Navbar />
             <Routes>
                 <Route exact path="/" element={<Home />} />
-                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/projects" element={<Projects />} />
                 <Route path="/sponsorship" element={<Sponsorship />} />
                 <Route path="/recruitment" element={<Recruitment />} />
                 <Route path="/contactUs" element={<ContactUs />} />
