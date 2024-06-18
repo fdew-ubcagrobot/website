@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
-import { past_publications } from "../../constant/portfolio";
+import { past_publications } from "../../constant/Projects";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Publications = () => {

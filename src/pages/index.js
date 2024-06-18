@@ -1,5 +1,5 @@
 import Home from "./Home";
-import Portfolio from "./Portfolio";
+import Projects from "./Projects";
 import Sponsorship from "./Sponsorship";
 import Recruitment from "./Recruitment";
 import ContactUs from "./ContactUs";
@@ -9,7 +9,7 @@ import AgroBot from './AgroBot';
 
 export {
     Home,
-    Portfolio,
+    Projects,
     Sponsorship,
     Recruitment,
     ContactUs,

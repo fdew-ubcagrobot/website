@@ -1,5 +1,5 @@
 import React from "react";
-import { stats } from "../../constant/portfolio";
+import { stats } from "../../constant/Projects";
 
 function StatsBar() {
   return (
